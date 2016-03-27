@@ -10,7 +10,7 @@ source:
   sha1: b8be66396c726fdc36ebb0f692ed8a8cca3bcc66
 
 build:
-  number: 0
+  number: 1
   skip: true  # [win]
 
 requirements:
