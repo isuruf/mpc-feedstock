@@ -34,13 +34,3 @@ copy lib\%PLATFORM%\Release\mpc.lib %LIBRARY_LIB%\mpc_static.lib
 
 cd %mpc_root%
 copy src\mpc.h %LIBRARY_INC%\mpc.h
-
-cd build.vc14
-
-for /d %%d in (dll_tests\*) do (
-    for %%f in (%%d\*.vcxproj) do (
-        msbuild.exe /property:SolutionDir=..\..\ /property:OutDir=..\..\%PLATFORM%\Release\ /p:Platform=%PLATFORM% /p:Configuration=Release /p:PostBuildEvent="" %%f
-    )
-)
-
-for /r "dll_tests\" %%a in (*.exe) do %%~fa
