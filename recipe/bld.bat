@@ -4,6 +4,9 @@ if "%ARCH%"=="32" (
     set PLATFORM=x64
 )
 
+mkdir dll\%PLATFORM%\Release
+mkdir lib\%PLATFORM%\Release
+
 set mpc_root=%cd%
 cd ..
 
@@ -34,3 +37,24 @@ copy lib\%PLATFORM%\Release\mpc.lib %LIBRARY_LIB%\mpc_static.lib
 
 cd %mpc_root%
 copy src\mpc.h %LIBRARY_INC%\mpc.h
+
+
+REM testing
+cd build.vc14
+xcopy dll\%PLATFORM%\Release\mpc.* ..\dll\%PLATFORM%\Release\ /E
+mkdir dll_tests\%PLATFORM%\Release
+
+msbuild.exe /property:SolutionDir=..\..\ /property:OutDir=..\..\%PLATFORM%\Release\ /p:Platform=%PLATFORM% /p:Configuration=Release dll_tests\add_test_lib\add_test_lib.vcxproj
+copy %PLATFORM%\Release\test_lib.lib dll_tests\%PLATFORM%\Release\test_lib.lib
+
+for /d %%d in (dll_tests\*) do (
+    for %%f in (%%d\*.vcxproj) do (
+        msbuild.exe /property:SolutionDir=..\..\ /property:OutDir=..\..\%PLATFORM%\Release\ /p:Platform=%PLATFORM% /p:Configuration=Release %%f
+    )
+)
+
+REM for /r "%PLATFORM%\Release\" %%a in (*.exe) do ( %%~fa )
+xcopy ..\tests\* %PLATFORM%\Release\ /E
+cd %PLATFORM%\Release
+treal.exe
+if errorlevel 1 exit 1
