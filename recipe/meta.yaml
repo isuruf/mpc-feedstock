@@ -1,33 +1,48 @@
 {% set version = "1.0.3" %}
+{% set commit = "58fa4d15fff10f26c490518bc0da2b69732e22ee" %}
 
 package:
   name: mpc
   version: {{ version }}
 
 source:
-  fn: mpc-{{ version }}.tar.gz
-  url: http://www.multiprecision.org/mpc/download/mpc-{{ version }}.tar.gz
-  sha1: b8be66396c726fdc36ebb0f692ed8a8cca3bcc66
+  fn: mpc-{{ version }}.tar.gz                                              # [unix]
+  url: http://www.multiprecision.org/mpc/download/mpc-{{ version }}.tar.gz  # [unix]
+  sha1: b8be66396c726fdc36ebb0f692ed8a8cca3bcc66                            # [unix]
+  fn: {{ commit }}.zip                                                      # [win]
+  url: https://github.com/BrianGladman/mpc/archive/{{ commit }}.zip         # [win]
+  md5: a3ccbbb17770110427a983638824f31b                                     # [win]
 
 build:
   number: 1
-  skip: true  # [win]
+  skip: true          # [win and not py35]
+  features:
+    - vc14            # [win and py35]
 
 requirements:
   build:
-    - libtool
-    - m4
-    - gmp
+    - python          # [win]
+    - m4              # [unix]
+    - libtool         # [unix]
+    - gmp             # [unix]
+    - mpir            # [win]
     - mpfr
   run:
-    - gmp
+    - gmp             # [unix]
+    - mpir            # [win]
+    - vc 14           # [win]
     - mpfr
 
 test:
   commands:
-    - test -f ${PREFIX}/lib/libmpc.a      # [unix]
-    - test -f ${PREFIX}/lib/libmpc.dylib  # [osx]
-    - test -f ${PREFIX}/lib/libmpc.so     # [linux]
+    - if not exist %LIBRARY_INC%\\mpc.h exit 1                  # [win]
+    - if not exist %LIBRARY_LIB%\\mpc.lib exit 1                # [win]
+    - if not exist %LIBRARY_BIN%\\mpc.dll exit 1                # [win]
+    - if not exist %LIBRARY_LIB%\\mpc_static.lib exit 1         # [win]
+    - test -f ${PREFIX}/include/mpc.h                           # [unix]
+    - test -f ${PREFIX}/lib/libmpc.a                            # [unix]
+    - test -f ${PREFIX}/lib/libmpc.dylib                        # [osx]
+    - test -f ${PREFIX}/lib/libmpc.so                           # [linux]
 
 about:
   home: http://www.multiprecision.org/
