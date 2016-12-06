@@ -14,13 +14,14 @@ source:
   md5: a3ccbbb17770110427a983638824f31b                                     # [win]
 
 build:
-  number: 2
+  number: 3
   skip: true          # [win and not py35]
   features:
     - vc14            # [win and py35]
 
 requirements:
   build:
+    - toolchain
     - python          # [win]
     - m4              # [unix]
     - libtool         # [unix]
@@ -47,7 +48,7 @@ test:
 about:
   home: http://www.multiprecision.org/
   license: LGPL 3
-  license: COPYING.LESSER
+  license_file: {{ SRC_DIR }}/COPYING.LESSER
   summary: A C library for the arithmetic of complex numbers with arbitrarily high precision.
 
 extra:

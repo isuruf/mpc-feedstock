@@ -23,6 +23,10 @@ for %%d in (mpir, mpfr) do (
 REM copy headers
 xcopy %LIBRARY_INC%\*.h mpir\lib\%PLATFORM%\Release\ /E
 xcopy %LIBRARY_INC%\*.h mpir\dll\%PLATFORM%\Release\ /E
+copy %LIBRARY_INC%\gmp-config.h mpir\lib\%PLATFORM%\Release\config.h
+copy %LIBRARY_INC%\gmp-config.h mpir\dll\%PLATFORM%\Release\config.h
+copy %LIBRARY_INC%\gmp-longlong.h mpir\lib\%PLATFORM%\Release\longlong.h
+copy %LIBRARY_INC%\gmp-longlong.h mpir\dll\%PLATFORM%\Release\longlong.h
 
 cd %mpc_root%\build.vc14
 
