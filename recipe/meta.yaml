@@ -21,6 +21,7 @@ build:
 
 requirements:
   build:
+    - toolchain
     - python          # [win]
     - m4              # [unix]
     - libtool         # [unix]
