@@ -14,7 +14,7 @@ source:
   md5: a3ccbbb17770110427a983638824f31b                                     # [win]
 
 build:
-  number: 2
+  number: 3
   skip: true          # [win and not py35]
   features:
     - vc14            # [win and py35]
