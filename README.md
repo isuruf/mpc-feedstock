@@ -11,6 +11,18 @@ Summary: A C library for the arithmetic of complex numbers with arbitrarily high
 
 
 
+Current build status
+====================
+
+Linux: [![Circle CI](https://circleci.com/gh/conda-forge/mpc-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/mpc-feedstock)
+OSX: [![TravisCI](https://travis-ci.org/conda-forge/mpc-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/mpc-feedstock)
+Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/mpc-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/mpc-feedstock/branch/master)
+
+Current release info
+====================
+Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/mpc/badges/version.svg)](https://anaconda.org/conda-forge/mpc)
+Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/mpc/badges/downloads.svg)](https://anaconda.org/conda-forge/mpc)
+
 Installing mpc
 ==============
 
@@ -66,18 +78,6 @@ Terminology
 
 **conda-forge** - the place where the feedstock and smithy live and work to
                   produce the finished article (built conda distributions)
-
-Current build status
-====================
-
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/mpc-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/mpc-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/mpc-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/mpc-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/mpc-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/mpc-feedstock/branch/master)
-
-Current release info
-====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/mpc/badges/version.svg)](https://anaconda.org/conda-forge/mpc)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/mpc/badges/downloads.svg)](https://anaconda.org/conda-forge/mpc)
 
 
 Updating mpc-feedstock
