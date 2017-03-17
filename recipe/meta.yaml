@@ -14,7 +14,7 @@ source:
   md5: a3ccbbb17770110427a983638824f31b                                     # [win]
 
 build:
-  number: 3
+  number: 4
   skip: true          # [win and not py35]
   features:
     - vc14            # [win and py35]
@@ -27,12 +27,12 @@ requirements:
     - libtool         # [unix]
     - gmp             # [unix]
     - mpir            # [win]
-    - mpfr
+    - mpfr 3.*
   run:
     - gmp             # [unix]
     - mpir            # [win]
     - vc 14           # [win]
-    - mpfr
+    - mpfr 3.*
 
 test:
   commands:
