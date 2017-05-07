@@ -1,5 +1,4 @@
 {% set version = "1.0.3" %}
-{% set commit = "58fa4d15fff10f26c490518bc0da2b69732e22ee" %}
 
 package:
   name: mpc
@@ -8,10 +7,10 @@ package:
 source:
   fn: mpc-{{ version }}.tar.gz                                              # [unix]
   url: http://www.multiprecision.org/mpc/download/mpc-{{ version }}.tar.gz  # [unix]
-  sha1: b8be66396c726fdc36ebb0f692ed8a8cca3bcc66                            # [unix]
+  sha256: 617decc6ea09889fb08ede330917a00b16809b8db88c29c31bfbb49cbf88ecc3  # [unix]
   fn: {{ commit }}.zip                                                      # [win]
-  url: https://github.com/BrianGladman/mpc/archive/{{ commit }}.zip         # [win]
-  md5: a3ccbbb17770110427a983638824f31b                                     # [win]
+  url: https://github.com/isuruf/mpc/archive/v{{ version }}.zip             # [win]
+  sha256: f134ae1448fb7098287f76c7202b1b57f2c0e9570a1544098bf463c5a5ce899a  # [win]
 
 build:
   number: 4
@@ -25,11 +24,11 @@ requirements:
     - python          # [win]
     - m4              # [unix]
     - libtool         # [unix]
-    - gmp             # [unix]
+    - gmp >=5.0.1,<7  # [unix]
     - mpir            # [win]
     - mpfr 3.*
   run:
-    - gmp             # [unix]
+    - gmp >=5.0.1,<7  # [unix]
     - mpir            # [win]
     - vc 14           # [win]
     - mpfr 3.*
