@@ -10,7 +10,7 @@ source:
   sha256: 617decc6ea09889fb08ede330917a00b16809b8db88c29c31bfbb49cbf88ecc3  # [unix]
   fn: mpc-{{ version }}.zip                                                 # [win]
   url: https://github.com/isuruf/mpc/archive/v{{ version }}.zip             # [win]
-  sha256: f134ae1448fb7098287f76c7202b1b57f2c0e9570a1544098bf463c5a5ce899a  # [win]
+  sha256: acc13357573d2ba542d93d1506f905bc7781ba9396fb21c5772c66c7048d7c53  # [win]
 
 build:
   number: 4
