@@ -1,4 +1,4 @@
-{% set version = "1.0.3" %}
+{% set version = "1.1.0" %}
 
 package:
   name: mpc
@@ -7,10 +7,10 @@ package:
 source:
   fn: mpc-{{ version }}.tar.gz                                              # [unix]
   url: http://www.multiprecision.org/mpc/download/mpc-{{ version }}.tar.gz  # [unix]
-  sha256: 617decc6ea09889fb08ede330917a00b16809b8db88c29c31bfbb49cbf88ecc3  # [unix]
+  sha256: 6985c538143c1208dcb1ac42cedad6ff52e267b47e5f970183a3e75125b43c2e  # [unix]
   fn: mpc-{{ version }}.zip                                                 # [win]
-  url: https://github.com/isuruf/mpc/archive/v{{ version }}.zip             # [win]
-  sha256: acc13357573d2ba542d93d1506f905bc7781ba9396fb21c5772c66c7048d7c53  # [win]
+  url: https://github.com/saraedum/mpc/archive/v{{ version }}.zip           # [win]
+  sha256: e5d4f2af1988f371837f7a7a7f27d7589ed19dadf21d9639f58bb3ec2a867e7f  # [win]
 
 build:
   number: 4
@@ -53,3 +53,4 @@ extra:
   recipe-maintainers:
     - isuruf
     - jakirkham
+    - saraedum
