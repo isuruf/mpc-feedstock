@@ -1,4 +1,5 @@
 {% set version = "1.1.0" %}
+{% set commit = "91c7eb59562c255b988dd05c3927d902ba6b7076" %}
 
 package:
   name: mpc
@@ -9,8 +10,8 @@ source:
   url: http://www.multiprecision.org/mpc/download/mpc-{{ version }}.tar.gz  # [unix]
   sha256: 6985c538143c1208dcb1ac42cedad6ff52e267b47e5f970183a3e75125b43c2e  # [unix]
   fn: mpc-{{ version }}.zip                                                 # [win]
-  url: https://github.com/saraedum/mpc/archive/v{{ version }}.zip           # [win]
-  sha256: e5d4f2af1988f371837f7a7a7f27d7589ed19dadf21d9639f58bb3ec2a867e7f  # [win]
+  url: https://github.com/BrianGladman/mpc/archive/{{ commit }}.zip         # [win]
+  sha256: 25a75891366d92c011589d0f203ae9715cc52afdbb572ab046fce1d25c032c30  # [win]
 
 build:
   number: 4
