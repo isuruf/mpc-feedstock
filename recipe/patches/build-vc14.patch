@@ -1,14 +1,14 @@
 Add Windows build files.
 
-Generated from within a clone of git@github.com:BrianGladman/mpc.git with
+Generated from within a clone of git@github.com:BrianGladman/mpc.git at commit 91c7eb59562c255b988dd05c3927d902ba6b7076
 
-    git diff --binary ../empty build.vc14 > /tmp/build-vc14.patch.
+    git diff --binary --dst-prefix='' ../empty build.vc14
 
-diff --git a/build.vc14/dlfcn.c b/build.vc14/dlfcn.c
+diff --git a/build.vc14/dlfcn.c build.vc14/dlfcn.c
 new file mode 100644
 index 0000000..2a8b847
 --- /dev/null
-+++ b/build.vc14/dlfcn.c
++++ build.vc14/dlfcn.c
 @@ -0,0 +1,320 @@
 +/*
 + * dlfcn-win32
@@ -330,11 +330,11 @@ index 0000000..2a8b847
 +#include "..\\src\\logging.c"
 +
 +#endif
-diff --git a/build.vc14/dlfcn.h b/build.vc14/dlfcn.h
+diff --git a/build.vc14/dlfcn.h build.vc14/dlfcn.h
 new file mode 100644
 index 0000000..f70b6b5
 --- /dev/null
-+++ b/build.vc14/dlfcn.h
++++ build.vc14/dlfcn.h
 @@ -0,0 +1,45 @@
 +/*
 + * dlfcn-win32
@@ -381,11 +381,11 @@ index 0000000..f70b6b5
 +char *dlerror( void );
 +
 +#endif /* DLFCN_H */
-diff --git a/build.vc14/dll_tests/add_test_lib/add_test_lib.vcxproj b/build.vc14/dll_tests/add_test_lib/add_test_lib.vcxproj
+diff --git a/build.vc14/dll_tests/add_test_lib/add_test_lib.vcxproj build.vc14/dll_tests/add_test_lib/add_test_lib.vcxproj
 new file mode 100644
 index 0000000..98795ef
 --- /dev/null
-+++ b/build.vc14/dll_tests/add_test_lib/add_test_lib.vcxproj
++++ build.vc14/dll_tests/add_test_lib/add_test_lib.vcxproj
 @@ -0,0 +1,206 @@
 +﻿<?xml version="1.0" encoding="utf-8"?>
 +<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -594,11 +594,11 @@ index 0000000..98795ef
 +  </ImportGroup>
 +</Project>
 \ No newline at end of file
-diff --git a/build.vc14/dll_tests/add_test_lib/add_test_lib.vcxproj.filters b/build.vc14/dll_tests/add_test_lib/add_test_lib.vcxproj.filters
+diff --git a/build.vc14/dll_tests/add_test_lib/add_test_lib.vcxproj.filters build.vc14/dll_tests/add_test_lib/add_test_lib.vcxproj.filters
 new file mode 100644
 index 0000000..851e8ee
 --- /dev/null
-+++ b/build.vc14/dll_tests/add_test_lib/add_test_lib.vcxproj.filters
++++ build.vc14/dll_tests/add_test_lib/add_test_lib.vcxproj.filters
 @@ -0,0 +1,80 @@
 +﻿<?xml version="1.0" encoding="utf-8"?>
 +<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -681,11 +681,11 @@ index 0000000..851e8ee
 +  </ItemGroup>
 +</Project>
 \ No newline at end of file
-diff --git a/build.vc14/dll_tests/tabs/tabs.vcxproj b/build.vc14/dll_tests/tabs/tabs.vcxproj
+diff --git a/build.vc14/dll_tests/tabs/tabs.vcxproj build.vc14/dll_tests/tabs/tabs.vcxproj
 new file mode 100644
 index 0000000..07aecaf
 --- /dev/null
-+++ b/build.vc14/dll_tests/tabs/tabs.vcxproj
++++ build.vc14/dll_tests/tabs/tabs.vcxproj
 @@ -0,0 +1,165 @@
 +﻿<?xml version="1.0" encoding="utf-8"?>
 +<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -853,11 +853,11 @@ index 0000000..07aecaf
 +  </ImportGroup>
 +</Project>
 \ No newline at end of file
-diff --git a/build.vc14/dll_tests/tabs/tabs.vcxproj.filters b/build.vc14/dll_tests/tabs/tabs.vcxproj.filters
+diff --git a/build.vc14/dll_tests/tabs/tabs.vcxproj.filters build.vc14/dll_tests/tabs/tabs.vcxproj.filters
 new file mode 100644
 index 0000000..0349cfb
 --- /dev/null
-+++ b/build.vc14/dll_tests/tabs/tabs.vcxproj.filters
++++ build.vc14/dll_tests/tabs/tabs.vcxproj.filters
 @@ -0,0 +1,6 @@
 +﻿<?xml version="1.0" encoding="utf-8"?>
 +<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -866,11 +866,11 @@ index 0000000..0349cfb
 +  </ItemGroup>
 +</Project>
 \ No newline at end of file
-diff --git a/build.vc14/dll_tests/tacos/tacos.vcxproj b/build.vc14/dll_tests/tacos/tacos.vcxproj
+diff --git a/build.vc14/dll_tests/tacos/tacos.vcxproj build.vc14/dll_tests/tacos/tacos.vcxproj
 new file mode 100644
 index 0000000..fbcaefc
 --- /dev/null
-+++ b/build.vc14/dll_tests/tacos/tacos.vcxproj
++++ build.vc14/dll_tests/tacos/tacos.vcxproj
 @@ -0,0 +1,165 @@
 +﻿<?xml version="1.0" encoding="utf-8"?>
 +<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -1038,11 +1038,11 @@ index 0000000..fbcaefc
 +  </ImportGroup>
 +</Project>
 \ No newline at end of file
-diff --git a/build.vc14/dll_tests/tacos/tacos.vcxproj.filters b/build.vc14/dll_tests/tacos/tacos.vcxproj.filters
+diff --git a/build.vc14/dll_tests/tacos/tacos.vcxproj.filters build.vc14/dll_tests/tacos/tacos.vcxproj.filters
 new file mode 100644
 index 0000000..9a099b5
 --- /dev/null
-+++ b/build.vc14/dll_tests/tacos/tacos.vcxproj.filters
++++ build.vc14/dll_tests/tacos/tacos.vcxproj.filters
 @@ -0,0 +1,6 @@
 +﻿<?xml version="1.0" encoding="utf-8"?>
 +<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -1051,11 +1051,11 @@ index 0000000..9a099b5
 +  </ItemGroup>
 +</Project>
 \ No newline at end of file
-diff --git a/build.vc14/dll_tests/tacosh/tacosh.vcxproj b/build.vc14/dll_tests/tacosh/tacosh.vcxproj
+diff --git a/build.vc14/dll_tests/tacosh/tacosh.vcxproj build.vc14/dll_tests/tacosh/tacosh.vcxproj
 new file mode 100644
 index 0000000..a7b0e44
 --- /dev/null
-+++ b/build.vc14/dll_tests/tacosh/tacosh.vcxproj
++++ build.vc14/dll_tests/tacosh/tacosh.vcxproj
 @@ -0,0 +1,165 @@
 +﻿<?xml version="1.0" encoding="utf-8"?>
 +<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -1223,11 +1223,11 @@ index 0000000..a7b0e44
 +  </ImportGroup>
 +</Project>
 \ No newline at end of file
-diff --git a/build.vc14/dll_tests/tacosh/tacosh.vcxproj.filters b/build.vc14/dll_tests/tacosh/tacosh.vcxproj.filters
+diff --git a/build.vc14/dll_tests/tacosh/tacosh.vcxproj.filters build.vc14/dll_tests/tacosh/tacosh.vcxproj.filters
 new file mode 100644
 index 0000000..527a8cb
 --- /dev/null
-+++ b/build.vc14/dll_tests/tacosh/tacosh.vcxproj.filters
++++ build.vc14/dll_tests/tacosh/tacosh.vcxproj.filters
 @@ -0,0 +1,6 @@
 +﻿<?xml version="1.0" encoding="utf-8"?>
 +<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -1236,11 +1236,11 @@ index 0000000..527a8cb
 +  </ItemGroup>
 +</Project>
 \ No newline at end of file
-diff --git a/build.vc14/dll_tests/tadd/tadd.vcxproj b/build.vc14/dll_tests/tadd/tadd.vcxproj
+diff --git a/build.vc14/dll_tests/tadd/tadd.vcxproj build.vc14/dll_tests/tadd/tadd.vcxproj
 new file mode 100644
 index 0000000..70a3935
 --- /dev/null
-+++ b/build.vc14/dll_tests/tadd/tadd.vcxproj
++++ build.vc14/dll_tests/tadd/tadd.vcxproj
 @@ -0,0 +1,165 @@
 +﻿<?xml version="1.0" encoding="utf-8"?>
 +<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -1408,11 +1408,11 @@ index 0000000..70a3935
 +  </ImportGroup>
 +</Project>
 \ No newline at end of file
-diff --git a/build.vc14/dll_tests/tadd/tadd.vcxproj.filters b/build.vc14/dll_tests/tadd/tadd.vcxproj.filters
+diff --git a/build.vc14/dll_tests/tadd/tadd.vcxproj.filters build.vc14/dll_tests/tadd/tadd.vcxproj.filters
 new file mode 100644
 index 0000000..c80bd11
 --- /dev/null
-+++ b/build.vc14/dll_tests/tadd/tadd.vcxproj.filters
++++ build.vc14/dll_tests/tadd/tadd.vcxproj.filters
 @@ -0,0 +1,6 @@
 +﻿<?xml version="1.0" encoding="utf-8"?>
 +<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -1421,11 +1421,11 @@ index 0000000..c80bd11
 +  </ItemGroup>
 +</Project>
 \ No newline at end of file
-diff --git a/build.vc14/dll_tests/tadd_fr/tadd_fr.vcxproj b/build.vc14/dll_tests/tadd_fr/tadd_fr.vcxproj
+diff --git a/build.vc14/dll_tests/tadd_fr/tadd_fr.vcxproj build.vc14/dll_tests/tadd_fr/tadd_fr.vcxproj
 new file mode 100644
 index 0000000..96e627d
 --- /dev/null
-+++ b/build.vc14/dll_tests/tadd_fr/tadd_fr.vcxproj
++++ build.vc14/dll_tests/tadd_fr/tadd_fr.vcxproj
 @@ -0,0 +1,165 @@
 +﻿<?xml version="1.0" encoding="utf-8"?>
 +<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -1593,11 +1593,11 @@ index 0000000..96e627d
 +  </ImportGroup>
 +</Project>
 \ No newline at end of file
-diff --git a/build.vc14/dll_tests/tadd_fr/tadd_fr.vcxproj.filters b/build.vc14/dll_tests/tadd_fr/tadd_fr.vcxproj.filters
+diff --git a/build.vc14/dll_tests/tadd_fr/tadd_fr.vcxproj.filters build.vc14/dll_tests/tadd_fr/tadd_fr.vcxproj.filters
 new file mode 100644
 index 0000000..b167f96
 --- /dev/null
-+++ b/build.vc14/dll_tests/tadd_fr/tadd_fr.vcxproj.filters
++++ build.vc14/dll_tests/tadd_fr/tadd_fr.vcxproj.filters
 @@ -0,0 +1,6 @@
 +﻿<?xml version="1.0" encoding="utf-8"?>
 +<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -1606,11 +1606,11 @@ index 0000000..b167f96
 +  </ItemGroup>
 +</Project>
 \ No newline at end of file
-diff --git a/build.vc14/dll_tests/tadd_si/tadd_si.vcxproj b/build.vc14/dll_tests/tadd_si/tadd_si.vcxproj
+diff --git a/build.vc14/dll_tests/tadd_si/tadd_si.vcxproj build.vc14/dll_tests/tadd_si/tadd_si.vcxproj
 new file mode 100644
 index 0000000..1c79a7a
 --- /dev/null
-+++ b/build.vc14/dll_tests/tadd_si/tadd_si.vcxproj
++++ build.vc14/dll_tests/tadd_si/tadd_si.vcxproj
 @@ -0,0 +1,165 @@
 +﻿<?xml version="1.0" encoding="utf-8"?>
 +<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -1778,11 +1778,11 @@ index 0000000..1c79a7a
 +  </ImportGroup>
 +</Project>
 \ No newline at end of file
-diff --git a/build.vc14/dll_tests/tadd_si/tadd_si.vcxproj.filters b/build.vc14/dll_tests/tadd_si/tadd_si.vcxproj.filters
+diff --git a/build.vc14/dll_tests/tadd_si/tadd_si.vcxproj.filters build.vc14/dll_tests/tadd_si/tadd_si.vcxproj.filters
 new file mode 100644
 index 0000000..fbdf47b
 --- /dev/null
-+++ b/build.vc14/dll_tests/tadd_si/tadd_si.vcxproj.filters
++++ build.vc14/dll_tests/tadd_si/tadd_si.vcxproj.filters
 @@ -0,0 +1,6 @@
 +﻿<?xml version="1.0" encoding="utf-8"?>
 +<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -1791,11 +1791,11 @@ index 0000000..fbdf47b
 +  </ItemGroup>
 +</Project>
 \ No newline at end of file
-diff --git a/build.vc14/dll_tests/tadd_ui/tadd_ui.vcxproj b/build.vc14/dll_tests/tadd_ui/tadd_ui.vcxproj
+diff --git a/build.vc14/dll_tests/tadd_ui/tadd_ui.vcxproj build.vc14/dll_tests/tadd_ui/tadd_ui.vcxproj
 new file mode 100644
 index 0000000..362caaa
 --- /dev/null
-+++ b/build.vc14/dll_tests/tadd_ui/tadd_ui.vcxproj
++++ build.vc14/dll_tests/tadd_ui/tadd_ui.vcxproj
 @@ -0,0 +1,165 @@
 +﻿<?xml version="1.0" encoding="utf-8"?>
 +<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -1963,11 +1963,11 @@ index 0000000..362caaa
 +  </ImportGroup>
 +</Project>
 \ No newline at end of file
-diff --git a/build.vc14/dll_tests/tadd_ui/tadd_ui.vcxproj.filters b/build.vc14/dll_tests/tadd_ui/tadd_ui.vcxproj.filters
+diff --git a/build.vc14/dll_tests/tadd_ui/tadd_ui.vcxproj.filters build.vc14/dll_tests/tadd_ui/tadd_ui.vcxproj.filters
 new file mode 100644
 index 0000000..b5756af
 --- /dev/null
-+++ b/build.vc14/dll_tests/tadd_ui/tadd_ui.vcxproj.filters
++++ build.vc14/dll_tests/tadd_ui/tadd_ui.vcxproj.filters
 @@ -0,0 +1,6 @@
 +﻿<?xml version="1.0" encoding="utf-8"?>
 +<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -1976,11 +1976,11 @@ index 0000000..b5756af
 +  </ItemGroup>
 +</Project>
 \ No newline at end of file
-diff --git a/build.vc14/dll_tests/targ/targ.vcxproj b/build.vc14/dll_tests/targ/targ.vcxproj
+diff --git a/build.vc14/dll_tests/targ/targ.vcxproj build.vc14/dll_tests/targ/targ.vcxproj
 new file mode 100644
 index 0000000..84ad5aa
 --- /dev/null
-+++ b/build.vc14/dll_tests/targ/targ.vcxproj
++++ build.vc14/dll_tests/targ/targ.vcxproj
 @@ -0,0 +1,165 @@
 +﻿<?xml version="1.0" encoding="utf-8"?>
 +<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -2148,11 +2148,11 @@ index 0000000..84ad5aa
 +  </ImportGroup>
 +</Project>
 \ No newline at end of file
-diff --git a/build.vc14/dll_tests/targ/targ.vcxproj.filters b/build.vc14/dll_tests/targ/targ.vcxproj.filters
+diff --git a/build.vc14/dll_tests/targ/targ.vcxproj.filters build.vc14/dll_tests/targ/targ.vcxproj.filters
 new file mode 100644
 index 0000000..ce026b3
 --- /dev/null
-+++ b/build.vc14/dll_tests/targ/targ.vcxproj.filters
++++ build.vc14/dll_tests/targ/targ.vcxproj.filters
 @@ -0,0 +1,6 @@
 +﻿<?xml version="1.0" encoding="utf-8"?>
 +<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -2161,11 +2161,11 @@ index 0000000..ce026b3
 +  </ItemGroup>
 +</Project>
 \ No newline at end of file
-diff --git a/build.vc14/dll_tests/tasin/tasin.vcxproj b/build.vc14/dll_tests/tasin/tasin.vcxproj
+diff --git a/build.vc14/dll_tests/tasin/tasin.vcxproj build.vc14/dll_tests/tasin/tasin.vcxproj
 new file mode 100644
 index 0000000..6e314d7
 --- /dev/null
-+++ b/build.vc14/dll_tests/tasin/tasin.vcxproj
++++ build.vc14/dll_tests/tasin/tasin.vcxproj
 @@ -0,0 +1,165 @@
 +﻿<?xml version="1.0" encoding="utf-8"?>
 +<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -2333,11 +2333,11 @@ index 0000000..6e314d7
 +  </ImportGroup>
 +</Project>
 \ No newline at end of file
-diff --git a/build.vc14/dll_tests/tasin/tasin.vcxproj.filters b/build.vc14/dll_tests/tasin/tasin.vcxproj.filters
+diff --git a/build.vc14/dll_tests/tasin/tasin.vcxproj.filters build.vc14/dll_tests/tasin/tasin.vcxproj.filters
 new file mode 100644
 index 0000000..36058af
 --- /dev/null
-+++ b/build.vc14/dll_tests/tasin/tasin.vcxproj.filters
++++ build.vc14/dll_tests/tasin/tasin.vcxproj.filters
 @@ -0,0 +1,6 @@
 +﻿<?xml version="1.0" encoding="utf-8"?>
 +<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -2346,11 +2346,11 @@ index 0000000..36058af
 +  </ItemGroup>
 +</Project>
 \ No newline at end of file
-diff --git a/build.vc14/dll_tests/tasinh/tasinh.vcxproj b/build.vc14/dll_tests/tasinh/tasinh.vcxproj
+diff --git a/build.vc14/dll_tests/tasinh/tasinh.vcxproj build.vc14/dll_tests/tasinh/tasinh.vcxproj
 new file mode 100644
 index 0000000..3b56ebb
 --- /dev/null
-+++ b/build.vc14/dll_tests/tasinh/tasinh.vcxproj
++++ build.vc14/dll_tests/tasinh/tasinh.vcxproj
 @@ -0,0 +1,165 @@
 +﻿<?xml version="1.0" encoding="utf-8"?>
 +<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -2518,11 +2518,11 @@ index 0000000..3b56ebb
 +  </ImportGroup>
 +</Project>
 \ No newline at end of file
-diff --git a/build.vc14/dll_tests/tasinh/tasinh.vcxproj.filters b/build.vc14/dll_tests/tasinh/tasinh.vcxproj.filters
+diff --git a/build.vc14/dll_tests/tasinh/tasinh.vcxproj.filters build.vc14/dll_tests/tasinh/tasinh.vcxproj.filters
 new file mode 100644
 index 0000000..afb7a7d
 --- /dev/null
-+++ b/build.vc14/dll_tests/tasinh/tasinh.vcxproj.filters
++++ build.vc14/dll_tests/tasinh/tasinh.vcxproj.filters
 @@ -0,0 +1,6 @@
 +﻿<?xml version="1.0" encoding="utf-8"?>
 +<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -2531,11 +2531,11 @@ index 0000000..afb7a7d
 +  </ItemGroup>
 +</Project>
 \ No newline at end of file
-diff --git a/build.vc14/dll_tests/tatan/tatan.vcxproj b/build.vc14/dll_tests/tatan/tatan.vcxproj
+diff --git a/build.vc14/dll_tests/tatan/tatan.vcxproj build.vc14/dll_tests/tatan/tatan.vcxproj
 new file mode 100644
 index 0000000..bc69013
 --- /dev/null
-+++ b/build.vc14/dll_tests/tatan/tatan.vcxproj
++++ build.vc14/dll_tests/tatan/tatan.vcxproj
 @@ -0,0 +1,165 @@
 +﻿<?xml version="1.0" encoding="utf-8"?>
 +<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -2703,11 +2703,11 @@ index 0000000..bc69013
 +  </ImportGroup>
 +</Project>
 \ No newline at end of file
-diff --git a/build.vc14/dll_tests/tatan/tatan.vcxproj.filters b/build.vc14/dll_tests/tatan/tatan.vcxproj.filters
+diff --git a/build.vc14/dll_tests/tatan/tatan.vcxproj.filters build.vc14/dll_tests/tatan/tatan.vcxproj.filters
 new file mode 100644
 index 0000000..7b8761e
 --- /dev/null
-+++ b/build.vc14/dll_tests/tatan/tatan.vcxproj.filters
++++ build.vc14/dll_tests/tatan/tatan.vcxproj.filters
 @@ -0,0 +1,6 @@
 +﻿<?xml version="1.0" encoding="utf-8"?>
 +<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -2716,11 +2716,11 @@ index 0000000..7b8761e
 +  </ItemGroup>
 +</Project>
 \ No newline at end of file
-diff --git a/build.vc14/dll_tests/tatanh/tatanh.vcxproj b/build.vc14/dll_tests/tatanh/tatanh.vcxproj
+diff --git a/build.vc14/dll_tests/tatanh/tatanh.vcxproj build.vc14/dll_tests/tatanh/tatanh.vcxproj
 new file mode 100644
 index 0000000..21384f5
 --- /dev/null
-+++ b/build.vc14/dll_tests/tatanh/tatanh.vcxproj
++++ build.vc14/dll_tests/tatanh/tatanh.vcxproj
 @@ -0,0 +1,165 @@
 +﻿<?xml version="1.0" encoding="utf-8"?>
 +<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -2888,11 +2888,11 @@ index 0000000..21384f5
 +  </ImportGroup>
 +</Project>
 \ No newline at end of file
-diff --git a/build.vc14/dll_tests/tatanh/tatanh.vcxproj.filters b/build.vc14/dll_tests/tatanh/tatanh.vcxproj.filters
+diff --git a/build.vc14/dll_tests/tatanh/tatanh.vcxproj.filters build.vc14/dll_tests/tatanh/tatanh.vcxproj.filters
 new file mode 100644
 index 0000000..3e44251
 --- /dev/null
-+++ b/build.vc14/dll_tests/tatanh/tatanh.vcxproj.filters
++++ build.vc14/dll_tests/tatanh/tatanh.vcxproj.filters
 @@ -0,0 +1,6 @@
 +﻿<?xml version="1.0" encoding="utf-8"?>
 +<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -2901,11 +2901,11 @@ index 0000000..3e44251
 +  </ItemGroup>
 +</Project>
 \ No newline at end of file
-diff --git a/build.vc14/dll_tests/tcmp_abs/tcmp_abs.vcxproj b/build.vc14/dll_tests/tcmp_abs/tcmp_abs.vcxproj
+diff --git a/build.vc14/dll_tests/tcmp_abs/tcmp_abs.vcxproj build.vc14/dll_tests/tcmp_abs/tcmp_abs.vcxproj
 new file mode 100644
 index 0000000..f781e68
 --- /dev/null
-+++ b/build.vc14/dll_tests/tcmp_abs/tcmp_abs.vcxproj
++++ build.vc14/dll_tests/tcmp_abs/tcmp_abs.vcxproj
 @@ -0,0 +1,165 @@
 +﻿<?xml version="1.0" encoding="utf-8"?>
 +<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -3073,11 +3073,11 @@ index 0000000..f781e68
 +  </ImportGroup>
 +</Project>
 \ No newline at end of file
-diff --git a/build.vc14/dll_tests/tcmp_abs/tcmp_abs.vcxproj.filters b/build.vc14/dll_tests/tcmp_abs/tcmp_abs.vcxproj.filters
+diff --git a/build.vc14/dll_tests/tcmp_abs/tcmp_abs.vcxproj.filters build.vc14/dll_tests/tcmp_abs/tcmp_abs.vcxproj.filters
 new file mode 100644
 index 0000000..66b02a4
 --- /dev/null
-+++ b/build.vc14/dll_tests/tcmp_abs/tcmp_abs.vcxproj.filters
++++ build.vc14/dll_tests/tcmp_abs/tcmp_abs.vcxproj.filters
 @@ -0,0 +1,6 @@
 +﻿<?xml version="1.0" encoding="utf-8"?>
 +<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -3086,11 +3086,11 @@ index 0000000..66b02a4
 +  </ItemGroup>
 +</Project>
 \ No newline at end of file
-diff --git a/build.vc14/dll_tests/tconj/tconj.vcxproj b/build.vc14/dll_tests/tconj/tconj.vcxproj
+diff --git a/build.vc14/dll_tests/tconj/tconj.vcxproj build.vc14/dll_tests/tconj/tconj.vcxproj
 new file mode 100644
 index 0000000..e5249f4
 --- /dev/null
-+++ b/build.vc14/dll_tests/tconj/tconj.vcxproj
++++ build.vc14/dll_tests/tconj/tconj.vcxproj
 @@ -0,0 +1,165 @@
 +﻿<?xml version="1.0" encoding="utf-8"?>
 +<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -3258,11 +3258,11 @@ index 0000000..e5249f4
 +  </ImportGroup>
 +</Project>
 \ No newline at end of file
-diff --git a/build.vc14/dll_tests/tconj/tconj.vcxproj.filters b/build.vc14/dll_tests/tconj/tconj.vcxproj.filters
+diff --git a/build.vc14/dll_tests/tconj/tconj.vcxproj.filters build.vc14/dll_tests/tconj/tconj.vcxproj.filters
 new file mode 100644
 index 0000000..0df81e8
 --- /dev/null
-+++ b/build.vc14/dll_tests/tconj/tconj.vcxproj.filters
++++ build.vc14/dll_tests/tconj/tconj.vcxproj.filters
 @@ -0,0 +1,6 @@
 +﻿<?xml version="1.0" encoding="utf-8"?>
 +<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -3271,11 +3271,11 @@ index 0000000..0df81e8
 +  </ItemGroup>
 +</Project>
 \ No newline at end of file
-diff --git a/build.vc14/dll_tests/tcos/tcos.vcxproj b/build.vc14/dll_tests/tcos/tcos.vcxproj
+diff --git a/build.vc14/dll_tests/tcos/tcos.vcxproj build.vc14/dll_tests/tcos/tcos.vcxproj
 new file mode 100644
 index 0000000..ec63372
 --- /dev/null
-+++ b/build.vc14/dll_tests/tcos/tcos.vcxproj
++++ build.vc14/dll_tests/tcos/tcos.vcxproj
 @@ -0,0 +1,165 @@
 +﻿<?xml version="1.0" encoding="utf-8"?>
 +<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -3443,11 +3443,11 @@ index 0000000..ec63372
 +  </ImportGroup>
 +</Project>
 \ No newline at end of file
-diff --git a/build.vc14/dll_tests/tcos/tcos.vcxproj.filters b/build.vc14/dll_tests/tcos/tcos.vcxproj.filters
+diff --git a/build.vc14/dll_tests/tcos/tcos.vcxproj.filters build.vc14/dll_tests/tcos/tcos.vcxproj.filters
 new file mode 100644
 index 0000000..2272b50
 --- /dev/null
-+++ b/build.vc14/dll_tests/tcos/tcos.vcxproj.filters
++++ build.vc14/dll_tests/tcos/tcos.vcxproj.filters
 @@ -0,0 +1,6 @@
 +﻿<?xml version="1.0" encoding="utf-8"?>
 +<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -3456,11 +3456,11 @@ index 0000000..2272b50
 +  </ItemGroup>
 +</Project>
 \ No newline at end of file
-diff --git a/build.vc14/dll_tests/tcosh/tcosh.vcxproj b/build.vc14/dll_tests/tcosh/tcosh.vcxproj
+diff --git a/build.vc14/dll_tests/tcosh/tcosh.vcxproj build.vc14/dll_tests/tcosh/tcosh.vcxproj
 new file mode 100644
 index 0000000..1704e40
 --- /dev/null
-+++ b/build.vc14/dll_tests/tcosh/tcosh.vcxproj
++++ build.vc14/dll_tests/tcosh/tcosh.vcxproj
 @@ -0,0 +1,165 @@
 +﻿<?xml version="1.0" encoding="utf-8"?>
 +<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -3628,11 +3628,11 @@ index 0000000..1704e40
 +  </ImportGroup>
 +</Project>
 \ No newline at end of file
-diff --git a/build.vc14/dll_tests/tcosh/tcosh.vcxproj.filters b/build.vc14/dll_tests/tcosh/tcosh.vcxproj.filters
+diff --git a/build.vc14/dll_tests/tcosh/tcosh.vcxproj.filters build.vc14/dll_tests/tcosh/tcosh.vcxproj.filters
 new file mode 100644
 index 0000000..7afe013
 --- /dev/null
-+++ b/build.vc14/dll_tests/tcosh/tcosh.vcxproj.filters
++++ build.vc14/dll_tests/tcosh/tcosh.vcxproj.filters
 @@ -0,0 +1,6 @@
 +﻿<?xml version="1.0" encoding="utf-8"?>
 +<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -3641,11 +3641,11 @@ index 0000000..7afe013
 +  </ItemGroup>
 +</Project>
 \ No newline at end of file
-diff --git a/build.vc14/dll_tests/tdiv/tdiv.vcxproj b/build.vc14/dll_tests/tdiv/tdiv.vcxproj
+diff --git a/build.vc14/dll_tests/tdiv/tdiv.vcxproj build.vc14/dll_tests/tdiv/tdiv.vcxproj
 new file mode 100644
 index 0000000..b170bfe
 --- /dev/null
-+++ b/build.vc14/dll_tests/tdiv/tdiv.vcxproj
++++ build.vc14/dll_tests/tdiv/tdiv.vcxproj
 @@ -0,0 +1,165 @@
 +﻿<?xml version="1.0" encoding="utf-8"?>
 +<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -3813,11 +3813,11 @@ index 0000000..b170bfe
 +  </ImportGroup>
 +</Project>
 \ No newline at end of file
-diff --git a/build.vc14/dll_tests/tdiv/tdiv.vcxproj.filters b/build.vc14/dll_tests/tdiv/tdiv.vcxproj.filters
+diff --git a/build.vc14/dll_tests/tdiv/tdiv.vcxproj.filters build.vc14/dll_tests/tdiv/tdiv.vcxproj.filters
 new file mode 100644
 index 0000000..d8ea37a
 --- /dev/null
-+++ b/build.vc14/dll_tests/tdiv/tdiv.vcxproj.filters
++++ build.vc14/dll_tests/tdiv/tdiv.vcxproj.filters
 @@ -0,0 +1,6 @@
 +﻿<?xml version="1.0" encoding="utf-8"?>
 +<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -3826,11 +3826,11 @@ index 0000000..d8ea37a
 +  </ItemGroup>
 +</Project>
 \ No newline at end of file
-diff --git a/build.vc14/dll_tests/tdiv_2si/tdiv_2si.vcxproj b/build.vc14/dll_tests/tdiv_2si/tdiv_2si.vcxproj
+diff --git a/build.vc14/dll_tests/tdiv_2si/tdiv_2si.vcxproj build.vc14/dll_tests/tdiv_2si/tdiv_2si.vcxproj
 new file mode 100644
 index 0000000..79e97eb
 --- /dev/null
-+++ b/build.vc14/dll_tests/tdiv_2si/tdiv_2si.vcxproj
++++ build.vc14/dll_tests/tdiv_2si/tdiv_2si.vcxproj
 @@ -0,0 +1,165 @@
 +﻿<?xml version="1.0" encoding="utf-8"?>
 +<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -3998,11 +3998,11 @@ index 0000000..79e97eb
 +  </ImportGroup>
 +</Project>
 \ No newline at end of file
-diff --git a/build.vc14/dll_tests/tdiv_2si/tdiv_2si.vcxproj.filters b/build.vc14/dll_tests/tdiv_2si/tdiv_2si.vcxproj.filters
+diff --git a/build.vc14/dll_tests/tdiv_2si/tdiv_2si.vcxproj.filters build.vc14/dll_tests/tdiv_2si/tdiv_2si.vcxproj.filters
 new file mode 100644
 index 0000000..5c3562c
 --- /dev/null
-+++ b/build.vc14/dll_tests/tdiv_2si/tdiv_2si.vcxproj.filters
++++ build.vc14/dll_tests/tdiv_2si/tdiv_2si.vcxproj.filters
 @@ -0,0 +1,6 @@
 +﻿<?xml version="1.0" encoding="utf-8"?>
 +<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -4011,11 +4011,11 @@ index 0000000..5c3562c
 +  </ItemGroup>
 +</Project>
 \ No newline at end of file
-diff --git a/build.vc14/dll_tests/tdiv_2ui/tdiv_2ui.vcxproj b/build.vc14/dll_tests/tdiv_2ui/tdiv_2ui.vcxproj
+diff --git a/build.vc14/dll_tests/tdiv_2ui/tdiv_2ui.vcxproj build.vc14/dll_tests/tdiv_2ui/tdiv_2ui.vcxproj
 new file mode 100644
 index 0000000..843ccb4
 --- /dev/null
-+++ b/build.vc14/dll_tests/tdiv_2ui/tdiv_2ui.vcxproj
++++ build.vc14/dll_tests/tdiv_2ui/tdiv_2ui.vcxproj
 @@ -0,0 +1,165 @@
 +﻿<?xml version="1.0" encoding="utf-8"?>
 +<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -4183,11 +4183,11 @@ index 0000000..843ccb4
 +  </ImportGroup>
 +</Project>
 \ No newline at end of file
-diff --git a/build.vc14/dll_tests/tdiv_2ui/tdiv_2ui.vcxproj.filters b/build.vc14/dll_tests/tdiv_2ui/tdiv_2ui.vcxproj.filters
+diff --git a/build.vc14/dll_tests/tdiv_2ui/tdiv_2ui.vcxproj.filters build.vc14/dll_tests/tdiv_2ui/tdiv_2ui.vcxproj.filters
 new file mode 100644
 index 0000000..9e7f6b5
 --- /dev/null
-+++ b/build.vc14/dll_tests/tdiv_2ui/tdiv_2ui.vcxproj.filters
++++ build.vc14/dll_tests/tdiv_2ui/tdiv_2ui.vcxproj.filters
 @@ -0,0 +1,6 @@
 +﻿<?xml version="1.0" encoding="utf-8"?>
 +<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -4196,11 +4196,11 @@ index 0000000..9e7f6b5
 +  </ItemGroup>
 +</Project>
 \ No newline at end of file
-diff --git a/build.vc14/dll_tests/tdiv_fr/tdiv_fr.vcxproj b/build.vc14/dll_tests/tdiv_fr/tdiv_fr.vcxproj
+diff --git a/build.vc14/dll_tests/tdiv_fr/tdiv_fr.vcxproj build.vc14/dll_tests/tdiv_fr/tdiv_fr.vcxproj
 new file mode 100644
 index 0000000..d46f785
 --- /dev/null
-+++ b/build.vc14/dll_tests/tdiv_fr/tdiv_fr.vcxproj
++++ build.vc14/dll_tests/tdiv_fr/tdiv_fr.vcxproj
 @@ -0,0 +1,165 @@
 +﻿<?xml version="1.0" encoding="utf-8"?>
 +<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -4368,11 +4368,11 @@ index 0000000..d46f785
 +  </ImportGroup>
 +</Project>
 \ No newline at end of file
-diff --git a/build.vc14/dll_tests/tdiv_fr/tdiv_fr.vcxproj.filters b/build.vc14/dll_tests/tdiv_fr/tdiv_fr.vcxproj.filters
+diff --git a/build.vc14/dll_tests/tdiv_fr/tdiv_fr.vcxproj.filters build.vc14/dll_tests/tdiv_fr/tdiv_fr.vcxproj.filters
 new file mode 100644
 index 0000000..8ba97a4
 --- /dev/null
-+++ b/build.vc14/dll_tests/tdiv_fr/tdiv_fr.vcxproj.filters
++++ build.vc14/dll_tests/tdiv_fr/tdiv_fr.vcxproj.filters
 @@ -0,0 +1,6 @@
 +﻿<?xml version="1.0" encoding="utf-8"?>
 +<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -4381,11 +4381,11 @@ index 0000000..8ba97a4
 +  </ItemGroup>
 +</Project>
 \ No newline at end of file
-diff --git a/build.vc14/dll_tests/tdiv_ui/tdiv_ui.vcxproj b/build.vc14/dll_tests/tdiv_ui/tdiv_ui.vcxproj
+diff --git a/build.vc14/dll_tests/tdiv_ui/tdiv_ui.vcxproj build.vc14/dll_tests/tdiv_ui/tdiv_ui.vcxproj
 new file mode 100644
 index 0000000..c65b63a
 --- /dev/null
-+++ b/build.vc14/dll_tests/tdiv_ui/tdiv_ui.vcxproj
++++ build.vc14/dll_tests/tdiv_ui/tdiv_ui.vcxproj
 @@ -0,0 +1,165 @@
 +﻿<?xml version="1.0" encoding="utf-8"?>
 +<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -4553,11 +4553,11 @@ index 0000000..c65b63a
 +  </ImportGroup>
 +</Project>
 \ No newline at end of file
-diff --git a/build.vc14/dll_tests/tdiv_ui/tdiv_ui.vcxproj.filters b/build.vc14/dll_tests/tdiv_ui/tdiv_ui.vcxproj.filters
+diff --git a/build.vc14/dll_tests/tdiv_ui/tdiv_ui.vcxproj.filters build.vc14/dll_tests/tdiv_ui/tdiv_ui.vcxproj.filters
 new file mode 100644
 index 0000000..b6a6088
 --- /dev/null
-+++ b/build.vc14/dll_tests/tdiv_ui/tdiv_ui.vcxproj.filters
++++ build.vc14/dll_tests/tdiv_ui/tdiv_ui.vcxproj.filters
 @@ -0,0 +1,6 @@
 +﻿<?xml version="1.0" encoding="utf-8"?>
 +<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -4566,11 +4566,11 @@ index 0000000..b6a6088
 +  </ItemGroup>
 +</Project>
 \ No newline at end of file
-diff --git a/build.vc14/dll_tests/texp/texp.vcxproj b/build.vc14/dll_tests/texp/texp.vcxproj
+diff --git a/build.vc14/dll_tests/texp/texp.vcxproj build.vc14/dll_tests/texp/texp.vcxproj
 new file mode 100644
 index 0000000..2787740
 --- /dev/null
-+++ b/build.vc14/dll_tests/texp/texp.vcxproj
++++ build.vc14/dll_tests/texp/texp.vcxproj
 @@ -0,0 +1,165 @@
 +﻿<?xml version="1.0" encoding="utf-8"?>
 +<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -4738,11 +4738,11 @@ index 0000000..2787740
 +  </ImportGroup>
 +</Project>
 \ No newline at end of file
-diff --git a/build.vc14/dll_tests/texp/texp.vcxproj.filters b/build.vc14/dll_tests/texp/texp.vcxproj.filters
+diff --git a/build.vc14/dll_tests/texp/texp.vcxproj.filters build.vc14/dll_tests/texp/texp.vcxproj.filters
 new file mode 100644
 index 0000000..b6a8285
 --- /dev/null
-+++ b/build.vc14/dll_tests/texp/texp.vcxproj.filters
++++ build.vc14/dll_tests/texp/texp.vcxproj.filters
 @@ -0,0 +1,6 @@
 +﻿<?xml version="1.0" encoding="utf-8"?>
 +<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -4751,11 +4751,11 @@ index 0000000..b6a8285
 +  </ItemGroup>
 +</Project>
 \ No newline at end of file
-diff --git a/build.vc14/dll_tests/tfma/tfma.vcxproj b/build.vc14/dll_tests/tfma/tfma.vcxproj
+diff --git a/build.vc14/dll_tests/tfma/tfma.vcxproj build.vc14/dll_tests/tfma/tfma.vcxproj
 new file mode 100644
 index 0000000..7688844
 --- /dev/null
-+++ b/build.vc14/dll_tests/tfma/tfma.vcxproj
++++ build.vc14/dll_tests/tfma/tfma.vcxproj
 @@ -0,0 +1,165 @@
 +﻿<?xml version="1.0" encoding="utf-8"?>
 +<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -4923,11 +4923,11 @@ index 0000000..7688844
 +  </ImportGroup>
 +</Project>
 \ No newline at end of file
-diff --git a/build.vc14/dll_tests/tfma/tfma.vcxproj.filters b/build.vc14/dll_tests/tfma/tfma.vcxproj.filters
+diff --git a/build.vc14/dll_tests/tfma/tfma.vcxproj.filters build.vc14/dll_tests/tfma/tfma.vcxproj.filters
 new file mode 100644
 index 0000000..e0b68c9
 --- /dev/null
-+++ b/build.vc14/dll_tests/tfma/tfma.vcxproj.filters
++++ build.vc14/dll_tests/tfma/tfma.vcxproj.filters
 @@ -0,0 +1,6 @@
 +﻿<?xml version="1.0" encoding="utf-8"?>
 +<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -4936,11 +4936,11 @@ index 0000000..e0b68c9
 +  </ItemGroup>
 +</Project>
 \ No newline at end of file
-diff --git a/build.vc14/dll_tests/tfr_div/tfr_div.vcxproj b/build.vc14/dll_tests/tfr_div/tfr_div.vcxproj
+diff --git a/build.vc14/dll_tests/tfr_div/tfr_div.vcxproj build.vc14/dll_tests/tfr_div/tfr_div.vcxproj
 new file mode 100644
 index 0000000..0382df8
 --- /dev/null
-+++ b/build.vc14/dll_tests/tfr_div/tfr_div.vcxproj
++++ build.vc14/dll_tests/tfr_div/tfr_div.vcxproj
 @@ -0,0 +1,165 @@
 +﻿<?xml version="1.0" encoding="utf-8"?>
 +<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -5108,11 +5108,11 @@ index 0000000..0382df8
 +  </ImportGroup>
 +</Project>
 \ No newline at end of file
-diff --git a/build.vc14/dll_tests/tfr_div/tfr_div.vcxproj.filters b/build.vc14/dll_tests/tfr_div/tfr_div.vcxproj.filters
+diff --git a/build.vc14/dll_tests/tfr_div/tfr_div.vcxproj.filters build.vc14/dll_tests/tfr_div/tfr_div.vcxproj.filters
 new file mode 100644
 index 0000000..cec8a2d
 --- /dev/null
-+++ b/build.vc14/dll_tests/tfr_div/tfr_div.vcxproj.filters
++++ build.vc14/dll_tests/tfr_div/tfr_div.vcxproj.filters
 @@ -0,0 +1,6 @@
 +﻿<?xml version="1.0" encoding="utf-8"?>
 +<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -5121,11 +5121,11 @@ index 0000000..cec8a2d
 +  </ItemGroup>
 +</Project>
 \ No newline at end of file
-diff --git a/build.vc14/dll_tests/tfr_sub/tfr_sub.vcxproj b/build.vc14/dll_tests/tfr_sub/tfr_sub.vcxproj
+diff --git a/build.vc14/dll_tests/tfr_sub/tfr_sub.vcxproj build.vc14/dll_tests/tfr_sub/tfr_sub.vcxproj
 new file mode 100644
 index 0000000..df5d748
 --- /dev/null
-+++ b/build.vc14/dll_tests/tfr_sub/tfr_sub.vcxproj
++++ build.vc14/dll_tests/tfr_sub/tfr_sub.vcxproj
 @@ -0,0 +1,165 @@
 +﻿<?xml version="1.0" encoding="utf-8"?>
 +<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -5293,11 +5293,11 @@ index 0000000..df5d748
 +  </ImportGroup>
 +</Project>
 \ No newline at end of file
-diff --git a/build.vc14/dll_tests/tfr_sub/tfr_sub.vcxproj.filters b/build.vc14/dll_tests/tfr_sub/tfr_sub.vcxproj.filters
+diff --git a/build.vc14/dll_tests/tfr_sub/tfr_sub.vcxproj.filters build.vc14/dll_tests/tfr_sub/tfr_sub.vcxproj.filters
 new file mode 100644
 index 0000000..7e16c2a
 --- /dev/null
-+++ b/build.vc14/dll_tests/tfr_sub/tfr_sub.vcxproj.filters
++++ build.vc14/dll_tests/tfr_sub/tfr_sub.vcxproj.filters
 @@ -0,0 +1,6 @@
 +﻿<?xml version="1.0" encoding="utf-8"?>
 +<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -5306,11 +5306,11 @@ index 0000000..7e16c2a
 +  </ItemGroup>
 +</Project>
 \ No newline at end of file
-diff --git a/build.vc14/dll_tests/tget_version/tget_version.vcxproj b/build.vc14/dll_tests/tget_version/tget_version.vcxproj
+diff --git a/build.vc14/dll_tests/tget_version/tget_version.vcxproj build.vc14/dll_tests/tget_version/tget_version.vcxproj
 new file mode 100644
 index 0000000..1fd2afb
 --- /dev/null
-+++ b/build.vc14/dll_tests/tget_version/tget_version.vcxproj
++++ build.vc14/dll_tests/tget_version/tget_version.vcxproj
 @@ -0,0 +1,165 @@
 +﻿<?xml version="1.0" encoding="utf-8"?>
 +<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -5478,11 +5478,11 @@ index 0000000..1fd2afb
 +  </ImportGroup>
 +</Project>
 \ No newline at end of file
-diff --git a/build.vc14/dll_tests/tget_version/tget_version.vcxproj.filters b/build.vc14/dll_tests/tget_version/tget_version.vcxproj.filters
+diff --git a/build.vc14/dll_tests/tget_version/tget_version.vcxproj.filters build.vc14/dll_tests/tget_version/tget_version.vcxproj.filters
 new file mode 100644
 index 0000000..1107420
 --- /dev/null
-+++ b/build.vc14/dll_tests/tget_version/tget_version.vcxproj.filters
++++ build.vc14/dll_tests/tget_version/tget_version.vcxproj.filters
 @@ -0,0 +1,6 @@
 +﻿<?xml version="1.0" encoding="utf-8"?>
 +<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -5491,11 +5491,11 @@ index 0000000..1107420
 +  </ItemGroup>
 +</Project>
 \ No newline at end of file
-diff --git a/build.vc14/dll_tests/timag/timag.vcxproj b/build.vc14/dll_tests/timag/timag.vcxproj
+diff --git a/build.vc14/dll_tests/timag/timag.vcxproj build.vc14/dll_tests/timag/timag.vcxproj
 new file mode 100644
 index 0000000..58a4773
 --- /dev/null
-+++ b/build.vc14/dll_tests/timag/timag.vcxproj
++++ build.vc14/dll_tests/timag/timag.vcxproj
 @@ -0,0 +1,165 @@
 +﻿<?xml version="1.0" encoding="utf-8"?>
 +<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -5663,11 +5663,11 @@ index 0000000..58a4773
 +  </ImportGroup>
 +</Project>
 \ No newline at end of file
-diff --git a/build.vc14/dll_tests/timag/timag.vcxproj.filters b/build.vc14/dll_tests/timag/timag.vcxproj.filters
+diff --git a/build.vc14/dll_tests/timag/timag.vcxproj.filters build.vc14/dll_tests/timag/timag.vcxproj.filters
 new file mode 100644
 index 0000000..0d57f89
 --- /dev/null
-+++ b/build.vc14/dll_tests/timag/timag.vcxproj.filters
++++ build.vc14/dll_tests/timag/timag.vcxproj.filters
 @@ -0,0 +1,6 @@
 +﻿<?xml version="1.0" encoding="utf-8"?>
 +<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -5676,11 +5676,11 @@ index 0000000..0d57f89
 +  </ItemGroup>
 +</Project>
 \ No newline at end of file
-diff --git a/build.vc14/dll_tests/tio_str/tio_str.vcxproj b/build.vc14/dll_tests/tio_str/tio_str.vcxproj
+diff --git a/build.vc14/dll_tests/tio_str/tio_str.vcxproj build.vc14/dll_tests/tio_str/tio_str.vcxproj
 new file mode 100644
 index 0000000..1a86841
 --- /dev/null
-+++ b/build.vc14/dll_tests/tio_str/tio_str.vcxproj
++++ build.vc14/dll_tests/tio_str/tio_str.vcxproj
 @@ -0,0 +1,165 @@
 +﻿<?xml version="1.0" encoding="utf-8"?>
 +<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -5848,11 +5848,11 @@ index 0000000..1a86841
 +  </ImportGroup>
 +</Project>
 \ No newline at end of file
-diff --git a/build.vc14/dll_tests/tio_str/tio_str.vcxproj.filters b/build.vc14/dll_tests/tio_str/tio_str.vcxproj.filters
+diff --git a/build.vc14/dll_tests/tio_str/tio_str.vcxproj.filters build.vc14/dll_tests/tio_str/tio_str.vcxproj.filters
 new file mode 100644
 index 0000000..723a526
 --- /dev/null
-+++ b/build.vc14/dll_tests/tio_str/tio_str.vcxproj.filters
++++ build.vc14/dll_tests/tio_str/tio_str.vcxproj.filters
 @@ -0,0 +1,6 @@
 +﻿<?xml version="1.0" encoding="utf-8"?>
 +<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -5861,11 +5861,11 @@ index 0000000..723a526
 +  </ItemGroup>
 +</Project>
 \ No newline at end of file
-diff --git a/build.vc14/dll_tests/tlog/tlog.vcxproj b/build.vc14/dll_tests/tlog/tlog.vcxproj
+diff --git a/build.vc14/dll_tests/tlog/tlog.vcxproj build.vc14/dll_tests/tlog/tlog.vcxproj
 new file mode 100644
 index 0000000..61a2365
 --- /dev/null
-+++ b/build.vc14/dll_tests/tlog/tlog.vcxproj
++++ build.vc14/dll_tests/tlog/tlog.vcxproj
 @@ -0,0 +1,165 @@
 +﻿<?xml version="1.0" encoding="utf-8"?>
 +<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -6033,11 +6033,11 @@ index 0000000..61a2365
 +  </ImportGroup>
 +</Project>
 \ No newline at end of file
-diff --git a/build.vc14/dll_tests/tlog/tlog.vcxproj.filters b/build.vc14/dll_tests/tlog/tlog.vcxproj.filters
+diff --git a/build.vc14/dll_tests/tlog/tlog.vcxproj.filters build.vc14/dll_tests/tlog/tlog.vcxproj.filters
 new file mode 100644
 index 0000000..fb8bc9e
 --- /dev/null
-+++ b/build.vc14/dll_tests/tlog/tlog.vcxproj.filters
++++ build.vc14/dll_tests/tlog/tlog.vcxproj.filters
 @@ -0,0 +1,6 @@
 +﻿<?xml version="1.0" encoding="utf-8"?>
 +<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -6046,11 +6046,11 @@ index 0000000..fb8bc9e
 +  </ItemGroup>
 +</Project>
 \ No newline at end of file
-diff --git a/build.vc14/dll_tests/tlog10/tlog10.vcxproj b/build.vc14/dll_tests/tlog10/tlog10.vcxproj
+diff --git a/build.vc14/dll_tests/tlog10/tlog10.vcxproj build.vc14/dll_tests/tlog10/tlog10.vcxproj
 new file mode 100644
 index 0000000..33bdab0
 --- /dev/null
-+++ b/build.vc14/dll_tests/tlog10/tlog10.vcxproj
++++ build.vc14/dll_tests/tlog10/tlog10.vcxproj
 @@ -0,0 +1,165 @@
 +﻿<?xml version="1.0" encoding="utf-8"?>
 +<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -6218,11 +6218,11 @@ index 0000000..33bdab0
 +  </ImportGroup>
 +</Project>
 \ No newline at end of file
-diff --git a/build.vc14/dll_tests/tlog10/tlog10.vcxproj.filters b/build.vc14/dll_tests/tlog10/tlog10.vcxproj.filters
+diff --git a/build.vc14/dll_tests/tlog10/tlog10.vcxproj.filters build.vc14/dll_tests/tlog10/tlog10.vcxproj.filters
 new file mode 100644
 index 0000000..3808244
 --- /dev/null
-+++ b/build.vc14/dll_tests/tlog10/tlog10.vcxproj.filters
++++ build.vc14/dll_tests/tlog10/tlog10.vcxproj.filters
 @@ -0,0 +1,6 @@
 +﻿<?xml version="1.0" encoding="utf-8"?>
 +<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -6231,11 +6231,11 @@ index 0000000..3808244
 +  </ItemGroup>
 +</Project>
 \ No newline at end of file
-diff --git a/build.vc14/dll_tests/tmul/tmul.vcxproj b/build.vc14/dll_tests/tmul/tmul.vcxproj
+diff --git a/build.vc14/dll_tests/tmul/tmul.vcxproj build.vc14/dll_tests/tmul/tmul.vcxproj
 new file mode 100644
 index 0000000..99b8cb7
 --- /dev/null
-+++ b/build.vc14/dll_tests/tmul/tmul.vcxproj
++++ build.vc14/dll_tests/tmul/tmul.vcxproj
 @@ -0,0 +1,165 @@
 +﻿<?xml version="1.0" encoding="utf-8"?>
 +<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -6403,11 +6403,11 @@ index 0000000..99b8cb7
 +  </ImportGroup>
 +</Project>
 \ No newline at end of file
-diff --git a/build.vc14/dll_tests/tmul/tmul.vcxproj.filters b/build.vc14/dll_tests/tmul/tmul.vcxproj.filters
+diff --git a/build.vc14/dll_tests/tmul/tmul.vcxproj.filters build.vc14/dll_tests/tmul/tmul.vcxproj.filters
 new file mode 100644
 index 0000000..fdce002
 --- /dev/null
-+++ b/build.vc14/dll_tests/tmul/tmul.vcxproj.filters
++++ build.vc14/dll_tests/tmul/tmul.vcxproj.filters
 @@ -0,0 +1,6 @@
 +﻿<?xml version="1.0" encoding="utf-8"?>
 +<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -6416,11 +6416,11 @@ index 0000000..fdce002
 +  </ItemGroup>
 +</Project>
 \ No newline at end of file
-diff --git a/build.vc14/dll_tests/tmul_2si/tmul_2si.vcxproj b/build.vc14/dll_tests/tmul_2si/tmul_2si.vcxproj
+diff --git a/build.vc14/dll_tests/tmul_2si/tmul_2si.vcxproj build.vc14/dll_tests/tmul_2si/tmul_2si.vcxproj
 new file mode 100644
 index 0000000..6ea4c6d
 --- /dev/null
-+++ b/build.vc14/dll_tests/tmul_2si/tmul_2si.vcxproj
++++ build.vc14/dll_tests/tmul_2si/tmul_2si.vcxproj
 @@ -0,0 +1,165 @@
 +﻿<?xml version="1.0" encoding="utf-8"?>
 +<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -6588,11 +6588,11 @@ index 0000000..6ea4c6d
 +  </ImportGroup>
 +</Project>
 \ No newline at end of file
-diff --git a/build.vc14/dll_tests/tmul_2si/tmul_2si.vcxproj.filters b/build.vc14/dll_tests/tmul_2si/tmul_2si.vcxproj.filters
+diff --git a/build.vc14/dll_tests/tmul_2si/tmul_2si.vcxproj.filters build.vc14/dll_tests/tmul_2si/tmul_2si.vcxproj.filters
 new file mode 100644
 index 0000000..22c070d
 --- /dev/null
-+++ b/build.vc14/dll_tests/tmul_2si/tmul_2si.vcxproj.filters
++++ build.vc14/dll_tests/tmul_2si/tmul_2si.vcxproj.filters
 @@ -0,0 +1,6 @@
 +﻿<?xml version="1.0" encoding="utf-8"?>
 +<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -6601,11 +6601,11 @@ index 0000000..22c070d
 +  </ItemGroup>
 +</Project>
 \ No newline at end of file
-diff --git a/build.vc14/dll_tests/tmul_2ui/tmul_2ui.vcxproj b/build.vc14/dll_tests/tmul_2ui/tmul_2ui.vcxproj
+diff --git a/build.vc14/dll_tests/tmul_2ui/tmul_2ui.vcxproj build.vc14/dll_tests/tmul_2ui/tmul_2ui.vcxproj
 new file mode 100644
 index 0000000..12328bb
 --- /dev/null
-+++ b/build.vc14/dll_tests/tmul_2ui/tmul_2ui.vcxproj
++++ build.vc14/dll_tests/tmul_2ui/tmul_2ui.vcxproj
 @@ -0,0 +1,165 @@
 +﻿<?xml version="1.0" encoding="utf-8"?>
 +<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -6773,11 +6773,11 @@ index 0000000..12328bb
 +  </ImportGroup>
 +</Project>
 \ No newline at end of file
-diff --git a/build.vc14/dll_tests/tmul_2ui/tmul_2ui.vcxproj.filters b/build.vc14/dll_tests/tmul_2ui/tmul_2ui.vcxproj.filters
+diff --git a/build.vc14/dll_tests/tmul_2ui/tmul_2ui.vcxproj.filters build.vc14/dll_tests/tmul_2ui/tmul_2ui.vcxproj.filters
 new file mode 100644
 index 0000000..f507112
 --- /dev/null
-+++ b/build.vc14/dll_tests/tmul_2ui/tmul_2ui.vcxproj.filters
++++ build.vc14/dll_tests/tmul_2ui/tmul_2ui.vcxproj.filters
 @@ -0,0 +1,6 @@
 +﻿<?xml version="1.0" encoding="utf-8"?>
 +<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -6786,11 +6786,11 @@ index 0000000..f507112
 +  </ItemGroup>
 +</Project>
 \ No newline at end of file
-diff --git a/build.vc14/dll_tests/tmul_fr/tmul_fr.vcxproj b/build.vc14/dll_tests/tmul_fr/tmul_fr.vcxproj
+diff --git a/build.vc14/dll_tests/tmul_fr/tmul_fr.vcxproj build.vc14/dll_tests/tmul_fr/tmul_fr.vcxproj
 new file mode 100644
 index 0000000..006b1dd
 --- /dev/null
-+++ b/build.vc14/dll_tests/tmul_fr/tmul_fr.vcxproj
++++ build.vc14/dll_tests/tmul_fr/tmul_fr.vcxproj
 @@ -0,0 +1,165 @@
 +﻿<?xml version="1.0" encoding="utf-8"?>
 +<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -6958,11 +6958,11 @@ index 0000000..006b1dd
 +  </ImportGroup>
 +</Project>
 \ No newline at end of file
-diff --git a/build.vc14/dll_tests/tmul_fr/tmul_fr.vcxproj.filters b/build.vc14/dll_tests/tmul_fr/tmul_fr.vcxproj.filters
+diff --git a/build.vc14/dll_tests/tmul_fr/tmul_fr.vcxproj.filters build.vc14/dll_tests/tmul_fr/tmul_fr.vcxproj.filters
 new file mode 100644
 index 0000000..194bb1c
 --- /dev/null
-+++ b/build.vc14/dll_tests/tmul_fr/tmul_fr.vcxproj.filters
++++ build.vc14/dll_tests/tmul_fr/tmul_fr.vcxproj.filters
 @@ -0,0 +1,6 @@
 +﻿<?xml version="1.0" encoding="utf-8"?>
 +<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -6971,11 +6971,11 @@ index 0000000..194bb1c
 +  </ItemGroup>
 +</Project>
 \ No newline at end of file
-diff --git a/build.vc14/dll_tests/tmul_i/tmul_i.vcxproj b/build.vc14/dll_tests/tmul_i/tmul_i.vcxproj
+diff --git a/build.vc14/dll_tests/tmul_i/tmul_i.vcxproj build.vc14/dll_tests/tmul_i/tmul_i.vcxproj
 new file mode 100644
 index 0000000..04b47bb
 --- /dev/null
-+++ b/build.vc14/dll_tests/tmul_i/tmul_i.vcxproj
++++ build.vc14/dll_tests/tmul_i/tmul_i.vcxproj
 @@ -0,0 +1,165 @@
 +﻿<?xml version="1.0" encoding="utf-8"?>
 +<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -7143,11 +7143,11 @@ index 0000000..04b47bb
 +  </ImportGroup>
 +</Project>
 \ No newline at end of file
-diff --git a/build.vc14/dll_tests/tmul_i/tmul_i.vcxproj.filters b/build.vc14/dll_tests/tmul_i/tmul_i.vcxproj.filters
+diff --git a/build.vc14/dll_tests/tmul_i/tmul_i.vcxproj.filters build.vc14/dll_tests/tmul_i/tmul_i.vcxproj.filters
 new file mode 100644
 index 0000000..f5378e7
 --- /dev/null
-+++ b/build.vc14/dll_tests/tmul_i/tmul_i.vcxproj.filters
++++ build.vc14/dll_tests/tmul_i/tmul_i.vcxproj.filters
 @@ -0,0 +1,6 @@
 +﻿<?xml version="1.0" encoding="utf-8"?>
 +<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -7156,11 +7156,11 @@ index 0000000..f5378e7
 +  </ItemGroup>
 +</Project>
 \ No newline at end of file
-diff --git a/build.vc14/dll_tests/tmul_si/tmul_si.vcxproj b/build.vc14/dll_tests/tmul_si/tmul_si.vcxproj
+diff --git a/build.vc14/dll_tests/tmul_si/tmul_si.vcxproj build.vc14/dll_tests/tmul_si/tmul_si.vcxproj
 new file mode 100644
 index 0000000..e1295c9
 --- /dev/null
-+++ b/build.vc14/dll_tests/tmul_si/tmul_si.vcxproj
++++ build.vc14/dll_tests/tmul_si/tmul_si.vcxproj
 @@ -0,0 +1,165 @@
 +﻿<?xml version="1.0" encoding="utf-8"?>
 +<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -7328,11 +7328,11 @@ index 0000000..e1295c9
 +  </ImportGroup>
 +</Project>
 \ No newline at end of file
-diff --git a/build.vc14/dll_tests/tmul_si/tmul_si.vcxproj.filters b/build.vc14/dll_tests/tmul_si/tmul_si.vcxproj.filters
+diff --git a/build.vc14/dll_tests/tmul_si/tmul_si.vcxproj.filters build.vc14/dll_tests/tmul_si/tmul_si.vcxproj.filters
 new file mode 100644
 index 0000000..6a9f9b4
 --- /dev/null
-+++ b/build.vc14/dll_tests/tmul_si/tmul_si.vcxproj.filters
++++ build.vc14/dll_tests/tmul_si/tmul_si.vcxproj.filters
 @@ -0,0 +1,6 @@
 +﻿<?xml version="1.0" encoding="utf-8"?>
 +<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -7341,11 +7341,11 @@ index 0000000..6a9f9b4
 +  </ItemGroup>
 +</Project>
 \ No newline at end of file
-diff --git a/build.vc14/dll_tests/tmul_ui/tmul_ui.vcxproj b/build.vc14/dll_tests/tmul_ui/tmul_ui.vcxproj
+diff --git a/build.vc14/dll_tests/tmul_ui/tmul_ui.vcxproj build.vc14/dll_tests/tmul_ui/tmul_ui.vcxproj
 new file mode 100644
 index 0000000..b2cf982
 --- /dev/null
-+++ b/build.vc14/dll_tests/tmul_ui/tmul_ui.vcxproj
++++ build.vc14/dll_tests/tmul_ui/tmul_ui.vcxproj
 @@ -0,0 +1,165 @@
 +﻿<?xml version="1.0" encoding="utf-8"?>
 +<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -7513,11 +7513,11 @@ index 0000000..b2cf982
 +  </ImportGroup>
 +</Project>
 \ No newline at end of file
-diff --git a/build.vc14/dll_tests/tmul_ui/tmul_ui.vcxproj.filters b/build.vc14/dll_tests/tmul_ui/tmul_ui.vcxproj.filters
+diff --git a/build.vc14/dll_tests/tmul_ui/tmul_ui.vcxproj.filters build.vc14/dll_tests/tmul_ui/tmul_ui.vcxproj.filters
 new file mode 100644
 index 0000000..608cbf4
 --- /dev/null
-+++ b/build.vc14/dll_tests/tmul_ui/tmul_ui.vcxproj.filters
++++ build.vc14/dll_tests/tmul_ui/tmul_ui.vcxproj.filters
 @@ -0,0 +1,6 @@
 +﻿<?xml version="1.0" encoding="utf-8"?>
 +<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -7526,11 +7526,11 @@ index 0000000..608cbf4
 +  </ItemGroup>
 +</Project>
 \ No newline at end of file
-diff --git a/build.vc14/dll_tests/tneg/tneg.vcxproj b/build.vc14/dll_tests/tneg/tneg.vcxproj
+diff --git a/build.vc14/dll_tests/tneg/tneg.vcxproj build.vc14/dll_tests/tneg/tneg.vcxproj
 new file mode 100644
 index 0000000..357393c
 --- /dev/null
-+++ b/build.vc14/dll_tests/tneg/tneg.vcxproj
++++ build.vc14/dll_tests/tneg/tneg.vcxproj
 @@ -0,0 +1,165 @@
 +﻿<?xml version="1.0" encoding="utf-8"?>
 +<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -7698,11 +7698,11 @@ index 0000000..357393c
 +  </ImportGroup>
 +</Project>
 \ No newline at end of file
-diff --git a/build.vc14/dll_tests/tneg/tneg.vcxproj.filters b/build.vc14/dll_tests/tneg/tneg.vcxproj.filters
+diff --git a/build.vc14/dll_tests/tneg/tneg.vcxproj.filters build.vc14/dll_tests/tneg/tneg.vcxproj.filters
 new file mode 100644
 index 0000000..a6149e2
 --- /dev/null
-+++ b/build.vc14/dll_tests/tneg/tneg.vcxproj.filters
++++ build.vc14/dll_tests/tneg/tneg.vcxproj.filters
 @@ -0,0 +1,6 @@
 +﻿<?xml version="1.0" encoding="utf-8"?>
 +<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -7711,11 +7711,11 @@ index 0000000..a6149e2
 +  </ItemGroup>
 +</Project>
 \ No newline at end of file
-diff --git a/build.vc14/dll_tests/tnorm/tnorm.vcxproj b/build.vc14/dll_tests/tnorm/tnorm.vcxproj
+diff --git a/build.vc14/dll_tests/tnorm/tnorm.vcxproj build.vc14/dll_tests/tnorm/tnorm.vcxproj
 new file mode 100644
 index 0000000..5d015d4
 --- /dev/null
-+++ b/build.vc14/dll_tests/tnorm/tnorm.vcxproj
++++ build.vc14/dll_tests/tnorm/tnorm.vcxproj
 @@ -0,0 +1,165 @@
 +﻿<?xml version="1.0" encoding="utf-8"?>
 +<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -7883,11 +7883,11 @@ index 0000000..5d015d4
 +  </ImportGroup>
 +</Project>
 \ No newline at end of file
-diff --git a/build.vc14/dll_tests/tnorm/tnorm.vcxproj.filters b/build.vc14/dll_tests/tnorm/tnorm.vcxproj.filters
+diff --git a/build.vc14/dll_tests/tnorm/tnorm.vcxproj.filters build.vc14/dll_tests/tnorm/tnorm.vcxproj.filters
 new file mode 100644
 index 0000000..b3813ae
 --- /dev/null
-+++ b/build.vc14/dll_tests/tnorm/tnorm.vcxproj.filters
++++ build.vc14/dll_tests/tnorm/tnorm.vcxproj.filters
 @@ -0,0 +1,6 @@
 +﻿<?xml version="1.0" encoding="utf-8"?>
 +<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -7896,11 +7896,11 @@ index 0000000..b3813ae
 +  </ItemGroup>
 +</Project>
 \ No newline at end of file
-diff --git a/build.vc14/dll_tests/tpow/tpow.vcxproj b/build.vc14/dll_tests/tpow/tpow.vcxproj
+diff --git a/build.vc14/dll_tests/tpow/tpow.vcxproj build.vc14/dll_tests/tpow/tpow.vcxproj
 new file mode 100644
 index 0000000..f13f7ca
 --- /dev/null
-+++ b/build.vc14/dll_tests/tpow/tpow.vcxproj
++++ build.vc14/dll_tests/tpow/tpow.vcxproj
 @@ -0,0 +1,165 @@
 +﻿<?xml version="1.0" encoding="utf-8"?>
 +<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -8068,11 +8068,11 @@ index 0000000..f13f7ca
 +  </ImportGroup>
 +</Project>
 \ No newline at end of file
-diff --git a/build.vc14/dll_tests/tpow/tpow.vcxproj.filters b/build.vc14/dll_tests/tpow/tpow.vcxproj.filters
+diff --git a/build.vc14/dll_tests/tpow/tpow.vcxproj.filters build.vc14/dll_tests/tpow/tpow.vcxproj.filters
 new file mode 100644
 index 0000000..81294d9
 --- /dev/null
-+++ b/build.vc14/dll_tests/tpow/tpow.vcxproj.filters
++++ build.vc14/dll_tests/tpow/tpow.vcxproj.filters
 @@ -0,0 +1,6 @@
 +﻿<?xml version="1.0" encoding="utf-8"?>
 +<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -8081,11 +8081,11 @@ index 0000000..81294d9
 +  </ItemGroup>
 +</Project>
 \ No newline at end of file
-diff --git a/build.vc14/dll_tests/tpow_d/tpow_d.vcxproj b/build.vc14/dll_tests/tpow_d/tpow_d.vcxproj
+diff --git a/build.vc14/dll_tests/tpow_d/tpow_d.vcxproj build.vc14/dll_tests/tpow_d/tpow_d.vcxproj
 new file mode 100644
 index 0000000..aa016a6
 --- /dev/null
-+++ b/build.vc14/dll_tests/tpow_d/tpow_d.vcxproj
++++ build.vc14/dll_tests/tpow_d/tpow_d.vcxproj
 @@ -0,0 +1,165 @@
 +﻿<?xml version="1.0" encoding="utf-8"?>
 +<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -8253,11 +8253,11 @@ index 0000000..aa016a6
 +  </ImportGroup>
 +</Project>
 \ No newline at end of file
-diff --git a/build.vc14/dll_tests/tpow_d/tpow_d.vcxproj.filters b/build.vc14/dll_tests/tpow_d/tpow_d.vcxproj.filters
+diff --git a/build.vc14/dll_tests/tpow_d/tpow_d.vcxproj.filters build.vc14/dll_tests/tpow_d/tpow_d.vcxproj.filters
 new file mode 100644
 index 0000000..26b35cd
 --- /dev/null
-+++ b/build.vc14/dll_tests/tpow_d/tpow_d.vcxproj.filters
++++ build.vc14/dll_tests/tpow_d/tpow_d.vcxproj.filters
 @@ -0,0 +1,6 @@
 +﻿<?xml version="1.0" encoding="utf-8"?>
 +<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -8266,11 +8266,11 @@ index 0000000..26b35cd
 +  </ItemGroup>
 +</Project>
 \ No newline at end of file
-diff --git a/build.vc14/dll_tests/tpow_fr/tpow_fr.vcxproj b/build.vc14/dll_tests/tpow_fr/tpow_fr.vcxproj
+diff --git a/build.vc14/dll_tests/tpow_fr/tpow_fr.vcxproj build.vc14/dll_tests/tpow_fr/tpow_fr.vcxproj
 new file mode 100644
 index 0000000..3fe697f
 --- /dev/null
-+++ b/build.vc14/dll_tests/tpow_fr/tpow_fr.vcxproj
++++ build.vc14/dll_tests/tpow_fr/tpow_fr.vcxproj
 @@ -0,0 +1,165 @@
 +﻿<?xml version="1.0" encoding="utf-8"?>
 +<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -8438,11 +8438,11 @@ index 0000000..3fe697f
 +  </ImportGroup>
 +</Project>
 \ No newline at end of file
-diff --git a/build.vc14/dll_tests/tpow_fr/tpow_fr.vcxproj.filters b/build.vc14/dll_tests/tpow_fr/tpow_fr.vcxproj.filters
+diff --git a/build.vc14/dll_tests/tpow_fr/tpow_fr.vcxproj.filters build.vc14/dll_tests/tpow_fr/tpow_fr.vcxproj.filters
 new file mode 100644
 index 0000000..ee80cb9
 --- /dev/null
-+++ b/build.vc14/dll_tests/tpow_fr/tpow_fr.vcxproj.filters
++++ build.vc14/dll_tests/tpow_fr/tpow_fr.vcxproj.filters
 @@ -0,0 +1,6 @@
 +﻿<?xml version="1.0" encoding="utf-8"?>
 +<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -8451,11 +8451,11 @@ index 0000000..ee80cb9
 +  </ItemGroup>
 +</Project>
 \ No newline at end of file
-diff --git a/build.vc14/dll_tests/tpow_ld/tpow_ld.vcxproj b/build.vc14/dll_tests/tpow_ld/tpow_ld.vcxproj
+diff --git a/build.vc14/dll_tests/tpow_ld/tpow_ld.vcxproj build.vc14/dll_tests/tpow_ld/tpow_ld.vcxproj
 new file mode 100644
 index 0000000..a2d24f2
 --- /dev/null
-+++ b/build.vc14/dll_tests/tpow_ld/tpow_ld.vcxproj
++++ build.vc14/dll_tests/tpow_ld/tpow_ld.vcxproj
 @@ -0,0 +1,165 @@
 +﻿<?xml version="1.0" encoding="utf-8"?>
 +<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -8623,11 +8623,11 @@ index 0000000..a2d24f2
 +  </ImportGroup>
 +</Project>
 \ No newline at end of file
-diff --git a/build.vc14/dll_tests/tpow_ld/tpow_ld.vcxproj.filters b/build.vc14/dll_tests/tpow_ld/tpow_ld.vcxproj.filters
+diff --git a/build.vc14/dll_tests/tpow_ld/tpow_ld.vcxproj.filters build.vc14/dll_tests/tpow_ld/tpow_ld.vcxproj.filters
 new file mode 100644
 index 0000000..90b45af
 --- /dev/null
-+++ b/build.vc14/dll_tests/tpow_ld/tpow_ld.vcxproj.filters
++++ build.vc14/dll_tests/tpow_ld/tpow_ld.vcxproj.filters
 @@ -0,0 +1,6 @@
 +﻿<?xml version="1.0" encoding="utf-8"?>
 +<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -8636,11 +8636,11 @@ index 0000000..90b45af
 +  </ItemGroup>
 +</Project>
 \ No newline at end of file
-diff --git a/build.vc14/dll_tests/tpow_si/tpow_si.vcxproj b/build.vc14/dll_tests/tpow_si/tpow_si.vcxproj
+diff --git a/build.vc14/dll_tests/tpow_si/tpow_si.vcxproj build.vc14/dll_tests/tpow_si/tpow_si.vcxproj
 new file mode 100644
 index 0000000..a915ac7
 --- /dev/null
-+++ b/build.vc14/dll_tests/tpow_si/tpow_si.vcxproj
++++ build.vc14/dll_tests/tpow_si/tpow_si.vcxproj
 @@ -0,0 +1,165 @@
 +﻿<?xml version="1.0" encoding="utf-8"?>
 +<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -8808,11 +8808,11 @@ index 0000000..a915ac7
 +  </ImportGroup>
 +</Project>
 \ No newline at end of file
-diff --git a/build.vc14/dll_tests/tpow_si/tpow_si.vcxproj.filters b/build.vc14/dll_tests/tpow_si/tpow_si.vcxproj.filters
+diff --git a/build.vc14/dll_tests/tpow_si/tpow_si.vcxproj.filters build.vc14/dll_tests/tpow_si/tpow_si.vcxproj.filters
 new file mode 100644
 index 0000000..b2283c0
 --- /dev/null
-+++ b/build.vc14/dll_tests/tpow_si/tpow_si.vcxproj.filters
++++ build.vc14/dll_tests/tpow_si/tpow_si.vcxproj.filters
 @@ -0,0 +1,6 @@
 +﻿<?xml version="1.0" encoding="utf-8"?>
 +<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -8821,11 +8821,11 @@ index 0000000..b2283c0
 +  </ItemGroup>
 +</Project>
 \ No newline at end of file
-diff --git a/build.vc14/dll_tests/tpow_ui/tpow_ui.vcxproj b/build.vc14/dll_tests/tpow_ui/tpow_ui.vcxproj
+diff --git a/build.vc14/dll_tests/tpow_ui/tpow_ui.vcxproj build.vc14/dll_tests/tpow_ui/tpow_ui.vcxproj
 new file mode 100644
 index 0000000..2ff76f3
 --- /dev/null
-+++ b/build.vc14/dll_tests/tpow_ui/tpow_ui.vcxproj
++++ build.vc14/dll_tests/tpow_ui/tpow_ui.vcxproj
 @@ -0,0 +1,165 @@
 +﻿<?xml version="1.0" encoding="utf-8"?>
 +<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -8993,11 +8993,11 @@ index 0000000..2ff76f3
 +  </ImportGroup>
 +</Project>
 \ No newline at end of file
-diff --git a/build.vc14/dll_tests/tpow_ui/tpow_ui.vcxproj.filters b/build.vc14/dll_tests/tpow_ui/tpow_ui.vcxproj.filters
+diff --git a/build.vc14/dll_tests/tpow_ui/tpow_ui.vcxproj.filters build.vc14/dll_tests/tpow_ui/tpow_ui.vcxproj.filters
 new file mode 100644
 index 0000000..6f26333
 --- /dev/null
-+++ b/build.vc14/dll_tests/tpow_ui/tpow_ui.vcxproj.filters
++++ build.vc14/dll_tests/tpow_ui/tpow_ui.vcxproj.filters
 @@ -0,0 +1,6 @@
 +﻿<?xml version="1.0" encoding="utf-8"?>
 +<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -9006,11 +9006,11 @@ index 0000000..6f26333
 +  </ItemGroup>
 +</Project>
 \ No newline at end of file
-diff --git a/build.vc14/dll_tests/tpow_z/tpow_z.vcxproj b/build.vc14/dll_tests/tpow_z/tpow_z.vcxproj
+diff --git a/build.vc14/dll_tests/tpow_z/tpow_z.vcxproj build.vc14/dll_tests/tpow_z/tpow_z.vcxproj
 new file mode 100644
 index 0000000..9e5a01f
 --- /dev/null
-+++ b/build.vc14/dll_tests/tpow_z/tpow_z.vcxproj
++++ build.vc14/dll_tests/tpow_z/tpow_z.vcxproj
 @@ -0,0 +1,165 @@
 +﻿<?xml version="1.0" encoding="utf-8"?>
 +<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -9178,11 +9178,11 @@ index 0000000..9e5a01f
 +  </ImportGroup>
 +</Project>
 \ No newline at end of file
-diff --git a/build.vc14/dll_tests/tpow_z/tpow_z.vcxproj.filters b/build.vc14/dll_tests/tpow_z/tpow_z.vcxproj.filters
+diff --git a/build.vc14/dll_tests/tpow_z/tpow_z.vcxproj.filters build.vc14/dll_tests/tpow_z/tpow_z.vcxproj.filters
 new file mode 100644
 index 0000000..95c5fc0
 --- /dev/null
-+++ b/build.vc14/dll_tests/tpow_z/tpow_z.vcxproj.filters
++++ build.vc14/dll_tests/tpow_z/tpow_z.vcxproj.filters
 @@ -0,0 +1,6 @@
 +﻿<?xml version="1.0" encoding="utf-8"?>
 +<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -9191,11 +9191,11 @@ index 0000000..95c5fc0
 +  </ItemGroup>
 +</Project>
 \ No newline at end of file
-diff --git a/build.vc14/dll_tests/tprec/tprec.vcxproj b/build.vc14/dll_tests/tprec/tprec.vcxproj
+diff --git a/build.vc14/dll_tests/tprec/tprec.vcxproj build.vc14/dll_tests/tprec/tprec.vcxproj
 new file mode 100644
 index 0000000..1010797
 --- /dev/null
-+++ b/build.vc14/dll_tests/tprec/tprec.vcxproj
++++ build.vc14/dll_tests/tprec/tprec.vcxproj
 @@ -0,0 +1,165 @@
 +﻿<?xml version="1.0" encoding="utf-8"?>
 +<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -9363,11 +9363,11 @@ index 0000000..1010797
 +  </ImportGroup>
 +</Project>
 \ No newline at end of file
-diff --git a/build.vc14/dll_tests/tprec/tprec.vcxproj.filters b/build.vc14/dll_tests/tprec/tprec.vcxproj.filters
+diff --git a/build.vc14/dll_tests/tprec/tprec.vcxproj.filters build.vc14/dll_tests/tprec/tprec.vcxproj.filters
 new file mode 100644
 index 0000000..04d8d92
 --- /dev/null
-+++ b/build.vc14/dll_tests/tprec/tprec.vcxproj.filters
++++ build.vc14/dll_tests/tprec/tprec.vcxproj.filters
 @@ -0,0 +1,6 @@
 +﻿<?xml version="1.0" encoding="utf-8"?>
 +<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -9376,11 +9376,11 @@ index 0000000..04d8d92
 +  </ItemGroup>
 +</Project>
 \ No newline at end of file
-diff --git a/build.vc14/dll_tests/tproj/tproj.vcxproj b/build.vc14/dll_tests/tproj/tproj.vcxproj
+diff --git a/build.vc14/dll_tests/tproj/tproj.vcxproj build.vc14/dll_tests/tproj/tproj.vcxproj
 new file mode 100644
 index 0000000..6f1d98a
 --- /dev/null
-+++ b/build.vc14/dll_tests/tproj/tproj.vcxproj
++++ build.vc14/dll_tests/tproj/tproj.vcxproj
 @@ -0,0 +1,165 @@
 +﻿<?xml version="1.0" encoding="utf-8"?>
 +<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -9548,11 +9548,11 @@ index 0000000..6f1d98a
 +  </ImportGroup>
 +</Project>
 \ No newline at end of file
-diff --git a/build.vc14/dll_tests/tproj/tproj.vcxproj.filters b/build.vc14/dll_tests/tproj/tproj.vcxproj.filters
+diff --git a/build.vc14/dll_tests/tproj/tproj.vcxproj.filters build.vc14/dll_tests/tproj/tproj.vcxproj.filters
 new file mode 100644
 index 0000000..85706f6
 --- /dev/null
-+++ b/build.vc14/dll_tests/tproj/tproj.vcxproj.filters
++++ build.vc14/dll_tests/tproj/tproj.vcxproj.filters
 @@ -0,0 +1,6 @@
 +﻿<?xml version="1.0" encoding="utf-8"?>
 +<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -9561,11 +9561,11 @@ index 0000000..85706f6
 +  </ItemGroup>
 +</Project>
 \ No newline at end of file
-diff --git a/build.vc14/dll_tests/treal/treal.vcxproj b/build.vc14/dll_tests/treal/treal.vcxproj
+diff --git a/build.vc14/dll_tests/treal/treal.vcxproj build.vc14/dll_tests/treal/treal.vcxproj
 new file mode 100644
 index 0000000..0a06a42
 --- /dev/null
-+++ b/build.vc14/dll_tests/treal/treal.vcxproj
++++ build.vc14/dll_tests/treal/treal.vcxproj
 @@ -0,0 +1,165 @@
 +﻿<?xml version="1.0" encoding="utf-8"?>
 +<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -9733,11 +9733,11 @@ index 0000000..0a06a42
 +  </ImportGroup>
 +</Project>
 \ No newline at end of file
-diff --git a/build.vc14/dll_tests/treal/treal.vcxproj.filters b/build.vc14/dll_tests/treal/treal.vcxproj.filters
+diff --git a/build.vc14/dll_tests/treal/treal.vcxproj.filters build.vc14/dll_tests/treal/treal.vcxproj.filters
 new file mode 100644
 index 0000000..5bbede2
 --- /dev/null
-+++ b/build.vc14/dll_tests/treal/treal.vcxproj.filters
++++ build.vc14/dll_tests/treal/treal.vcxproj.filters
 @@ -0,0 +1,6 @@
 +﻿<?xml version="1.0" encoding="utf-8"?>
 +<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -9746,11 +9746,11 @@ index 0000000..5bbede2
 +  </ItemGroup>
 +</Project>
 \ No newline at end of file
-diff --git a/build.vc14/dll_tests/treimref/treimref.vcxproj b/build.vc14/dll_tests/treimref/treimref.vcxproj
+diff --git a/build.vc14/dll_tests/treimref/treimref.vcxproj build.vc14/dll_tests/treimref/treimref.vcxproj
 new file mode 100644
 index 0000000..190000d
 --- /dev/null
-+++ b/build.vc14/dll_tests/treimref/treimref.vcxproj
++++ build.vc14/dll_tests/treimref/treimref.vcxproj
 @@ -0,0 +1,165 @@
 +﻿<?xml version="1.0" encoding="utf-8"?>
 +<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -9918,11 +9918,11 @@ index 0000000..190000d
 +  </ImportGroup>
 +</Project>
 \ No newline at end of file
-diff --git a/build.vc14/dll_tests/treimref/treimref.vcxproj.filters b/build.vc14/dll_tests/treimref/treimref.vcxproj.filters
+diff --git a/build.vc14/dll_tests/treimref/treimref.vcxproj.filters build.vc14/dll_tests/treimref/treimref.vcxproj.filters
 new file mode 100644
 index 0000000..b9bb8d0
 --- /dev/null
-+++ b/build.vc14/dll_tests/treimref/treimref.vcxproj.filters
++++ build.vc14/dll_tests/treimref/treimref.vcxproj.filters
 @@ -0,0 +1,6 @@
 +﻿<?xml version="1.0" encoding="utf-8"?>
 +<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -9931,11 +9931,11 @@ index 0000000..b9bb8d0
 +  </ItemGroup>
 +</Project>
 \ No newline at end of file
-diff --git a/build.vc14/dll_tests/trootofunity/trootofunity.vcxproj b/build.vc14/dll_tests/trootofunity/trootofunity.vcxproj
+diff --git a/build.vc14/dll_tests/trootofunity/trootofunity.vcxproj build.vc14/dll_tests/trootofunity/trootofunity.vcxproj
 new file mode 100644
 index 0000000..8701e24
 --- /dev/null
-+++ b/build.vc14/dll_tests/trootofunity/trootofunity.vcxproj
++++ build.vc14/dll_tests/trootofunity/trootofunity.vcxproj
 @@ -0,0 +1,165 @@
 +﻿<?xml version="1.0" encoding="utf-8"?>
 +<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -10103,11 +10103,11 @@ index 0000000..8701e24
 +  </ImportGroup>
 +</Project>
 \ No newline at end of file
-diff --git a/build.vc14/dll_tests/trootofunity/trootofunity.vcxproj.filters b/build.vc14/dll_tests/trootofunity/trootofunity.vcxproj.filters
+diff --git a/build.vc14/dll_tests/trootofunity/trootofunity.vcxproj.filters build.vc14/dll_tests/trootofunity/trootofunity.vcxproj.filters
 new file mode 100644
 index 0000000..953315a
 --- /dev/null
-+++ b/build.vc14/dll_tests/trootofunity/trootofunity.vcxproj.filters
++++ build.vc14/dll_tests/trootofunity/trootofunity.vcxproj.filters
 @@ -0,0 +1,6 @@
 +﻿<?xml version="1.0" encoding="utf-8"?>
 +<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -10116,11 +10116,11 @@ index 0000000..953315a
 +  </ItemGroup>
 +</Project>
 \ No newline at end of file
-diff --git a/build.vc14/dll_tests/tset/tset.vcxproj b/build.vc14/dll_tests/tset/tset.vcxproj
+diff --git a/build.vc14/dll_tests/tset/tset.vcxproj build.vc14/dll_tests/tset/tset.vcxproj
 new file mode 100644
 index 0000000..00a1fe2
 --- /dev/null
-+++ b/build.vc14/dll_tests/tset/tset.vcxproj
++++ build.vc14/dll_tests/tset/tset.vcxproj
 @@ -0,0 +1,165 @@
 +﻿<?xml version="1.0" encoding="utf-8"?>
 +<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -10288,11 +10288,11 @@ index 0000000..00a1fe2
 +  </ImportGroup>
 +</Project>
 \ No newline at end of file
-diff --git a/build.vc14/dll_tests/tset/tset.vcxproj.filters b/build.vc14/dll_tests/tset/tset.vcxproj.filters
+diff --git a/build.vc14/dll_tests/tset/tset.vcxproj.filters build.vc14/dll_tests/tset/tset.vcxproj.filters
 new file mode 100644
 index 0000000..bd7e819
 --- /dev/null
-+++ b/build.vc14/dll_tests/tset/tset.vcxproj.filters
++++ build.vc14/dll_tests/tset/tset.vcxproj.filters
 @@ -0,0 +1,6 @@
 +﻿<?xml version="1.0" encoding="utf-8"?>
 +<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -10301,11 +10301,11 @@ index 0000000..bd7e819
 +  </ItemGroup>
 +</Project>
 \ No newline at end of file
-diff --git a/build.vc14/dll_tests/tsin/tsin.vcxproj b/build.vc14/dll_tests/tsin/tsin.vcxproj
+diff --git a/build.vc14/dll_tests/tsin/tsin.vcxproj build.vc14/dll_tests/tsin/tsin.vcxproj
 new file mode 100644
 index 0000000..8d023aa
 --- /dev/null
-+++ b/build.vc14/dll_tests/tsin/tsin.vcxproj
++++ build.vc14/dll_tests/tsin/tsin.vcxproj
 @@ -0,0 +1,165 @@
 +﻿<?xml version="1.0" encoding="utf-8"?>
 +<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -10473,11 +10473,11 @@ index 0000000..8d023aa
 +  </ImportGroup>
 +</Project>
 \ No newline at end of file
-diff --git a/build.vc14/dll_tests/tsin/tsin.vcxproj.filters b/build.vc14/dll_tests/tsin/tsin.vcxproj.filters
+diff --git a/build.vc14/dll_tests/tsin/tsin.vcxproj.filters build.vc14/dll_tests/tsin/tsin.vcxproj.filters
 new file mode 100644
 index 0000000..96b2150
 --- /dev/null
-+++ b/build.vc14/dll_tests/tsin/tsin.vcxproj.filters
++++ build.vc14/dll_tests/tsin/tsin.vcxproj.filters
 @@ -0,0 +1,6 @@
 +﻿<?xml version="1.0" encoding="utf-8"?>
 +<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -10486,11 +10486,11 @@ index 0000000..96b2150
 +  </ItemGroup>
 +</Project>
 \ No newline at end of file
-diff --git a/build.vc14/dll_tests/tsin_cos/tsin_cos.vcxproj b/build.vc14/dll_tests/tsin_cos/tsin_cos.vcxproj
+diff --git a/build.vc14/dll_tests/tsin_cos/tsin_cos.vcxproj build.vc14/dll_tests/tsin_cos/tsin_cos.vcxproj
 new file mode 100644
 index 0000000..8ed57bc
 --- /dev/null
-+++ b/build.vc14/dll_tests/tsin_cos/tsin_cos.vcxproj
++++ build.vc14/dll_tests/tsin_cos/tsin_cos.vcxproj
 @@ -0,0 +1,165 @@
 +﻿<?xml version="1.0" encoding="utf-8"?>
 +<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -10658,11 +10658,11 @@ index 0000000..8ed57bc
 +  </ImportGroup>
 +</Project>
 \ No newline at end of file
-diff --git a/build.vc14/dll_tests/tsin_cos/tsin_cos.vcxproj.filters b/build.vc14/dll_tests/tsin_cos/tsin_cos.vcxproj.filters
+diff --git a/build.vc14/dll_tests/tsin_cos/tsin_cos.vcxproj.filters build.vc14/dll_tests/tsin_cos/tsin_cos.vcxproj.filters
 new file mode 100644
 index 0000000..9b6db88
 --- /dev/null
-+++ b/build.vc14/dll_tests/tsin_cos/tsin_cos.vcxproj.filters
++++ build.vc14/dll_tests/tsin_cos/tsin_cos.vcxproj.filters
 @@ -0,0 +1,6 @@
 +﻿<?xml version="1.0" encoding="utf-8"?>
 +<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -10671,11 +10671,11 @@ index 0000000..9b6db88
 +  </ItemGroup>
 +</Project>
 \ No newline at end of file
-diff --git a/build.vc14/dll_tests/tsinh/tsinh.vcxproj b/build.vc14/dll_tests/tsinh/tsinh.vcxproj
+diff --git a/build.vc14/dll_tests/tsinh/tsinh.vcxproj build.vc14/dll_tests/tsinh/tsinh.vcxproj
 new file mode 100644
 index 0000000..2e96d19
 --- /dev/null
-+++ b/build.vc14/dll_tests/tsinh/tsinh.vcxproj
++++ build.vc14/dll_tests/tsinh/tsinh.vcxproj
 @@ -0,0 +1,165 @@
 +﻿<?xml version="1.0" encoding="utf-8"?>
 +<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -10843,11 +10843,11 @@ index 0000000..2e96d19
 +  </ImportGroup>
 +</Project>
 \ No newline at end of file
-diff --git a/build.vc14/dll_tests/tsinh/tsinh.vcxproj.filters b/build.vc14/dll_tests/tsinh/tsinh.vcxproj.filters
+diff --git a/build.vc14/dll_tests/tsinh/tsinh.vcxproj.filters build.vc14/dll_tests/tsinh/tsinh.vcxproj.filters
 new file mode 100644
 index 0000000..656ebed
 --- /dev/null
-+++ b/build.vc14/dll_tests/tsinh/tsinh.vcxproj.filters
++++ build.vc14/dll_tests/tsinh/tsinh.vcxproj.filters
 @@ -0,0 +1,6 @@
 +﻿<?xml version="1.0" encoding="utf-8"?>
 +<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -10856,11 +10856,11 @@ index 0000000..656ebed
 +  </ItemGroup>
 +</Project>
 \ No newline at end of file
-diff --git a/build.vc14/dll_tests/tsqr/tsqr.vcxproj b/build.vc14/dll_tests/tsqr/tsqr.vcxproj
+diff --git a/build.vc14/dll_tests/tsqr/tsqr.vcxproj build.vc14/dll_tests/tsqr/tsqr.vcxproj
 new file mode 100644
 index 0000000..e2100fa
 --- /dev/null
-+++ b/build.vc14/dll_tests/tsqr/tsqr.vcxproj
++++ build.vc14/dll_tests/tsqr/tsqr.vcxproj
 @@ -0,0 +1,165 @@
 +﻿<?xml version="1.0" encoding="utf-8"?>
 +<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -11028,11 +11028,11 @@ index 0000000..e2100fa
 +  </ImportGroup>
 +</Project>
 \ No newline at end of file
-diff --git a/build.vc14/dll_tests/tsqr/tsqr.vcxproj.filters b/build.vc14/dll_tests/tsqr/tsqr.vcxproj.filters
+diff --git a/build.vc14/dll_tests/tsqr/tsqr.vcxproj.filters build.vc14/dll_tests/tsqr/tsqr.vcxproj.filters
 new file mode 100644
 index 0000000..01821c5
 --- /dev/null
-+++ b/build.vc14/dll_tests/tsqr/tsqr.vcxproj.filters
++++ build.vc14/dll_tests/tsqr/tsqr.vcxproj.filters
 @@ -0,0 +1,6 @@
 +﻿<?xml version="1.0" encoding="utf-8"?>
 +<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -11041,11 +11041,11 @@ index 0000000..01821c5
 +  </ItemGroup>
 +</Project>
 \ No newline at end of file
-diff --git a/build.vc14/dll_tests/tsqrt/tsqrt.vcxproj b/build.vc14/dll_tests/tsqrt/tsqrt.vcxproj
+diff --git a/build.vc14/dll_tests/tsqrt/tsqrt.vcxproj build.vc14/dll_tests/tsqrt/tsqrt.vcxproj
 new file mode 100644
 index 0000000..4dddc2a
 --- /dev/null
-+++ b/build.vc14/dll_tests/tsqrt/tsqrt.vcxproj
++++ build.vc14/dll_tests/tsqrt/tsqrt.vcxproj
 @@ -0,0 +1,165 @@
 +﻿<?xml version="1.0" encoding="utf-8"?>
 +<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -11213,11 +11213,11 @@ index 0000000..4dddc2a
 +  </ImportGroup>
 +</Project>
 \ No newline at end of file
-diff --git a/build.vc14/dll_tests/tsqrt/tsqrt.vcxproj.filters b/build.vc14/dll_tests/tsqrt/tsqrt.vcxproj.filters
+diff --git a/build.vc14/dll_tests/tsqrt/tsqrt.vcxproj.filters build.vc14/dll_tests/tsqrt/tsqrt.vcxproj.filters
 new file mode 100644
 index 0000000..bdcd98d
 --- /dev/null
-+++ b/build.vc14/dll_tests/tsqrt/tsqrt.vcxproj.filters
++++ build.vc14/dll_tests/tsqrt/tsqrt.vcxproj.filters
 @@ -0,0 +1,6 @@
 +﻿<?xml version="1.0" encoding="utf-8"?>
 +<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -11226,11 +11226,11 @@ index 0000000..bdcd98d
 +  </ItemGroup>
 +</Project>
 \ No newline at end of file
-diff --git a/build.vc14/dll_tests/tstrtoc/tstrtoc.vcxproj b/build.vc14/dll_tests/tstrtoc/tstrtoc.vcxproj
+diff --git a/build.vc14/dll_tests/tstrtoc/tstrtoc.vcxproj build.vc14/dll_tests/tstrtoc/tstrtoc.vcxproj
 new file mode 100644
 index 0000000..712342a
 --- /dev/null
-+++ b/build.vc14/dll_tests/tstrtoc/tstrtoc.vcxproj
++++ build.vc14/dll_tests/tstrtoc/tstrtoc.vcxproj
 @@ -0,0 +1,165 @@
 +﻿<?xml version="1.0" encoding="utf-8"?>
 +<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -11398,11 +11398,11 @@ index 0000000..712342a
 +  </ImportGroup>
 +</Project>
 \ No newline at end of file
-diff --git a/build.vc14/dll_tests/tstrtoc/tstrtoc.vcxproj.filters b/build.vc14/dll_tests/tstrtoc/tstrtoc.vcxproj.filters
+diff --git a/build.vc14/dll_tests/tstrtoc/tstrtoc.vcxproj.filters build.vc14/dll_tests/tstrtoc/tstrtoc.vcxproj.filters
 new file mode 100644
 index 0000000..20f04fd
 --- /dev/null
-+++ b/build.vc14/dll_tests/tstrtoc/tstrtoc.vcxproj.filters
++++ build.vc14/dll_tests/tstrtoc/tstrtoc.vcxproj.filters
 @@ -0,0 +1,6 @@
 +﻿<?xml version="1.0" encoding="utf-8"?>
 +<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -11411,11 +11411,11 @@ index 0000000..20f04fd
 +  </ItemGroup>
 +</Project>
 \ No newline at end of file
-diff --git a/build.vc14/dll_tests/tsub/tsub.vcxproj b/build.vc14/dll_tests/tsub/tsub.vcxproj
+diff --git a/build.vc14/dll_tests/tsub/tsub.vcxproj build.vc14/dll_tests/tsub/tsub.vcxproj
 new file mode 100644
 index 0000000..fb914e6
 --- /dev/null
-+++ b/build.vc14/dll_tests/tsub/tsub.vcxproj
++++ build.vc14/dll_tests/tsub/tsub.vcxproj
 @@ -0,0 +1,165 @@
 +﻿<?xml version="1.0" encoding="utf-8"?>
 +<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -11583,11 +11583,11 @@ index 0000000..fb914e6
 +  </ImportGroup>
 +</Project>
 \ No newline at end of file
-diff --git a/build.vc14/dll_tests/tsub/tsub.vcxproj.filters b/build.vc14/dll_tests/tsub/tsub.vcxproj.filters
+diff --git a/build.vc14/dll_tests/tsub/tsub.vcxproj.filters build.vc14/dll_tests/tsub/tsub.vcxproj.filters
 new file mode 100644
 index 0000000..92df87a
 --- /dev/null
-+++ b/build.vc14/dll_tests/tsub/tsub.vcxproj.filters
++++ build.vc14/dll_tests/tsub/tsub.vcxproj.filters
 @@ -0,0 +1,6 @@
 +﻿<?xml version="1.0" encoding="utf-8"?>
 +<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -11596,11 +11596,11 @@ index 0000000..92df87a
 +  </ItemGroup>
 +</Project>
 \ No newline at end of file
-diff --git a/build.vc14/dll_tests/tsub_fr/tsub_fr.vcxproj b/build.vc14/dll_tests/tsub_fr/tsub_fr.vcxproj
+diff --git a/build.vc14/dll_tests/tsub_fr/tsub_fr.vcxproj build.vc14/dll_tests/tsub_fr/tsub_fr.vcxproj
 new file mode 100644
 index 0000000..c80c2ea
 --- /dev/null
-+++ b/build.vc14/dll_tests/tsub_fr/tsub_fr.vcxproj
++++ build.vc14/dll_tests/tsub_fr/tsub_fr.vcxproj
 @@ -0,0 +1,165 @@
 +﻿<?xml version="1.0" encoding="utf-8"?>
 +<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -11768,11 +11768,11 @@ index 0000000..c80c2ea
 +  </ImportGroup>
 +</Project>
 \ No newline at end of file
-diff --git a/build.vc14/dll_tests/tsub_fr/tsub_fr.vcxproj.filters b/build.vc14/dll_tests/tsub_fr/tsub_fr.vcxproj.filters
+diff --git a/build.vc14/dll_tests/tsub_fr/tsub_fr.vcxproj.filters build.vc14/dll_tests/tsub_fr/tsub_fr.vcxproj.filters
 new file mode 100644
 index 0000000..f4691bf
 --- /dev/null
-+++ b/build.vc14/dll_tests/tsub_fr/tsub_fr.vcxproj.filters
++++ build.vc14/dll_tests/tsub_fr/tsub_fr.vcxproj.filters
 @@ -0,0 +1,6 @@
 +﻿<?xml version="1.0" encoding="utf-8"?>
 +<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -11781,11 +11781,11 @@ index 0000000..f4691bf
 +  </ItemGroup>
 +</Project>
 \ No newline at end of file
-diff --git a/build.vc14/dll_tests/tsub_ui/tsub_ui.vcxproj b/build.vc14/dll_tests/tsub_ui/tsub_ui.vcxproj
+diff --git a/build.vc14/dll_tests/tsub_ui/tsub_ui.vcxproj build.vc14/dll_tests/tsub_ui/tsub_ui.vcxproj
 new file mode 100644
 index 0000000..784aac2
 --- /dev/null
-+++ b/build.vc14/dll_tests/tsub_ui/tsub_ui.vcxproj
++++ build.vc14/dll_tests/tsub_ui/tsub_ui.vcxproj
 @@ -0,0 +1,165 @@
 +﻿<?xml version="1.0" encoding="utf-8"?>
 +<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -11953,11 +11953,11 @@ index 0000000..784aac2
 +  </ImportGroup>
 +</Project>
 \ No newline at end of file
-diff --git a/build.vc14/dll_tests/tsub_ui/tsub_ui.vcxproj.filters b/build.vc14/dll_tests/tsub_ui/tsub_ui.vcxproj.filters
+diff --git a/build.vc14/dll_tests/tsub_ui/tsub_ui.vcxproj.filters build.vc14/dll_tests/tsub_ui/tsub_ui.vcxproj.filters
 new file mode 100644
 index 0000000..e77ecfa
 --- /dev/null
-+++ b/build.vc14/dll_tests/tsub_ui/tsub_ui.vcxproj.filters
++++ build.vc14/dll_tests/tsub_ui/tsub_ui.vcxproj.filters
 @@ -0,0 +1,6 @@
 +﻿<?xml version="1.0" encoding="utf-8"?>
 +<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -11966,11 +11966,11 @@ index 0000000..e77ecfa
 +  </ItemGroup>
 +</Project>
 \ No newline at end of file
-diff --git a/build.vc14/dll_tests/tswap/tswap.vcxproj b/build.vc14/dll_tests/tswap/tswap.vcxproj
+diff --git a/build.vc14/dll_tests/tswap/tswap.vcxproj build.vc14/dll_tests/tswap/tswap.vcxproj
 new file mode 100644
 index 0000000..6acc798
 --- /dev/null
-+++ b/build.vc14/dll_tests/tswap/tswap.vcxproj
++++ build.vc14/dll_tests/tswap/tswap.vcxproj
 @@ -0,0 +1,165 @@
 +﻿<?xml version="1.0" encoding="utf-8"?>
 +<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -12138,11 +12138,11 @@ index 0000000..6acc798
 +  </ImportGroup>
 +</Project>
 \ No newline at end of file
-diff --git a/build.vc14/dll_tests/tswap/tswap.vcxproj.filters b/build.vc14/dll_tests/tswap/tswap.vcxproj.filters
+diff --git a/build.vc14/dll_tests/tswap/tswap.vcxproj.filters build.vc14/dll_tests/tswap/tswap.vcxproj.filters
 new file mode 100644
 index 0000000..6bc51ea
 --- /dev/null
-+++ b/build.vc14/dll_tests/tswap/tswap.vcxproj.filters
++++ build.vc14/dll_tests/tswap/tswap.vcxproj.filters
 @@ -0,0 +1,6 @@
 +﻿<?xml version="1.0" encoding="utf-8"?>
 +<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -12151,11 +12151,11 @@ index 0000000..6bc51ea
 +  </ItemGroup>
 +</Project>
 \ No newline at end of file
-diff --git a/build.vc14/dll_tests/ttan/ttan.vcxproj b/build.vc14/dll_tests/ttan/ttan.vcxproj
+diff --git a/build.vc14/dll_tests/ttan/ttan.vcxproj build.vc14/dll_tests/ttan/ttan.vcxproj
 new file mode 100644
 index 0000000..d8f46d9
 --- /dev/null
-+++ b/build.vc14/dll_tests/ttan/ttan.vcxproj
++++ build.vc14/dll_tests/ttan/ttan.vcxproj
 @@ -0,0 +1,165 @@
 +﻿<?xml version="1.0" encoding="utf-8"?>
 +<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -12323,11 +12323,11 @@ index 0000000..d8f46d9
 +  </ImportGroup>
 +</Project>
 \ No newline at end of file
-diff --git a/build.vc14/dll_tests/ttan/ttan.vcxproj.filters b/build.vc14/dll_tests/ttan/ttan.vcxproj.filters
+diff --git a/build.vc14/dll_tests/ttan/ttan.vcxproj.filters build.vc14/dll_tests/ttan/ttan.vcxproj.filters
 new file mode 100644
 index 0000000..cebcd4a
 --- /dev/null
-+++ b/build.vc14/dll_tests/ttan/ttan.vcxproj.filters
++++ build.vc14/dll_tests/ttan/ttan.vcxproj.filters
 @@ -0,0 +1,6 @@
 +﻿<?xml version="1.0" encoding="utf-8"?>
 +<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -12336,11 +12336,11 @@ index 0000000..cebcd4a
 +  </ItemGroup>
 +</Project>
 \ No newline at end of file
-diff --git a/build.vc14/dll_tests/ttanh/ttanh.vcxproj b/build.vc14/dll_tests/ttanh/ttanh.vcxproj
+diff --git a/build.vc14/dll_tests/ttanh/ttanh.vcxproj build.vc14/dll_tests/ttanh/ttanh.vcxproj
 new file mode 100644
 index 0000000..e3ce7df
 --- /dev/null
-+++ b/build.vc14/dll_tests/ttanh/ttanh.vcxproj
++++ build.vc14/dll_tests/ttanh/ttanh.vcxproj
 @@ -0,0 +1,165 @@
 +﻿<?xml version="1.0" encoding="utf-8"?>
 +<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -12508,11 +12508,11 @@ index 0000000..e3ce7df
 +  </ImportGroup>
 +</Project>
 \ No newline at end of file
-diff --git a/build.vc14/dll_tests/ttanh/ttanh.vcxproj.filters b/build.vc14/dll_tests/ttanh/ttanh.vcxproj.filters
+diff --git a/build.vc14/dll_tests/ttanh/ttanh.vcxproj.filters build.vc14/dll_tests/ttanh/ttanh.vcxproj.filters
 new file mode 100644
 index 0000000..df01aa4
 --- /dev/null
-+++ b/build.vc14/dll_tests/ttanh/ttanh.vcxproj.filters
++++ build.vc14/dll_tests/ttanh/ttanh.vcxproj.filters
 @@ -0,0 +1,6 @@
 +﻿<?xml version="1.0" encoding="utf-8"?>
 +<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -12521,11 +12521,11 @@ index 0000000..df01aa4
 +  </ItemGroup>
 +</Project>
 \ No newline at end of file
-diff --git a/build.vc14/dll_tests/tui_div/tui_div.vcxproj b/build.vc14/dll_tests/tui_div/tui_div.vcxproj
+diff --git a/build.vc14/dll_tests/tui_div/tui_div.vcxproj build.vc14/dll_tests/tui_div/tui_div.vcxproj
 new file mode 100644
 index 0000000..bdfb032
 --- /dev/null
-+++ b/build.vc14/dll_tests/tui_div/tui_div.vcxproj
++++ build.vc14/dll_tests/tui_div/tui_div.vcxproj
 @@ -0,0 +1,165 @@
 +﻿<?xml version="1.0" encoding="utf-8"?>
 +<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -12693,11 +12693,11 @@ index 0000000..bdfb032
 +  </ImportGroup>
 +</Project>
 \ No newline at end of file
-diff --git a/build.vc14/dll_tests/tui_div/tui_div.vcxproj.filters b/build.vc14/dll_tests/tui_div/tui_div.vcxproj.filters
+diff --git a/build.vc14/dll_tests/tui_div/tui_div.vcxproj.filters build.vc14/dll_tests/tui_div/tui_div.vcxproj.filters
 new file mode 100644
 index 0000000..6b817d4
 --- /dev/null
-+++ b/build.vc14/dll_tests/tui_div/tui_div.vcxproj.filters
++++ build.vc14/dll_tests/tui_div/tui_div.vcxproj.filters
 @@ -0,0 +1,6 @@
 +﻿<?xml version="1.0" encoding="utf-8"?>
 +<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -12706,11 +12706,11 @@ index 0000000..6b817d4
 +  </ItemGroup>
 +</Project>
 \ No newline at end of file
-diff --git a/build.vc14/dll_tests/tui_ui_sub/tui_ui_sub.vcxproj b/build.vc14/dll_tests/tui_ui_sub/tui_ui_sub.vcxproj
+diff --git a/build.vc14/dll_tests/tui_ui_sub/tui_ui_sub.vcxproj build.vc14/dll_tests/tui_ui_sub/tui_ui_sub.vcxproj
 new file mode 100644
 index 0000000..eb43073
 --- /dev/null
-+++ b/build.vc14/dll_tests/tui_ui_sub/tui_ui_sub.vcxproj
++++ build.vc14/dll_tests/tui_ui_sub/tui_ui_sub.vcxproj
 @@ -0,0 +1,165 @@
 +﻿<?xml version="1.0" encoding="utf-8"?>
 +<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -12878,11 +12878,11 @@ index 0000000..eb43073
 +  </ImportGroup>
 +</Project>
 \ No newline at end of file
-diff --git a/build.vc14/dll_tests/tui_ui_sub/tui_ui_sub.vcxproj.filters b/build.vc14/dll_tests/tui_ui_sub/tui_ui_sub.vcxproj.filters
+diff --git a/build.vc14/dll_tests/tui_ui_sub/tui_ui_sub.vcxproj.filters build.vc14/dll_tests/tui_ui_sub/tui_ui_sub.vcxproj.filters
 new file mode 100644
 index 0000000..e2a3d66
 --- /dev/null
-+++ b/build.vc14/dll_tests/tui_ui_sub/tui_ui_sub.vcxproj.filters
++++ build.vc14/dll_tests/tui_ui_sub/tui_ui_sub.vcxproj.filters
 @@ -0,0 +1,6 @@
 +﻿<?xml version="1.0" encoding="utf-8"?>
 +<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -12891,22 +12891,22 @@ index 0000000..e2a3d66
 +  </ItemGroup>
 +</Project>
 \ No newline at end of file
-diff --git a/build.vc14/file_copy.bat b/build.vc14/file_copy.bat
+diff --git a/build.vc14/file_copy.bat build.vc14/file_copy.bat
 new file mode 100644
 index 0000000..43b4185
 --- /dev/null
-+++ b/build.vc14/file_copy.bat
++++ build.vc14/file_copy.bat
 @@ -0,0 +1,5 @@
 +
 +if not exist %1 ( echo file_copy failure: %1 not found && goto exit )
 +if exist %2     ( fc %1 %2 > nul && if not %errorlevel 1 goto exit )
 +echo copying %1 to %2 && copy %1 %2
 +:exit
-diff --git a/build.vc14/lib_tests/add_test_lib/add_test_lib.vcxproj b/build.vc14/lib_tests/add_test_lib/add_test_lib.vcxproj
+diff --git a/build.vc14/lib_tests/add_test_lib/add_test_lib.vcxproj build.vc14/lib_tests/add_test_lib/add_test_lib.vcxproj
 new file mode 100644
 index 0000000..200fc23
 --- /dev/null
-+++ b/build.vc14/lib_tests/add_test_lib/add_test_lib.vcxproj
++++ build.vc14/lib_tests/add_test_lib/add_test_lib.vcxproj
 @@ -0,0 +1,189 @@
 +﻿<?xml version="1.0" encoding="utf-8"?>
 +<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -13098,11 +13098,11 @@ index 0000000..200fc23
 +  </ImportGroup>
 +</Project>
 \ No newline at end of file
-diff --git a/build.vc14/lib_tests/add_test_lib/add_test_lib.vcxproj.filters b/build.vc14/lib_tests/add_test_lib/add_test_lib.vcxproj.filters
+diff --git a/build.vc14/lib_tests/add_test_lib/add_test_lib.vcxproj.filters build.vc14/lib_tests/add_test_lib/add_test_lib.vcxproj.filters
 new file mode 100644
 index 0000000..851e8ee
 --- /dev/null
-+++ b/build.vc14/lib_tests/add_test_lib/add_test_lib.vcxproj.filters
++++ build.vc14/lib_tests/add_test_lib/add_test_lib.vcxproj.filters
 @@ -0,0 +1,80 @@
 +﻿<?xml version="1.0" encoding="utf-8"?>
 +<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -13185,11 +13185,11 @@ index 0000000..851e8ee
 +  </ItemGroup>
 +</Project>
 \ No newline at end of file
-diff --git a/build.vc14/lib_tests/tabs/tabs.vcxproj b/build.vc14/lib_tests/tabs/tabs.vcxproj
+diff --git a/build.vc14/lib_tests/tabs/tabs.vcxproj build.vc14/lib_tests/tabs/tabs.vcxproj
 new file mode 100644
 index 0000000..cb6459b
 --- /dev/null
-+++ b/build.vc14/lib_tests/tabs/tabs.vcxproj
++++ build.vc14/lib_tests/tabs/tabs.vcxproj
 @@ -0,0 +1,165 @@
 +﻿<?xml version="1.0" encoding="utf-8"?>
 +<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -13357,11 +13357,11 @@ index 0000000..cb6459b
 +  </ImportGroup>
 +</Project>
 \ No newline at end of file
-diff --git a/build.vc14/lib_tests/tabs/tabs.vcxproj.filters b/build.vc14/lib_tests/tabs/tabs.vcxproj.filters
+diff --git a/build.vc14/lib_tests/tabs/tabs.vcxproj.filters build.vc14/lib_tests/tabs/tabs.vcxproj.filters
 new file mode 100644
 index 0000000..0349cfb
 --- /dev/null
-+++ b/build.vc14/lib_tests/tabs/tabs.vcxproj.filters
++++ build.vc14/lib_tests/tabs/tabs.vcxproj.filters
 @@ -0,0 +1,6 @@
 +﻿<?xml version="1.0" encoding="utf-8"?>
 +<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -13370,11 +13370,11 @@ index 0000000..0349cfb
 +  </ItemGroup>
 +</Project>
 \ No newline at end of file
-diff --git a/build.vc14/lib_tests/tacos/tacos.vcxproj b/build.vc14/lib_tests/tacos/tacos.vcxproj
+diff --git a/build.vc14/lib_tests/tacos/tacos.vcxproj build.vc14/lib_tests/tacos/tacos.vcxproj
 new file mode 100644
 index 0000000..1c5f9aa
 --- /dev/null
-+++ b/build.vc14/lib_tests/tacos/tacos.vcxproj
++++ build.vc14/lib_tests/tacos/tacos.vcxproj
 @@ -0,0 +1,165 @@
 +﻿<?xml version="1.0" encoding="utf-8"?>
 +<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -13542,11 +13542,11 @@ index 0000000..1c5f9aa
 +  </ImportGroup>
 +</Project>
 \ No newline at end of file
-diff --git a/build.vc14/lib_tests/tacos/tacos.vcxproj.filters b/build.vc14/lib_tests/tacos/tacos.vcxproj.filters
+diff --git a/build.vc14/lib_tests/tacos/tacos.vcxproj.filters build.vc14/lib_tests/tacos/tacos.vcxproj.filters
 new file mode 100644
 index 0000000..9a099b5
 --- /dev/null
-+++ b/build.vc14/lib_tests/tacos/tacos.vcxproj.filters
++++ build.vc14/lib_tests/tacos/tacos.vcxproj.filters
 @@ -0,0 +1,6 @@
 +﻿<?xml version="1.0" encoding="utf-8"?>
 +<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -13555,11 +13555,11 @@ index 0000000..9a099b5
 +  </ItemGroup>
 +</Project>
 \ No newline at end of file
-diff --git a/build.vc14/lib_tests/tacosh/tacosh.vcxproj b/build.vc14/lib_tests/tacosh/tacosh.vcxproj
+diff --git a/build.vc14/lib_tests/tacosh/tacosh.vcxproj build.vc14/lib_tests/tacosh/tacosh.vcxproj
 new file mode 100644
 index 0000000..7ac490d
 --- /dev/null
-+++ b/build.vc14/lib_tests/tacosh/tacosh.vcxproj
++++ build.vc14/lib_tests/tacosh/tacosh.vcxproj
 @@ -0,0 +1,165 @@
 +﻿<?xml version="1.0" encoding="utf-8"?>
 +<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -13727,11 +13727,11 @@ index 0000000..7ac490d
 +  </ImportGroup>
 +</Project>
 \ No newline at end of file
-diff --git a/build.vc14/lib_tests/tacosh/tacosh.vcxproj.filters b/build.vc14/lib_tests/tacosh/tacosh.vcxproj.filters
+diff --git a/build.vc14/lib_tests/tacosh/tacosh.vcxproj.filters build.vc14/lib_tests/tacosh/tacosh.vcxproj.filters
 new file mode 100644
 index 0000000..527a8cb
 --- /dev/null
-+++ b/build.vc14/lib_tests/tacosh/tacosh.vcxproj.filters
++++ build.vc14/lib_tests/tacosh/tacosh.vcxproj.filters
 @@ -0,0 +1,6 @@
 +﻿<?xml version="1.0" encoding="utf-8"?>
 +<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -13740,11 +13740,11 @@ index 0000000..527a8cb
 +  </ItemGroup>
 +</Project>
 \ No newline at end of file
-diff --git a/build.vc14/lib_tests/tadd/tadd.vcxproj b/build.vc14/lib_tests/tadd/tadd.vcxproj
+diff --git a/build.vc14/lib_tests/tadd/tadd.vcxproj build.vc14/lib_tests/tadd/tadd.vcxproj
 new file mode 100644
 index 0000000..ad9b8cf
 --- /dev/null
-+++ b/build.vc14/lib_tests/tadd/tadd.vcxproj
++++ build.vc14/lib_tests/tadd/tadd.vcxproj
 @@ -0,0 +1,165 @@
 +﻿<?xml version="1.0" encoding="utf-8"?>
 +<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -13912,11 +13912,11 @@ index 0000000..ad9b8cf
 +  </ImportGroup>
 +</Project>
 \ No newline at end of file
-diff --git a/build.vc14/lib_tests/tadd/tadd.vcxproj.filters b/build.vc14/lib_tests/tadd/tadd.vcxproj.filters
+diff --git a/build.vc14/lib_tests/tadd/tadd.vcxproj.filters build.vc14/lib_tests/tadd/tadd.vcxproj.filters
 new file mode 100644
 index 0000000..c80bd11
 --- /dev/null
-+++ b/build.vc14/lib_tests/tadd/tadd.vcxproj.filters
++++ build.vc14/lib_tests/tadd/tadd.vcxproj.filters
 @@ -0,0 +1,6 @@
 +﻿<?xml version="1.0" encoding="utf-8"?>
 +<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -13925,11 +13925,11 @@ index 0000000..c80bd11
 +  </ItemGroup>
 +</Project>
 \ No newline at end of file
-diff --git a/build.vc14/lib_tests/tadd_fr/tadd_fr.vcxproj b/build.vc14/lib_tests/tadd_fr/tadd_fr.vcxproj
+diff --git a/build.vc14/lib_tests/tadd_fr/tadd_fr.vcxproj build.vc14/lib_tests/tadd_fr/tadd_fr.vcxproj
 new file mode 100644
 index 0000000..13e0d5b
 --- /dev/null
-+++ b/build.vc14/lib_tests/tadd_fr/tadd_fr.vcxproj
++++ build.vc14/lib_tests/tadd_fr/tadd_fr.vcxproj
 @@ -0,0 +1,165 @@
 +﻿<?xml version="1.0" encoding="utf-8"?>
 +<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -14097,11 +14097,11 @@ index 0000000..13e0d5b
 +  </ImportGroup>
 +</Project>
 \ No newline at end of file
-diff --git a/build.vc14/lib_tests/tadd_fr/tadd_fr.vcxproj.filters b/build.vc14/lib_tests/tadd_fr/tadd_fr.vcxproj.filters
+diff --git a/build.vc14/lib_tests/tadd_fr/tadd_fr.vcxproj.filters build.vc14/lib_tests/tadd_fr/tadd_fr.vcxproj.filters
 new file mode 100644
 index 0000000..b167f96
 --- /dev/null
-+++ b/build.vc14/lib_tests/tadd_fr/tadd_fr.vcxproj.filters
++++ build.vc14/lib_tests/tadd_fr/tadd_fr.vcxproj.filters
 @@ -0,0 +1,6 @@
 +﻿<?xml version="1.0" encoding="utf-8"?>
 +<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -14110,11 +14110,11 @@ index 0000000..b167f96
 +  </ItemGroup>
 +</Project>
 \ No newline at end of file
-diff --git a/build.vc14/lib_tests/tadd_si/tadd_si.vcxproj b/build.vc14/lib_tests/tadd_si/tadd_si.vcxproj
+diff --git a/build.vc14/lib_tests/tadd_si/tadd_si.vcxproj build.vc14/lib_tests/tadd_si/tadd_si.vcxproj
 new file mode 100644
 index 0000000..5a5c135
 --- /dev/null
-+++ b/build.vc14/lib_tests/tadd_si/tadd_si.vcxproj
++++ build.vc14/lib_tests/tadd_si/tadd_si.vcxproj
 @@ -0,0 +1,165 @@
 +﻿<?xml version="1.0" encoding="utf-8"?>
 +<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -14282,11 +14282,11 @@ index 0000000..5a5c135
 +  </ImportGroup>
 +</Project>
 \ No newline at end of file
-diff --git a/build.vc14/lib_tests/tadd_si/tadd_si.vcxproj.filters b/build.vc14/lib_tests/tadd_si/tadd_si.vcxproj.filters
+diff --git a/build.vc14/lib_tests/tadd_si/tadd_si.vcxproj.filters build.vc14/lib_tests/tadd_si/tadd_si.vcxproj.filters
 new file mode 100644
 index 0000000..fbdf47b
 --- /dev/null
-+++ b/build.vc14/lib_tests/tadd_si/tadd_si.vcxproj.filters
++++ build.vc14/lib_tests/tadd_si/tadd_si.vcxproj.filters
 @@ -0,0 +1,6 @@
 +﻿<?xml version="1.0" encoding="utf-8"?>
 +<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -14295,11 +14295,11 @@ index 0000000..fbdf47b
 +  </ItemGroup>
 +</Project>
 \ No newline at end of file
-diff --git a/build.vc14/lib_tests/tadd_ui/tadd_ui.vcxproj b/build.vc14/lib_tests/tadd_ui/tadd_ui.vcxproj
+diff --git a/build.vc14/lib_tests/tadd_ui/tadd_ui.vcxproj build.vc14/lib_tests/tadd_ui/tadd_ui.vcxproj
 new file mode 100644
 index 0000000..644c845
 --- /dev/null
-+++ b/build.vc14/lib_tests/tadd_ui/tadd_ui.vcxproj
++++ build.vc14/lib_tests/tadd_ui/tadd_ui.vcxproj
 @@ -0,0 +1,165 @@
 +﻿<?xml version="1.0" encoding="utf-8"?>
 +<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -14467,11 +14467,11 @@ index 0000000..644c845
 +  </ImportGroup>
 +</Project>
 \ No newline at end of file
-diff --git a/build.vc14/lib_tests/tadd_ui/tadd_ui.vcxproj.filters b/build.vc14/lib_tests/tadd_ui/tadd_ui.vcxproj.filters
+diff --git a/build.vc14/lib_tests/tadd_ui/tadd_ui.vcxproj.filters build.vc14/lib_tests/tadd_ui/tadd_ui.vcxproj.filters
 new file mode 100644
 index 0000000..b5756af
 --- /dev/null
-+++ b/build.vc14/lib_tests/tadd_ui/tadd_ui.vcxproj.filters
++++ build.vc14/lib_tests/tadd_ui/tadd_ui.vcxproj.filters
 @@ -0,0 +1,6 @@
 +﻿<?xml version="1.0" encoding="utf-8"?>
 +<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -14480,11 +14480,11 @@ index 0000000..b5756af
 +  </ItemGroup>
 +</Project>
 \ No newline at end of file
-diff --git a/build.vc14/lib_tests/targ/targ.vcxproj b/build.vc14/lib_tests/targ/targ.vcxproj
+diff --git a/build.vc14/lib_tests/targ/targ.vcxproj build.vc14/lib_tests/targ/targ.vcxproj
 new file mode 100644
 index 0000000..7184ff7
 --- /dev/null
-+++ b/build.vc14/lib_tests/targ/targ.vcxproj
++++ build.vc14/lib_tests/targ/targ.vcxproj
 @@ -0,0 +1,165 @@
 +﻿<?xml version="1.0" encoding="utf-8"?>
 +<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -14652,11 +14652,11 @@ index 0000000..7184ff7
 +  </ImportGroup>
 +</Project>
 \ No newline at end of file
-diff --git a/build.vc14/lib_tests/targ/targ.vcxproj.filters b/build.vc14/lib_tests/targ/targ.vcxproj.filters
+diff --git a/build.vc14/lib_tests/targ/targ.vcxproj.filters build.vc14/lib_tests/targ/targ.vcxproj.filters
 new file mode 100644
 index 0000000..ce026b3
 --- /dev/null
-+++ b/build.vc14/lib_tests/targ/targ.vcxproj.filters
++++ build.vc14/lib_tests/targ/targ.vcxproj.filters
 @@ -0,0 +1,6 @@
 +﻿<?xml version="1.0" encoding="utf-8"?>
 +<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -14665,11 +14665,11 @@ index 0000000..ce026b3
 +  </ItemGroup>
 +</Project>
 \ No newline at end of file
-diff --git a/build.vc14/lib_tests/tasin/tasin.vcxproj b/build.vc14/lib_tests/tasin/tasin.vcxproj
+diff --git a/build.vc14/lib_tests/tasin/tasin.vcxproj build.vc14/lib_tests/tasin/tasin.vcxproj
 new file mode 100644
 index 0000000..a21bd14
 --- /dev/null
-+++ b/build.vc14/lib_tests/tasin/tasin.vcxproj
++++ build.vc14/lib_tests/tasin/tasin.vcxproj
 @@ -0,0 +1,165 @@
 +﻿<?xml version="1.0" encoding="utf-8"?>
 +<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -14837,11 +14837,11 @@ index 0000000..a21bd14
 +  </ImportGroup>
 +</Project>
 \ No newline at end of file
-diff --git a/build.vc14/lib_tests/tasin/tasin.vcxproj.filters b/build.vc14/lib_tests/tasin/tasin.vcxproj.filters
+diff --git a/build.vc14/lib_tests/tasin/tasin.vcxproj.filters build.vc14/lib_tests/tasin/tasin.vcxproj.filters
 new file mode 100644
 index 0000000..36058af
 --- /dev/null
-+++ b/build.vc14/lib_tests/tasin/tasin.vcxproj.filters
++++ build.vc14/lib_tests/tasin/tasin.vcxproj.filters
 @@ -0,0 +1,6 @@
 +﻿<?xml version="1.0" encoding="utf-8"?>
 +<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -14850,11 +14850,11 @@ index 0000000..36058af
 +  </ItemGroup>
 +</Project>
 \ No newline at end of file
-diff --git a/build.vc14/lib_tests/tasinh/tasinh.vcxproj b/build.vc14/lib_tests/tasinh/tasinh.vcxproj
+diff --git a/build.vc14/lib_tests/tasinh/tasinh.vcxproj build.vc14/lib_tests/tasinh/tasinh.vcxproj
 new file mode 100644
 index 0000000..431fc30
 --- /dev/null
-+++ b/build.vc14/lib_tests/tasinh/tasinh.vcxproj
++++ build.vc14/lib_tests/tasinh/tasinh.vcxproj
 @@ -0,0 +1,165 @@
 +﻿<?xml version="1.0" encoding="utf-8"?>
 +<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -15022,11 +15022,11 @@ index 0000000..431fc30
 +  </ImportGroup>
 +</Project>
 \ No newline at end of file
-diff --git a/build.vc14/lib_tests/tasinh/tasinh.vcxproj.filters b/build.vc14/lib_tests/tasinh/tasinh.vcxproj.filters
+diff --git a/build.vc14/lib_tests/tasinh/tasinh.vcxproj.filters build.vc14/lib_tests/tasinh/tasinh.vcxproj.filters
 new file mode 100644
 index 0000000..afb7a7d
 --- /dev/null
-+++ b/build.vc14/lib_tests/tasinh/tasinh.vcxproj.filters
++++ build.vc14/lib_tests/tasinh/tasinh.vcxproj.filters
 @@ -0,0 +1,6 @@
 +﻿<?xml version="1.0" encoding="utf-8"?>
 +<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -15035,11 +15035,11 @@ index 0000000..afb7a7d
 +  </ItemGroup>
 +</Project>
 \ No newline at end of file
-diff --git a/build.vc14/lib_tests/tatan/tatan.vcxproj b/build.vc14/lib_tests/tatan/tatan.vcxproj
+diff --git a/build.vc14/lib_tests/tatan/tatan.vcxproj build.vc14/lib_tests/tatan/tatan.vcxproj
 new file mode 100644
 index 0000000..bc39ad7
 --- /dev/null
-+++ b/build.vc14/lib_tests/tatan/tatan.vcxproj
++++ build.vc14/lib_tests/tatan/tatan.vcxproj
 @@ -0,0 +1,165 @@
 +﻿<?xml version="1.0" encoding="utf-8"?>
 +<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -15207,11 +15207,11 @@ index 0000000..bc39ad7
 +  </ImportGroup>
 +</Project>
 \ No newline at end of file
-diff --git a/build.vc14/lib_tests/tatan/tatan.vcxproj.filters b/build.vc14/lib_tests/tatan/tatan.vcxproj.filters
+diff --git a/build.vc14/lib_tests/tatan/tatan.vcxproj.filters build.vc14/lib_tests/tatan/tatan.vcxproj.filters
 new file mode 100644
 index 0000000..7b8761e
 --- /dev/null
-+++ b/build.vc14/lib_tests/tatan/tatan.vcxproj.filters
++++ build.vc14/lib_tests/tatan/tatan.vcxproj.filters
 @@ -0,0 +1,6 @@
 +﻿<?xml version="1.0" encoding="utf-8"?>
 +<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -15220,11 +15220,11 @@ index 0000000..7b8761e
 +  </ItemGroup>
 +</Project>
 \ No newline at end of file
-diff --git a/build.vc14/lib_tests/tatanh/tatanh.vcxproj b/build.vc14/lib_tests/tatanh/tatanh.vcxproj
+diff --git a/build.vc14/lib_tests/tatanh/tatanh.vcxproj build.vc14/lib_tests/tatanh/tatanh.vcxproj
 new file mode 100644
 index 0000000..fe96013
 --- /dev/null
-+++ b/build.vc14/lib_tests/tatanh/tatanh.vcxproj
++++ build.vc14/lib_tests/tatanh/tatanh.vcxproj
 @@ -0,0 +1,165 @@
 +﻿<?xml version="1.0" encoding="utf-8"?>
 +<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -15392,11 +15392,11 @@ index 0000000..fe96013
 +  </ImportGroup>
 +</Project>
 \ No newline at end of file
-diff --git a/build.vc14/lib_tests/tatanh/tatanh.vcxproj.filters b/build.vc14/lib_tests/tatanh/tatanh.vcxproj.filters
+diff --git a/build.vc14/lib_tests/tatanh/tatanh.vcxproj.filters build.vc14/lib_tests/tatanh/tatanh.vcxproj.filters
 new file mode 100644
 index 0000000..3e44251
 --- /dev/null
-+++ b/build.vc14/lib_tests/tatanh/tatanh.vcxproj.filters
++++ build.vc14/lib_tests/tatanh/tatanh.vcxproj.filters
 @@ -0,0 +1,6 @@
 +﻿<?xml version="1.0" encoding="utf-8"?>
 +<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -15405,11 +15405,11 @@ index 0000000..3e44251
 +  </ItemGroup>
 +</Project>
 \ No newline at end of file
-diff --git a/build.vc14/lib_tests/tcmp_abs/tcmp_abs.vcxproj b/build.vc14/lib_tests/tcmp_abs/tcmp_abs.vcxproj
+diff --git a/build.vc14/lib_tests/tcmp_abs/tcmp_abs.vcxproj build.vc14/lib_tests/tcmp_abs/tcmp_abs.vcxproj
 new file mode 100644
 index 0000000..3436472
 --- /dev/null
-+++ b/build.vc14/lib_tests/tcmp_abs/tcmp_abs.vcxproj
++++ build.vc14/lib_tests/tcmp_abs/tcmp_abs.vcxproj
 @@ -0,0 +1,165 @@
 +﻿<?xml version="1.0" encoding="utf-8"?>
 +<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -15577,11 +15577,11 @@ index 0000000..3436472
 +  </ImportGroup>
 +</Project>
 \ No newline at end of file
-diff --git a/build.vc14/lib_tests/tcmp_abs/tcmp_abs.vcxproj.filters b/build.vc14/lib_tests/tcmp_abs/tcmp_abs.vcxproj.filters
+diff --git a/build.vc14/lib_tests/tcmp_abs/tcmp_abs.vcxproj.filters build.vc14/lib_tests/tcmp_abs/tcmp_abs.vcxproj.filters
 new file mode 100644
 index 0000000..66b02a4
 --- /dev/null
-+++ b/build.vc14/lib_tests/tcmp_abs/tcmp_abs.vcxproj.filters
++++ build.vc14/lib_tests/tcmp_abs/tcmp_abs.vcxproj.filters
 @@ -0,0 +1,6 @@
 +﻿<?xml version="1.0" encoding="utf-8"?>
 +<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -15590,11 +15590,11 @@ index 0000000..66b02a4
 +  </ItemGroup>
 +</Project>
 \ No newline at end of file
-diff --git a/build.vc14/lib_tests/tconj/tconj.vcxproj b/build.vc14/lib_tests/tconj/tconj.vcxproj
+diff --git a/build.vc14/lib_tests/tconj/tconj.vcxproj build.vc14/lib_tests/tconj/tconj.vcxproj
 new file mode 100644
 index 0000000..26c767d
 --- /dev/null
-+++ b/build.vc14/lib_tests/tconj/tconj.vcxproj
++++ build.vc14/lib_tests/tconj/tconj.vcxproj
 @@ -0,0 +1,165 @@
 +﻿<?xml version="1.0" encoding="utf-8"?>
 +<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -15762,11 +15762,11 @@ index 0000000..26c767d
 +  </ImportGroup>
 +</Project>
 \ No newline at end of file
-diff --git a/build.vc14/lib_tests/tconj/tconj.vcxproj.filters b/build.vc14/lib_tests/tconj/tconj.vcxproj.filters
+diff --git a/build.vc14/lib_tests/tconj/tconj.vcxproj.filters build.vc14/lib_tests/tconj/tconj.vcxproj.filters
 new file mode 100644
 index 0000000..0df81e8
 --- /dev/null
-+++ b/build.vc14/lib_tests/tconj/tconj.vcxproj.filters
++++ build.vc14/lib_tests/tconj/tconj.vcxproj.filters
 @@ -0,0 +1,6 @@
 +﻿<?xml version="1.0" encoding="utf-8"?>
 +<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -15775,11 +15775,11 @@ index 0000000..0df81e8
 +  </ItemGroup>
 +</Project>
 \ No newline at end of file
-diff --git a/build.vc14/lib_tests/tcos/tcos.vcxproj b/build.vc14/lib_tests/tcos/tcos.vcxproj
+diff --git a/build.vc14/lib_tests/tcos/tcos.vcxproj build.vc14/lib_tests/tcos/tcos.vcxproj
 new file mode 100644
 index 0000000..a2d3ba6
 --- /dev/null
-+++ b/build.vc14/lib_tests/tcos/tcos.vcxproj
++++ build.vc14/lib_tests/tcos/tcos.vcxproj
 @@ -0,0 +1,165 @@
 +﻿<?xml version="1.0" encoding="utf-8"?>
 +<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -15947,11 +15947,11 @@ index 0000000..a2d3ba6
 +  </ImportGroup>
 +</Project>
 \ No newline at end of file
-diff --git a/build.vc14/lib_tests/tcos/tcos.vcxproj.filters b/build.vc14/lib_tests/tcos/tcos.vcxproj.filters
+diff --git a/build.vc14/lib_tests/tcos/tcos.vcxproj.filters build.vc14/lib_tests/tcos/tcos.vcxproj.filters
 new file mode 100644
 index 0000000..2272b50
 --- /dev/null
-+++ b/build.vc14/lib_tests/tcos/tcos.vcxproj.filters
++++ build.vc14/lib_tests/tcos/tcos.vcxproj.filters
 @@ -0,0 +1,6 @@
 +﻿<?xml version="1.0" encoding="utf-8"?>
 +<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -15960,11 +15960,11 @@ index 0000000..2272b50
 +  </ItemGroup>
 +</Project>
 \ No newline at end of file
-diff --git a/build.vc14/lib_tests/tcosh/tcosh.vcxproj b/build.vc14/lib_tests/tcosh/tcosh.vcxproj
+diff --git a/build.vc14/lib_tests/tcosh/tcosh.vcxproj build.vc14/lib_tests/tcosh/tcosh.vcxproj
 new file mode 100644
 index 0000000..1366f9f
 --- /dev/null
-+++ b/build.vc14/lib_tests/tcosh/tcosh.vcxproj
++++ build.vc14/lib_tests/tcosh/tcosh.vcxproj
 @@ -0,0 +1,165 @@
 +﻿<?xml version="1.0" encoding="utf-8"?>
 +<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -16132,11 +16132,11 @@ index 0000000..1366f9f
 +  </ImportGroup>
 +</Project>
 \ No newline at end of file
-diff --git a/build.vc14/lib_tests/tcosh/tcosh.vcxproj.filters b/build.vc14/lib_tests/tcosh/tcosh.vcxproj.filters
+diff --git a/build.vc14/lib_tests/tcosh/tcosh.vcxproj.filters build.vc14/lib_tests/tcosh/tcosh.vcxproj.filters
 new file mode 100644
 index 0000000..7afe013
 --- /dev/null
-+++ b/build.vc14/lib_tests/tcosh/tcosh.vcxproj.filters
++++ build.vc14/lib_tests/tcosh/tcosh.vcxproj.filters
 @@ -0,0 +1,6 @@
 +﻿<?xml version="1.0" encoding="utf-8"?>
 +<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -16145,11 +16145,11 @@ index 0000000..7afe013
 +  </ItemGroup>
 +</Project>
 \ No newline at end of file
-diff --git a/build.vc14/lib_tests/tdiv/tdiv.vcxproj b/build.vc14/lib_tests/tdiv/tdiv.vcxproj
+diff --git a/build.vc14/lib_tests/tdiv/tdiv.vcxproj build.vc14/lib_tests/tdiv/tdiv.vcxproj
 new file mode 100644
 index 0000000..1b11a12
 --- /dev/null
-+++ b/build.vc14/lib_tests/tdiv/tdiv.vcxproj
++++ build.vc14/lib_tests/tdiv/tdiv.vcxproj
 @@ -0,0 +1,165 @@
 +﻿<?xml version="1.0" encoding="utf-8"?>
 +<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -16317,11 +16317,11 @@ index 0000000..1b11a12
 +  </ImportGroup>
 +</Project>
 \ No newline at end of file
-diff --git a/build.vc14/lib_tests/tdiv/tdiv.vcxproj.filters b/build.vc14/lib_tests/tdiv/tdiv.vcxproj.filters
+diff --git a/build.vc14/lib_tests/tdiv/tdiv.vcxproj.filters build.vc14/lib_tests/tdiv/tdiv.vcxproj.filters
 new file mode 100644
 index 0000000..d8ea37a
 --- /dev/null
-+++ b/build.vc14/lib_tests/tdiv/tdiv.vcxproj.filters
++++ build.vc14/lib_tests/tdiv/tdiv.vcxproj.filters
 @@ -0,0 +1,6 @@
 +﻿<?xml version="1.0" encoding="utf-8"?>
 +<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -16330,11 +16330,11 @@ index 0000000..d8ea37a
 +  </ItemGroup>
 +</Project>
 \ No newline at end of file
-diff --git a/build.vc14/lib_tests/tdiv_2si/tdiv_2si.vcxproj b/build.vc14/lib_tests/tdiv_2si/tdiv_2si.vcxproj
+diff --git a/build.vc14/lib_tests/tdiv_2si/tdiv_2si.vcxproj build.vc14/lib_tests/tdiv_2si/tdiv_2si.vcxproj
 new file mode 100644
 index 0000000..8886812
 --- /dev/null
-+++ b/build.vc14/lib_tests/tdiv_2si/tdiv_2si.vcxproj
++++ build.vc14/lib_tests/tdiv_2si/tdiv_2si.vcxproj
 @@ -0,0 +1,165 @@
 +﻿<?xml version="1.0" encoding="utf-8"?>
 +<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -16502,11 +16502,11 @@ index 0000000..8886812
 +  </ImportGroup>
 +</Project>
 \ No newline at end of file
-diff --git a/build.vc14/lib_tests/tdiv_2si/tdiv_2si.vcxproj.filters b/build.vc14/lib_tests/tdiv_2si/tdiv_2si.vcxproj.filters
+diff --git a/build.vc14/lib_tests/tdiv_2si/tdiv_2si.vcxproj.filters build.vc14/lib_tests/tdiv_2si/tdiv_2si.vcxproj.filters
 new file mode 100644
 index 0000000..5c3562c
 --- /dev/null
-+++ b/build.vc14/lib_tests/tdiv_2si/tdiv_2si.vcxproj.filters
++++ build.vc14/lib_tests/tdiv_2si/tdiv_2si.vcxproj.filters
 @@ -0,0 +1,6 @@
 +﻿<?xml version="1.0" encoding="utf-8"?>
 +<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -16515,11 +16515,11 @@ index 0000000..5c3562c
 +  </ItemGroup>
 +</Project>
 \ No newline at end of file
-diff --git a/build.vc14/lib_tests/tdiv_2ui/tdiv_2ui.vcxproj b/build.vc14/lib_tests/tdiv_2ui/tdiv_2ui.vcxproj
+diff --git a/build.vc14/lib_tests/tdiv_2ui/tdiv_2ui.vcxproj build.vc14/lib_tests/tdiv_2ui/tdiv_2ui.vcxproj
 new file mode 100644
 index 0000000..df6aaea
 --- /dev/null
-+++ b/build.vc14/lib_tests/tdiv_2ui/tdiv_2ui.vcxproj
++++ build.vc14/lib_tests/tdiv_2ui/tdiv_2ui.vcxproj
 @@ -0,0 +1,165 @@
 +﻿<?xml version="1.0" encoding="utf-8"?>
 +<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -16687,11 +16687,11 @@ index 0000000..df6aaea
 +  </ImportGroup>
 +</Project>
 \ No newline at end of file
-diff --git a/build.vc14/lib_tests/tdiv_2ui/tdiv_2ui.vcxproj.filters b/build.vc14/lib_tests/tdiv_2ui/tdiv_2ui.vcxproj.filters
+diff --git a/build.vc14/lib_tests/tdiv_2ui/tdiv_2ui.vcxproj.filters build.vc14/lib_tests/tdiv_2ui/tdiv_2ui.vcxproj.filters
 new file mode 100644
 index 0000000..9e7f6b5
 --- /dev/null
-+++ b/build.vc14/lib_tests/tdiv_2ui/tdiv_2ui.vcxproj.filters
++++ build.vc14/lib_tests/tdiv_2ui/tdiv_2ui.vcxproj.filters
 @@ -0,0 +1,6 @@
 +﻿<?xml version="1.0" encoding="utf-8"?>
 +<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -16700,11 +16700,11 @@ index 0000000..9e7f6b5
 +  </ItemGroup>
 +</Project>
 \ No newline at end of file
-diff --git a/build.vc14/lib_tests/tdiv_fr/tdiv_fr.vcxproj b/build.vc14/lib_tests/tdiv_fr/tdiv_fr.vcxproj
+diff --git a/build.vc14/lib_tests/tdiv_fr/tdiv_fr.vcxproj build.vc14/lib_tests/tdiv_fr/tdiv_fr.vcxproj
 new file mode 100644
 index 0000000..9d3882e
 --- /dev/null
-+++ b/build.vc14/lib_tests/tdiv_fr/tdiv_fr.vcxproj
++++ build.vc14/lib_tests/tdiv_fr/tdiv_fr.vcxproj
 @@ -0,0 +1,165 @@
 +﻿<?xml version="1.0" encoding="utf-8"?>
 +<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -16872,11 +16872,11 @@ index 0000000..9d3882e
 +  </ImportGroup>
 +</Project>
 \ No newline at end of file
-diff --git a/build.vc14/lib_tests/tdiv_fr/tdiv_fr.vcxproj.filters b/build.vc14/lib_tests/tdiv_fr/tdiv_fr.vcxproj.filters
+diff --git a/build.vc14/lib_tests/tdiv_fr/tdiv_fr.vcxproj.filters build.vc14/lib_tests/tdiv_fr/tdiv_fr.vcxproj.filters
 new file mode 100644
 index 0000000..8ba97a4
 --- /dev/null
-+++ b/build.vc14/lib_tests/tdiv_fr/tdiv_fr.vcxproj.filters
++++ build.vc14/lib_tests/tdiv_fr/tdiv_fr.vcxproj.filters
 @@ -0,0 +1,6 @@
 +﻿<?xml version="1.0" encoding="utf-8"?>
 +<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -16885,11 +16885,11 @@ index 0000000..8ba97a4
 +  </ItemGroup>
 +</Project>
 \ No newline at end of file
-diff --git a/build.vc14/lib_tests/tdiv_ui/tdiv_ui.vcxproj b/build.vc14/lib_tests/tdiv_ui/tdiv_ui.vcxproj
+diff --git a/build.vc14/lib_tests/tdiv_ui/tdiv_ui.vcxproj build.vc14/lib_tests/tdiv_ui/tdiv_ui.vcxproj
 new file mode 100644
 index 0000000..94fe816
 --- /dev/null
-+++ b/build.vc14/lib_tests/tdiv_ui/tdiv_ui.vcxproj
++++ build.vc14/lib_tests/tdiv_ui/tdiv_ui.vcxproj
 @@ -0,0 +1,165 @@
 +﻿<?xml version="1.0" encoding="utf-8"?>
 +<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -17057,11 +17057,11 @@ index 0000000..94fe816
 +  </ImportGroup>
 +</Project>
 \ No newline at end of file
-diff --git a/build.vc14/lib_tests/tdiv_ui/tdiv_ui.vcxproj.filters b/build.vc14/lib_tests/tdiv_ui/tdiv_ui.vcxproj.filters
+diff --git a/build.vc14/lib_tests/tdiv_ui/tdiv_ui.vcxproj.filters build.vc14/lib_tests/tdiv_ui/tdiv_ui.vcxproj.filters
 new file mode 100644
 index 0000000..b6a6088
 --- /dev/null
-+++ b/build.vc14/lib_tests/tdiv_ui/tdiv_ui.vcxproj.filters
++++ build.vc14/lib_tests/tdiv_ui/tdiv_ui.vcxproj.filters
 @@ -0,0 +1,6 @@
 +﻿<?xml version="1.0" encoding="utf-8"?>
 +<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -17070,11 +17070,11 @@ index 0000000..b6a6088
 +  </ItemGroup>
 +</Project>
 \ No newline at end of file
-diff --git a/build.vc14/lib_tests/texp/texp.vcxproj b/build.vc14/lib_tests/texp/texp.vcxproj
+diff --git a/build.vc14/lib_tests/texp/texp.vcxproj build.vc14/lib_tests/texp/texp.vcxproj
 new file mode 100644
 index 0000000..3eba0ff
 --- /dev/null
-+++ b/build.vc14/lib_tests/texp/texp.vcxproj
++++ build.vc14/lib_tests/texp/texp.vcxproj
 @@ -0,0 +1,165 @@
 +﻿<?xml version="1.0" encoding="utf-8"?>
 +<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -17242,11 +17242,11 @@ index 0000000..3eba0ff
 +  </ImportGroup>
 +</Project>
 \ No newline at end of file
-diff --git a/build.vc14/lib_tests/texp/texp.vcxproj.filters b/build.vc14/lib_tests/texp/texp.vcxproj.filters
+diff --git a/build.vc14/lib_tests/texp/texp.vcxproj.filters build.vc14/lib_tests/texp/texp.vcxproj.filters
 new file mode 100644
 index 0000000..b6a8285
 --- /dev/null
-+++ b/build.vc14/lib_tests/texp/texp.vcxproj.filters
++++ build.vc14/lib_tests/texp/texp.vcxproj.filters
 @@ -0,0 +1,6 @@
 +﻿<?xml version="1.0" encoding="utf-8"?>
 +<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -17255,11 +17255,11 @@ index 0000000..b6a8285
 +  </ItemGroup>
 +</Project>
 \ No newline at end of file
-diff --git a/build.vc14/lib_tests/tfma/tfma.vcxproj b/build.vc14/lib_tests/tfma/tfma.vcxproj
+diff --git a/build.vc14/lib_tests/tfma/tfma.vcxproj build.vc14/lib_tests/tfma/tfma.vcxproj
 new file mode 100644
 index 0000000..735ca8e
 --- /dev/null
-+++ b/build.vc14/lib_tests/tfma/tfma.vcxproj
++++ build.vc14/lib_tests/tfma/tfma.vcxproj
 @@ -0,0 +1,165 @@
 +﻿<?xml version="1.0" encoding="utf-8"?>
 +<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -17427,11 +17427,11 @@ index 0000000..735ca8e
 +  </ImportGroup>
 +</Project>
 \ No newline at end of file
-diff --git a/build.vc14/lib_tests/tfma/tfma.vcxproj.filters b/build.vc14/lib_tests/tfma/tfma.vcxproj.filters
+diff --git a/build.vc14/lib_tests/tfma/tfma.vcxproj.filters build.vc14/lib_tests/tfma/tfma.vcxproj.filters
 new file mode 100644
 index 0000000..e0b68c9
 --- /dev/null
-+++ b/build.vc14/lib_tests/tfma/tfma.vcxproj.filters
++++ build.vc14/lib_tests/tfma/tfma.vcxproj.filters
 @@ -0,0 +1,6 @@
 +﻿<?xml version="1.0" encoding="utf-8"?>
 +<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -17440,11 +17440,11 @@ index 0000000..e0b68c9
 +  </ItemGroup>
 +</Project>
 \ No newline at end of file
-diff --git a/build.vc14/lib_tests/tfr_div/tfr_div.vcxproj b/build.vc14/lib_tests/tfr_div/tfr_div.vcxproj
+diff --git a/build.vc14/lib_tests/tfr_div/tfr_div.vcxproj build.vc14/lib_tests/tfr_div/tfr_div.vcxproj
 new file mode 100644
 index 0000000..49492b0
 --- /dev/null
-+++ b/build.vc14/lib_tests/tfr_div/tfr_div.vcxproj
++++ build.vc14/lib_tests/tfr_div/tfr_div.vcxproj
 @@ -0,0 +1,165 @@
 +﻿<?xml version="1.0" encoding="utf-8"?>
 +<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -17612,11 +17612,11 @@ index 0000000..49492b0
 +  </ImportGroup>
 +</Project>
 \ No newline at end of file
-diff --git a/build.vc14/lib_tests/tfr_div/tfr_div.vcxproj.filters b/build.vc14/lib_tests/tfr_div/tfr_div.vcxproj.filters
+diff --git a/build.vc14/lib_tests/tfr_div/tfr_div.vcxproj.filters build.vc14/lib_tests/tfr_div/tfr_div.vcxproj.filters
 new file mode 100644
 index 0000000..cec8a2d
 --- /dev/null
-+++ b/build.vc14/lib_tests/tfr_div/tfr_div.vcxproj.filters
++++ build.vc14/lib_tests/tfr_div/tfr_div.vcxproj.filters
 @@ -0,0 +1,6 @@
 +﻿<?xml version="1.0" encoding="utf-8"?>
 +<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -17625,11 +17625,11 @@ index 0000000..cec8a2d
 +  </ItemGroup>
 +</Project>
 \ No newline at end of file
-diff --git a/build.vc14/lib_tests/tfr_sub/tfr_sub.vcxproj b/build.vc14/lib_tests/tfr_sub/tfr_sub.vcxproj
+diff --git a/build.vc14/lib_tests/tfr_sub/tfr_sub.vcxproj build.vc14/lib_tests/tfr_sub/tfr_sub.vcxproj
 new file mode 100644
 index 0000000..8b9183d
 --- /dev/null
-+++ b/build.vc14/lib_tests/tfr_sub/tfr_sub.vcxproj
++++ build.vc14/lib_tests/tfr_sub/tfr_sub.vcxproj
 @@ -0,0 +1,165 @@
 +﻿<?xml version="1.0" encoding="utf-8"?>
 +<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -17797,11 +17797,11 @@ index 0000000..8b9183d
 +  </ImportGroup>
 +</Project>
 \ No newline at end of file
-diff --git a/build.vc14/lib_tests/tfr_sub/tfr_sub.vcxproj.filters b/build.vc14/lib_tests/tfr_sub/tfr_sub.vcxproj.filters
+diff --git a/build.vc14/lib_tests/tfr_sub/tfr_sub.vcxproj.filters build.vc14/lib_tests/tfr_sub/tfr_sub.vcxproj.filters
 new file mode 100644
 index 0000000..7e16c2a
 --- /dev/null
-+++ b/build.vc14/lib_tests/tfr_sub/tfr_sub.vcxproj.filters
++++ build.vc14/lib_tests/tfr_sub/tfr_sub.vcxproj.filters
 @@ -0,0 +1,6 @@
 +﻿<?xml version="1.0" encoding="utf-8"?>
 +<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -17810,11 +17810,11 @@ index 0000000..7e16c2a
 +  </ItemGroup>
 +</Project>
 \ No newline at end of file
-diff --git a/build.vc14/lib_tests/tget_version/tget_version.vcxproj b/build.vc14/lib_tests/tget_version/tget_version.vcxproj
+diff --git a/build.vc14/lib_tests/tget_version/tget_version.vcxproj build.vc14/lib_tests/tget_version/tget_version.vcxproj
 new file mode 100644
 index 0000000..49b294a
 --- /dev/null
-+++ b/build.vc14/lib_tests/tget_version/tget_version.vcxproj
++++ build.vc14/lib_tests/tget_version/tget_version.vcxproj
 @@ -0,0 +1,165 @@
 +﻿<?xml version="1.0" encoding="utf-8"?>
 +<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -17982,11 +17982,11 @@ index 0000000..49b294a
 +  </ImportGroup>
 +</Project>
 \ No newline at end of file
-diff --git a/build.vc14/lib_tests/tget_version/tget_version.vcxproj.filters b/build.vc14/lib_tests/tget_version/tget_version.vcxproj.filters
+diff --git a/build.vc14/lib_tests/tget_version/tget_version.vcxproj.filters build.vc14/lib_tests/tget_version/tget_version.vcxproj.filters
 new file mode 100644
 index 0000000..1107420
 --- /dev/null
-+++ b/build.vc14/lib_tests/tget_version/tget_version.vcxproj.filters
++++ build.vc14/lib_tests/tget_version/tget_version.vcxproj.filters
 @@ -0,0 +1,6 @@
 +﻿<?xml version="1.0" encoding="utf-8"?>
 +<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -17995,11 +17995,11 @@ index 0000000..1107420
 +  </ItemGroup>
 +</Project>
 \ No newline at end of file
-diff --git a/build.vc14/lib_tests/timag/timag.vcxproj b/build.vc14/lib_tests/timag/timag.vcxproj
+diff --git a/build.vc14/lib_tests/timag/timag.vcxproj build.vc14/lib_tests/timag/timag.vcxproj
 new file mode 100644
 index 0000000..375cce6
 --- /dev/null
-+++ b/build.vc14/lib_tests/timag/timag.vcxproj
++++ build.vc14/lib_tests/timag/timag.vcxproj
 @@ -0,0 +1,165 @@
 +﻿<?xml version="1.0" encoding="utf-8"?>
 +<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -18167,11 +18167,11 @@ index 0000000..375cce6
 +  </ImportGroup>
 +</Project>
 \ No newline at end of file
-diff --git a/build.vc14/lib_tests/timag/timag.vcxproj.filters b/build.vc14/lib_tests/timag/timag.vcxproj.filters
+diff --git a/build.vc14/lib_tests/timag/timag.vcxproj.filters build.vc14/lib_tests/timag/timag.vcxproj.filters
 new file mode 100644
 index 0000000..0d57f89
 --- /dev/null
-+++ b/build.vc14/lib_tests/timag/timag.vcxproj.filters
++++ build.vc14/lib_tests/timag/timag.vcxproj.filters
 @@ -0,0 +1,6 @@
 +﻿<?xml version="1.0" encoding="utf-8"?>
 +<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -18180,11 +18180,11 @@ index 0000000..0d57f89
 +  </ItemGroup>
 +</Project>
 \ No newline at end of file
-diff --git a/build.vc14/lib_tests/tio_str/tio_str.vcxproj b/build.vc14/lib_tests/tio_str/tio_str.vcxproj
+diff --git a/build.vc14/lib_tests/tio_str/tio_str.vcxproj build.vc14/lib_tests/tio_str/tio_str.vcxproj
 new file mode 100644
 index 0000000..9560102
 --- /dev/null
-+++ b/build.vc14/lib_tests/tio_str/tio_str.vcxproj
++++ build.vc14/lib_tests/tio_str/tio_str.vcxproj
 @@ -0,0 +1,165 @@
 +﻿<?xml version="1.0" encoding="utf-8"?>
 +<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -18352,11 +18352,11 @@ index 0000000..9560102
 +  </ImportGroup>
 +</Project>
 \ No newline at end of file
-diff --git a/build.vc14/lib_tests/tio_str/tio_str.vcxproj.filters b/build.vc14/lib_tests/tio_str/tio_str.vcxproj.filters
+diff --git a/build.vc14/lib_tests/tio_str/tio_str.vcxproj.filters build.vc14/lib_tests/tio_str/tio_str.vcxproj.filters
 new file mode 100644
 index 0000000..723a526
 --- /dev/null
-+++ b/build.vc14/lib_tests/tio_str/tio_str.vcxproj.filters
++++ build.vc14/lib_tests/tio_str/tio_str.vcxproj.filters
 @@ -0,0 +1,6 @@
 +﻿<?xml version="1.0" encoding="utf-8"?>
 +<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -18365,11 +18365,11 @@ index 0000000..723a526
 +  </ItemGroup>
 +</Project>
 \ No newline at end of file
-diff --git a/build.vc14/lib_tests/tlog/tlog.vcxproj b/build.vc14/lib_tests/tlog/tlog.vcxproj
+diff --git a/build.vc14/lib_tests/tlog/tlog.vcxproj build.vc14/lib_tests/tlog/tlog.vcxproj
 new file mode 100644
 index 0000000..57c5778
 --- /dev/null
-+++ b/build.vc14/lib_tests/tlog/tlog.vcxproj
++++ build.vc14/lib_tests/tlog/tlog.vcxproj
 @@ -0,0 +1,165 @@
 +﻿<?xml version="1.0" encoding="utf-8"?>
 +<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -18537,11 +18537,11 @@ index 0000000..57c5778
 +  </ImportGroup>
 +</Project>
 \ No newline at end of file
-diff --git a/build.vc14/lib_tests/tlog/tlog.vcxproj.filters b/build.vc14/lib_tests/tlog/tlog.vcxproj.filters
+diff --git a/build.vc14/lib_tests/tlog/tlog.vcxproj.filters build.vc14/lib_tests/tlog/tlog.vcxproj.filters
 new file mode 100644
 index 0000000..fb8bc9e
 --- /dev/null
-+++ b/build.vc14/lib_tests/tlog/tlog.vcxproj.filters
++++ build.vc14/lib_tests/tlog/tlog.vcxproj.filters
 @@ -0,0 +1,6 @@
 +﻿<?xml version="1.0" encoding="utf-8"?>
 +<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -18550,11 +18550,11 @@ index 0000000..fb8bc9e
 +  </ItemGroup>
 +</Project>
 \ No newline at end of file
-diff --git a/build.vc14/lib_tests/tlog10/tlog10.vcxproj b/build.vc14/lib_tests/tlog10/tlog10.vcxproj
+diff --git a/build.vc14/lib_tests/tlog10/tlog10.vcxproj build.vc14/lib_tests/tlog10/tlog10.vcxproj
 new file mode 100644
 index 0000000..0a6503d
 --- /dev/null
-+++ b/build.vc14/lib_tests/tlog10/tlog10.vcxproj
++++ build.vc14/lib_tests/tlog10/tlog10.vcxproj
 @@ -0,0 +1,165 @@
 +﻿<?xml version="1.0" encoding="utf-8"?>
 +<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -18722,11 +18722,11 @@ index 0000000..0a6503d
 +  </ImportGroup>
 +</Project>
 \ No newline at end of file
-diff --git a/build.vc14/lib_tests/tlog10/tlog10.vcxproj.filters b/build.vc14/lib_tests/tlog10/tlog10.vcxproj.filters
+diff --git a/build.vc14/lib_tests/tlog10/tlog10.vcxproj.filters build.vc14/lib_tests/tlog10/tlog10.vcxproj.filters
 new file mode 100644
 index 0000000..3808244
 --- /dev/null
-+++ b/build.vc14/lib_tests/tlog10/tlog10.vcxproj.filters
++++ build.vc14/lib_tests/tlog10/tlog10.vcxproj.filters
 @@ -0,0 +1,6 @@
 +﻿<?xml version="1.0" encoding="utf-8"?>
 +<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -18735,11 +18735,11 @@ index 0000000..3808244
 +  </ItemGroup>
 +</Project>
 \ No newline at end of file
-diff --git a/build.vc14/lib_tests/tmul/tmul.vcxproj b/build.vc14/lib_tests/tmul/tmul.vcxproj
+diff --git a/build.vc14/lib_tests/tmul/tmul.vcxproj build.vc14/lib_tests/tmul/tmul.vcxproj
 new file mode 100644
 index 0000000..24d76e3
 --- /dev/null
-+++ b/build.vc14/lib_tests/tmul/tmul.vcxproj
++++ build.vc14/lib_tests/tmul/tmul.vcxproj
 @@ -0,0 +1,165 @@
 +﻿<?xml version="1.0" encoding="utf-8"?>
 +<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -18907,11 +18907,11 @@ index 0000000..24d76e3
 +  </ImportGroup>
 +</Project>
 \ No newline at end of file
-diff --git a/build.vc14/lib_tests/tmul/tmul.vcxproj.filters b/build.vc14/lib_tests/tmul/tmul.vcxproj.filters
+diff --git a/build.vc14/lib_tests/tmul/tmul.vcxproj.filters build.vc14/lib_tests/tmul/tmul.vcxproj.filters
 new file mode 100644
 index 0000000..fdce002
 --- /dev/null
-+++ b/build.vc14/lib_tests/tmul/tmul.vcxproj.filters
++++ build.vc14/lib_tests/tmul/tmul.vcxproj.filters
 @@ -0,0 +1,6 @@
 +﻿<?xml version="1.0" encoding="utf-8"?>
 +<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -18920,11 +18920,11 @@ index 0000000..fdce002
 +  </ItemGroup>
 +</Project>
 \ No newline at end of file
-diff --git a/build.vc14/lib_tests/tmul_2si/tmul_2si.vcxproj b/build.vc14/lib_tests/tmul_2si/tmul_2si.vcxproj
+diff --git a/build.vc14/lib_tests/tmul_2si/tmul_2si.vcxproj build.vc14/lib_tests/tmul_2si/tmul_2si.vcxproj
 new file mode 100644
 index 0000000..29d1f05
 --- /dev/null
-+++ b/build.vc14/lib_tests/tmul_2si/tmul_2si.vcxproj
++++ build.vc14/lib_tests/tmul_2si/tmul_2si.vcxproj
 @@ -0,0 +1,165 @@
 +﻿<?xml version="1.0" encoding="utf-8"?>
 +<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -19092,11 +19092,11 @@ index 0000000..29d1f05
 +  </ImportGroup>
 +</Project>
 \ No newline at end of file
-diff --git a/build.vc14/lib_tests/tmul_2si/tmul_2si.vcxproj.filters b/build.vc14/lib_tests/tmul_2si/tmul_2si.vcxproj.filters
+diff --git a/build.vc14/lib_tests/tmul_2si/tmul_2si.vcxproj.filters build.vc14/lib_tests/tmul_2si/tmul_2si.vcxproj.filters
 new file mode 100644
 index 0000000..22c070d
 --- /dev/null
-+++ b/build.vc14/lib_tests/tmul_2si/tmul_2si.vcxproj.filters
++++ build.vc14/lib_tests/tmul_2si/tmul_2si.vcxproj.filters
 @@ -0,0 +1,6 @@
 +﻿<?xml version="1.0" encoding="utf-8"?>
 +<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -19105,11 +19105,11 @@ index 0000000..22c070d
 +  </ItemGroup>
 +</Project>
 \ No newline at end of file
-diff --git a/build.vc14/lib_tests/tmul_2ui/tmul_2ui.vcxproj b/build.vc14/lib_tests/tmul_2ui/tmul_2ui.vcxproj
+diff --git a/build.vc14/lib_tests/tmul_2ui/tmul_2ui.vcxproj build.vc14/lib_tests/tmul_2ui/tmul_2ui.vcxproj
 new file mode 100644
 index 0000000..8a01b13
 --- /dev/null
-+++ b/build.vc14/lib_tests/tmul_2ui/tmul_2ui.vcxproj
++++ build.vc14/lib_tests/tmul_2ui/tmul_2ui.vcxproj
 @@ -0,0 +1,165 @@
 +﻿<?xml version="1.0" encoding="utf-8"?>
 +<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -19277,11 +19277,11 @@ index 0000000..8a01b13
 +  </ImportGroup>
 +</Project>
 \ No newline at end of file
-diff --git a/build.vc14/lib_tests/tmul_2ui/tmul_2ui.vcxproj.filters b/build.vc14/lib_tests/tmul_2ui/tmul_2ui.vcxproj.filters
+diff --git a/build.vc14/lib_tests/tmul_2ui/tmul_2ui.vcxproj.filters build.vc14/lib_tests/tmul_2ui/tmul_2ui.vcxproj.filters
 new file mode 100644
 index 0000000..f507112
 --- /dev/null
-+++ b/build.vc14/lib_tests/tmul_2ui/tmul_2ui.vcxproj.filters
++++ build.vc14/lib_tests/tmul_2ui/tmul_2ui.vcxproj.filters
 @@ -0,0 +1,6 @@
 +﻿<?xml version="1.0" encoding="utf-8"?>
 +<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -19290,11 +19290,11 @@ index 0000000..f507112
 +  </ItemGroup>
 +</Project>
 \ No newline at end of file
-diff --git a/build.vc14/lib_tests/tmul_fr/tmul_fr.vcxproj b/build.vc14/lib_tests/tmul_fr/tmul_fr.vcxproj
+diff --git a/build.vc14/lib_tests/tmul_fr/tmul_fr.vcxproj build.vc14/lib_tests/tmul_fr/tmul_fr.vcxproj
 new file mode 100644
 index 0000000..e1f7819
 --- /dev/null
-+++ b/build.vc14/lib_tests/tmul_fr/tmul_fr.vcxproj
++++ build.vc14/lib_tests/tmul_fr/tmul_fr.vcxproj
 @@ -0,0 +1,165 @@
 +﻿<?xml version="1.0" encoding="utf-8"?>
 +<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -19462,11 +19462,11 @@ index 0000000..e1f7819
 +  </ImportGroup>
 +</Project>
 \ No newline at end of file
-diff --git a/build.vc14/lib_tests/tmul_fr/tmul_fr.vcxproj.filters b/build.vc14/lib_tests/tmul_fr/tmul_fr.vcxproj.filters
+diff --git a/build.vc14/lib_tests/tmul_fr/tmul_fr.vcxproj.filters build.vc14/lib_tests/tmul_fr/tmul_fr.vcxproj.filters
 new file mode 100644
 index 0000000..194bb1c
 --- /dev/null
-+++ b/build.vc14/lib_tests/tmul_fr/tmul_fr.vcxproj.filters
++++ build.vc14/lib_tests/tmul_fr/tmul_fr.vcxproj.filters
 @@ -0,0 +1,6 @@
 +﻿<?xml version="1.0" encoding="utf-8"?>
 +<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -19475,11 +19475,11 @@ index 0000000..194bb1c
 +  </ItemGroup>
 +</Project>
 \ No newline at end of file
-diff --git a/build.vc14/lib_tests/tmul_i/tmul_i.vcxproj b/build.vc14/lib_tests/tmul_i/tmul_i.vcxproj
+diff --git a/build.vc14/lib_tests/tmul_i/tmul_i.vcxproj build.vc14/lib_tests/tmul_i/tmul_i.vcxproj
 new file mode 100644
 index 0000000..f8f045e
 --- /dev/null
-+++ b/build.vc14/lib_tests/tmul_i/tmul_i.vcxproj
++++ build.vc14/lib_tests/tmul_i/tmul_i.vcxproj
 @@ -0,0 +1,165 @@
 +﻿<?xml version="1.0" encoding="utf-8"?>
 +<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -19647,11 +19647,11 @@ index 0000000..f8f045e
 +  </ImportGroup>
 +</Project>
 \ No newline at end of file
-diff --git a/build.vc14/lib_tests/tmul_i/tmul_i.vcxproj.filters b/build.vc14/lib_tests/tmul_i/tmul_i.vcxproj.filters
+diff --git a/build.vc14/lib_tests/tmul_i/tmul_i.vcxproj.filters build.vc14/lib_tests/tmul_i/tmul_i.vcxproj.filters
 new file mode 100644
 index 0000000..f5378e7
 --- /dev/null
-+++ b/build.vc14/lib_tests/tmul_i/tmul_i.vcxproj.filters
++++ build.vc14/lib_tests/tmul_i/tmul_i.vcxproj.filters
 @@ -0,0 +1,6 @@
 +﻿<?xml version="1.0" encoding="utf-8"?>
 +<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -19660,11 +19660,11 @@ index 0000000..f5378e7
 +  </ItemGroup>
 +</Project>
 \ No newline at end of file
-diff --git a/build.vc14/lib_tests/tmul_si/tmul_si.vcxproj b/build.vc14/lib_tests/tmul_si/tmul_si.vcxproj
+diff --git a/build.vc14/lib_tests/tmul_si/tmul_si.vcxproj build.vc14/lib_tests/tmul_si/tmul_si.vcxproj
 new file mode 100644
 index 0000000..0eba850
 --- /dev/null
-+++ b/build.vc14/lib_tests/tmul_si/tmul_si.vcxproj
++++ build.vc14/lib_tests/tmul_si/tmul_si.vcxproj
 @@ -0,0 +1,165 @@
 +﻿<?xml version="1.0" encoding="utf-8"?>
 +<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -19832,11 +19832,11 @@ index 0000000..0eba850
 +  </ImportGroup>
 +</Project>
 \ No newline at end of file
-diff --git a/build.vc14/lib_tests/tmul_si/tmul_si.vcxproj.filters b/build.vc14/lib_tests/tmul_si/tmul_si.vcxproj.filters
+diff --git a/build.vc14/lib_tests/tmul_si/tmul_si.vcxproj.filters build.vc14/lib_tests/tmul_si/tmul_si.vcxproj.filters
 new file mode 100644
 index 0000000..6a9f9b4
 --- /dev/null
-+++ b/build.vc14/lib_tests/tmul_si/tmul_si.vcxproj.filters
++++ build.vc14/lib_tests/tmul_si/tmul_si.vcxproj.filters
 @@ -0,0 +1,6 @@
 +﻿<?xml version="1.0" encoding="utf-8"?>
 +<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -19845,11 +19845,11 @@ index 0000000..6a9f9b4
 +  </ItemGroup>
 +</Project>
 \ No newline at end of file
-diff --git a/build.vc14/lib_tests/tmul_ui/tmul_ui.vcxproj b/build.vc14/lib_tests/tmul_ui/tmul_ui.vcxproj
+diff --git a/build.vc14/lib_tests/tmul_ui/tmul_ui.vcxproj build.vc14/lib_tests/tmul_ui/tmul_ui.vcxproj
 new file mode 100644
 index 0000000..cc38e90
 --- /dev/null
-+++ b/build.vc14/lib_tests/tmul_ui/tmul_ui.vcxproj
++++ build.vc14/lib_tests/tmul_ui/tmul_ui.vcxproj
 @@ -0,0 +1,165 @@
 +﻿<?xml version="1.0" encoding="utf-8"?>
 +<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -20017,11 +20017,11 @@ index 0000000..cc38e90
 +  </ImportGroup>
 +</Project>
 \ No newline at end of file
-diff --git a/build.vc14/lib_tests/tmul_ui/tmul_ui.vcxproj.filters b/build.vc14/lib_tests/tmul_ui/tmul_ui.vcxproj.filters
+diff --git a/build.vc14/lib_tests/tmul_ui/tmul_ui.vcxproj.filters build.vc14/lib_tests/tmul_ui/tmul_ui.vcxproj.filters
 new file mode 100644
 index 0000000..608cbf4
 --- /dev/null
-+++ b/build.vc14/lib_tests/tmul_ui/tmul_ui.vcxproj.filters
++++ build.vc14/lib_tests/tmul_ui/tmul_ui.vcxproj.filters
 @@ -0,0 +1,6 @@
 +﻿<?xml version="1.0" encoding="utf-8"?>
 +<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -20030,11 +20030,11 @@ index 0000000..608cbf4
 +  </ItemGroup>
 +</Project>
 \ No newline at end of file
-diff --git a/build.vc14/lib_tests/tneg/tneg.vcxproj b/build.vc14/lib_tests/tneg/tneg.vcxproj
+diff --git a/build.vc14/lib_tests/tneg/tneg.vcxproj build.vc14/lib_tests/tneg/tneg.vcxproj
 new file mode 100644
 index 0000000..f023943
 --- /dev/null
-+++ b/build.vc14/lib_tests/tneg/tneg.vcxproj
++++ build.vc14/lib_tests/tneg/tneg.vcxproj
 @@ -0,0 +1,165 @@
 +﻿<?xml version="1.0" encoding="utf-8"?>
 +<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -20202,11 +20202,11 @@ index 0000000..f023943
 +  </ImportGroup>
 +</Project>
 \ No newline at end of file
-diff --git a/build.vc14/lib_tests/tneg/tneg.vcxproj.filters b/build.vc14/lib_tests/tneg/tneg.vcxproj.filters
+diff --git a/build.vc14/lib_tests/tneg/tneg.vcxproj.filters build.vc14/lib_tests/tneg/tneg.vcxproj.filters
 new file mode 100644
 index 0000000..a6149e2
 --- /dev/null
-+++ b/build.vc14/lib_tests/tneg/tneg.vcxproj.filters
++++ build.vc14/lib_tests/tneg/tneg.vcxproj.filters
 @@ -0,0 +1,6 @@
 +﻿<?xml version="1.0" encoding="utf-8"?>
 +<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -20215,11 +20215,11 @@ index 0000000..a6149e2
 +  </ItemGroup>
 +</Project>
 \ No newline at end of file
-diff --git a/build.vc14/lib_tests/tnorm/tnorm.vcxproj b/build.vc14/lib_tests/tnorm/tnorm.vcxproj
+diff --git a/build.vc14/lib_tests/tnorm/tnorm.vcxproj build.vc14/lib_tests/tnorm/tnorm.vcxproj
 new file mode 100644
 index 0000000..4b08954
 --- /dev/null
-+++ b/build.vc14/lib_tests/tnorm/tnorm.vcxproj
++++ build.vc14/lib_tests/tnorm/tnorm.vcxproj
 @@ -0,0 +1,165 @@
 +﻿<?xml version="1.0" encoding="utf-8"?>
 +<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -20387,11 +20387,11 @@ index 0000000..4b08954
 +  </ImportGroup>
 +</Project>
 \ No newline at end of file
-diff --git a/build.vc14/lib_tests/tnorm/tnorm.vcxproj.filters b/build.vc14/lib_tests/tnorm/tnorm.vcxproj.filters
+diff --git a/build.vc14/lib_tests/tnorm/tnorm.vcxproj.filters build.vc14/lib_tests/tnorm/tnorm.vcxproj.filters
 new file mode 100644
 index 0000000..b3813ae
 --- /dev/null
-+++ b/build.vc14/lib_tests/tnorm/tnorm.vcxproj.filters
++++ build.vc14/lib_tests/tnorm/tnorm.vcxproj.filters
 @@ -0,0 +1,6 @@
 +﻿<?xml version="1.0" encoding="utf-8"?>
 +<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -20400,11 +20400,11 @@ index 0000000..b3813ae
 +  </ItemGroup>
 +</Project>
 \ No newline at end of file
-diff --git a/build.vc14/lib_tests/tpow/tpow.vcxproj b/build.vc14/lib_tests/tpow/tpow.vcxproj
+diff --git a/build.vc14/lib_tests/tpow/tpow.vcxproj build.vc14/lib_tests/tpow/tpow.vcxproj
 new file mode 100644
 index 0000000..e32244c
 --- /dev/null
-+++ b/build.vc14/lib_tests/tpow/tpow.vcxproj
++++ build.vc14/lib_tests/tpow/tpow.vcxproj
 @@ -0,0 +1,165 @@
 +﻿<?xml version="1.0" encoding="utf-8"?>
 +<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -20572,11 +20572,11 @@ index 0000000..e32244c
 +  </ImportGroup>
 +</Project>
 \ No newline at end of file
-diff --git a/build.vc14/lib_tests/tpow/tpow.vcxproj.filters b/build.vc14/lib_tests/tpow/tpow.vcxproj.filters
+diff --git a/build.vc14/lib_tests/tpow/tpow.vcxproj.filters build.vc14/lib_tests/tpow/tpow.vcxproj.filters
 new file mode 100644
 index 0000000..81294d9
 --- /dev/null
-+++ b/build.vc14/lib_tests/tpow/tpow.vcxproj.filters
++++ build.vc14/lib_tests/tpow/tpow.vcxproj.filters
 @@ -0,0 +1,6 @@
 +﻿<?xml version="1.0" encoding="utf-8"?>
 +<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -20585,11 +20585,11 @@ index 0000000..81294d9
 +  </ItemGroup>
 +</Project>
 \ No newline at end of file
-diff --git a/build.vc14/lib_tests/tpow_d/tpow_d.vcxproj b/build.vc14/lib_tests/tpow_d/tpow_d.vcxproj
+diff --git a/build.vc14/lib_tests/tpow_d/tpow_d.vcxproj build.vc14/lib_tests/tpow_d/tpow_d.vcxproj
 new file mode 100644
 index 0000000..714ba33
 --- /dev/null
-+++ b/build.vc14/lib_tests/tpow_d/tpow_d.vcxproj
++++ build.vc14/lib_tests/tpow_d/tpow_d.vcxproj
 @@ -0,0 +1,165 @@
 +﻿<?xml version="1.0" encoding="utf-8"?>
 +<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -20757,11 +20757,11 @@ index 0000000..714ba33
 +  </ImportGroup>
 +</Project>
 \ No newline at end of file
-diff --git a/build.vc14/lib_tests/tpow_d/tpow_d.vcxproj.filters b/build.vc14/lib_tests/tpow_d/tpow_d.vcxproj.filters
+diff --git a/build.vc14/lib_tests/tpow_d/tpow_d.vcxproj.filters build.vc14/lib_tests/tpow_d/tpow_d.vcxproj.filters
 new file mode 100644
 index 0000000..26b35cd
 --- /dev/null
-+++ b/build.vc14/lib_tests/tpow_d/tpow_d.vcxproj.filters
++++ build.vc14/lib_tests/tpow_d/tpow_d.vcxproj.filters
 @@ -0,0 +1,6 @@
 +﻿<?xml version="1.0" encoding="utf-8"?>
 +<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -20770,11 +20770,11 @@ index 0000000..26b35cd
 +  </ItemGroup>
 +</Project>
 \ No newline at end of file
-diff --git a/build.vc14/lib_tests/tpow_fr/tpow_fr.vcxproj b/build.vc14/lib_tests/tpow_fr/tpow_fr.vcxproj
+diff --git a/build.vc14/lib_tests/tpow_fr/tpow_fr.vcxproj build.vc14/lib_tests/tpow_fr/tpow_fr.vcxproj
 new file mode 100644
 index 0000000..45354d7
 --- /dev/null
-+++ b/build.vc14/lib_tests/tpow_fr/tpow_fr.vcxproj
++++ build.vc14/lib_tests/tpow_fr/tpow_fr.vcxproj
 @@ -0,0 +1,165 @@
 +﻿<?xml version="1.0" encoding="utf-8"?>
 +<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -20942,11 +20942,11 @@ index 0000000..45354d7
 +  </ImportGroup>
 +</Project>
 \ No newline at end of file
-diff --git a/build.vc14/lib_tests/tpow_fr/tpow_fr.vcxproj.filters b/build.vc14/lib_tests/tpow_fr/tpow_fr.vcxproj.filters
+diff --git a/build.vc14/lib_tests/tpow_fr/tpow_fr.vcxproj.filters build.vc14/lib_tests/tpow_fr/tpow_fr.vcxproj.filters
 new file mode 100644
 index 0000000..ee80cb9
 --- /dev/null
-+++ b/build.vc14/lib_tests/tpow_fr/tpow_fr.vcxproj.filters
++++ build.vc14/lib_tests/tpow_fr/tpow_fr.vcxproj.filters
 @@ -0,0 +1,6 @@
 +﻿<?xml version="1.0" encoding="utf-8"?>
 +<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -20955,11 +20955,11 @@ index 0000000..ee80cb9
 +  </ItemGroup>
 +</Project>
 \ No newline at end of file
-diff --git a/build.vc14/lib_tests/tpow_ld/tpow_ld.vcxproj b/build.vc14/lib_tests/tpow_ld/tpow_ld.vcxproj
+diff --git a/build.vc14/lib_tests/tpow_ld/tpow_ld.vcxproj build.vc14/lib_tests/tpow_ld/tpow_ld.vcxproj
 new file mode 100644
 index 0000000..1c68c32
 --- /dev/null
-+++ b/build.vc14/lib_tests/tpow_ld/tpow_ld.vcxproj
++++ build.vc14/lib_tests/tpow_ld/tpow_ld.vcxproj
 @@ -0,0 +1,165 @@
 +﻿<?xml version="1.0" encoding="utf-8"?>
 +<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -21127,11 +21127,11 @@ index 0000000..1c68c32
 +  </ImportGroup>
 +</Project>
 \ No newline at end of file
-diff --git a/build.vc14/lib_tests/tpow_ld/tpow_ld.vcxproj.filters b/build.vc14/lib_tests/tpow_ld/tpow_ld.vcxproj.filters
+diff --git a/build.vc14/lib_tests/tpow_ld/tpow_ld.vcxproj.filters build.vc14/lib_tests/tpow_ld/tpow_ld.vcxproj.filters
 new file mode 100644
 index 0000000..90b45af
 --- /dev/null
-+++ b/build.vc14/lib_tests/tpow_ld/tpow_ld.vcxproj.filters
++++ build.vc14/lib_tests/tpow_ld/tpow_ld.vcxproj.filters
 @@ -0,0 +1,6 @@
 +﻿<?xml version="1.0" encoding="utf-8"?>
 +<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -21140,11 +21140,11 @@ index 0000000..90b45af
 +  </ItemGroup>
 +</Project>
 \ No newline at end of file
-diff --git a/build.vc14/lib_tests/tpow_si/tpow_si.vcxproj b/build.vc14/lib_tests/tpow_si/tpow_si.vcxproj
+diff --git a/build.vc14/lib_tests/tpow_si/tpow_si.vcxproj build.vc14/lib_tests/tpow_si/tpow_si.vcxproj
 new file mode 100644
 index 0000000..cba2402
 --- /dev/null
-+++ b/build.vc14/lib_tests/tpow_si/tpow_si.vcxproj
++++ build.vc14/lib_tests/tpow_si/tpow_si.vcxproj
 @@ -0,0 +1,165 @@
 +﻿<?xml version="1.0" encoding="utf-8"?>
 +<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -21312,11 +21312,11 @@ index 0000000..cba2402
 +  </ImportGroup>
 +</Project>
 \ No newline at end of file
-diff --git a/build.vc14/lib_tests/tpow_si/tpow_si.vcxproj.filters b/build.vc14/lib_tests/tpow_si/tpow_si.vcxproj.filters
+diff --git a/build.vc14/lib_tests/tpow_si/tpow_si.vcxproj.filters build.vc14/lib_tests/tpow_si/tpow_si.vcxproj.filters
 new file mode 100644
 index 0000000..b2283c0
 --- /dev/null
-+++ b/build.vc14/lib_tests/tpow_si/tpow_si.vcxproj.filters
++++ build.vc14/lib_tests/tpow_si/tpow_si.vcxproj.filters
 @@ -0,0 +1,6 @@
 +﻿<?xml version="1.0" encoding="utf-8"?>
 +<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -21325,11 +21325,11 @@ index 0000000..b2283c0
 +  </ItemGroup>
 +</Project>
 \ No newline at end of file
-diff --git a/build.vc14/lib_tests/tpow_ui/tpow_ui.vcxproj b/build.vc14/lib_tests/tpow_ui/tpow_ui.vcxproj
+diff --git a/build.vc14/lib_tests/tpow_ui/tpow_ui.vcxproj build.vc14/lib_tests/tpow_ui/tpow_ui.vcxproj
 new file mode 100644
 index 0000000..9ffd135
 --- /dev/null
-+++ b/build.vc14/lib_tests/tpow_ui/tpow_ui.vcxproj
++++ build.vc14/lib_tests/tpow_ui/tpow_ui.vcxproj
 @@ -0,0 +1,165 @@
 +﻿<?xml version="1.0" encoding="utf-8"?>
 +<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -21497,11 +21497,11 @@ index 0000000..9ffd135
 +  </ImportGroup>
 +</Project>
 \ No newline at end of file
-diff --git a/build.vc14/lib_tests/tpow_ui/tpow_ui.vcxproj.filters b/build.vc14/lib_tests/tpow_ui/tpow_ui.vcxproj.filters
+diff --git a/build.vc14/lib_tests/tpow_ui/tpow_ui.vcxproj.filters build.vc14/lib_tests/tpow_ui/tpow_ui.vcxproj.filters
 new file mode 100644
 index 0000000..6f26333
 --- /dev/null
-+++ b/build.vc14/lib_tests/tpow_ui/tpow_ui.vcxproj.filters
++++ build.vc14/lib_tests/tpow_ui/tpow_ui.vcxproj.filters
 @@ -0,0 +1,6 @@
 +﻿<?xml version="1.0" encoding="utf-8"?>
 +<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -21510,11 +21510,11 @@ index 0000000..6f26333
 +  </ItemGroup>
 +</Project>
 \ No newline at end of file
-diff --git a/build.vc14/lib_tests/tpow_z/tpow_z.vcxproj b/build.vc14/lib_tests/tpow_z/tpow_z.vcxproj
+diff --git a/build.vc14/lib_tests/tpow_z/tpow_z.vcxproj build.vc14/lib_tests/tpow_z/tpow_z.vcxproj
 new file mode 100644
 index 0000000..843036c
 --- /dev/null
-+++ b/build.vc14/lib_tests/tpow_z/tpow_z.vcxproj
++++ build.vc14/lib_tests/tpow_z/tpow_z.vcxproj
 @@ -0,0 +1,165 @@
 +﻿<?xml version="1.0" encoding="utf-8"?>
 +<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -21682,11 +21682,11 @@ index 0000000..843036c
 +  </ImportGroup>
 +</Project>
 \ No newline at end of file
-diff --git a/build.vc14/lib_tests/tpow_z/tpow_z.vcxproj.filters b/build.vc14/lib_tests/tpow_z/tpow_z.vcxproj.filters
+diff --git a/build.vc14/lib_tests/tpow_z/tpow_z.vcxproj.filters build.vc14/lib_tests/tpow_z/tpow_z.vcxproj.filters
 new file mode 100644
 index 0000000..95c5fc0
 --- /dev/null
-+++ b/build.vc14/lib_tests/tpow_z/tpow_z.vcxproj.filters
++++ build.vc14/lib_tests/tpow_z/tpow_z.vcxproj.filters
 @@ -0,0 +1,6 @@
 +﻿<?xml version="1.0" encoding="utf-8"?>
 +<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -21695,11 +21695,11 @@ index 0000000..95c5fc0
 +  </ItemGroup>
 +</Project>
 \ No newline at end of file
-diff --git a/build.vc14/lib_tests/tprec/tprec.vcxproj b/build.vc14/lib_tests/tprec/tprec.vcxproj
+diff --git a/build.vc14/lib_tests/tprec/tprec.vcxproj build.vc14/lib_tests/tprec/tprec.vcxproj
 new file mode 100644
 index 0000000..17af774
 --- /dev/null
-+++ b/build.vc14/lib_tests/tprec/tprec.vcxproj
++++ build.vc14/lib_tests/tprec/tprec.vcxproj
 @@ -0,0 +1,165 @@
 +﻿<?xml version="1.0" encoding="utf-8"?>
 +<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -21867,11 +21867,11 @@ index 0000000..17af774
 +  </ImportGroup>
 +</Project>
 \ No newline at end of file
-diff --git a/build.vc14/lib_tests/tprec/tprec.vcxproj.filters b/build.vc14/lib_tests/tprec/tprec.vcxproj.filters
+diff --git a/build.vc14/lib_tests/tprec/tprec.vcxproj.filters build.vc14/lib_tests/tprec/tprec.vcxproj.filters
 new file mode 100644
 index 0000000..04d8d92
 --- /dev/null
-+++ b/build.vc14/lib_tests/tprec/tprec.vcxproj.filters
++++ build.vc14/lib_tests/tprec/tprec.vcxproj.filters
 @@ -0,0 +1,6 @@
 +﻿<?xml version="1.0" encoding="utf-8"?>
 +<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -21880,11 +21880,11 @@ index 0000000..04d8d92
 +  </ItemGroup>
 +</Project>
 \ No newline at end of file
-diff --git a/build.vc14/lib_tests/tproj/tproj.vcxproj b/build.vc14/lib_tests/tproj/tproj.vcxproj
+diff --git a/build.vc14/lib_tests/tproj/tproj.vcxproj build.vc14/lib_tests/tproj/tproj.vcxproj
 new file mode 100644
 index 0000000..418a983
 --- /dev/null
-+++ b/build.vc14/lib_tests/tproj/tproj.vcxproj
++++ build.vc14/lib_tests/tproj/tproj.vcxproj
 @@ -0,0 +1,165 @@
 +﻿<?xml version="1.0" encoding="utf-8"?>
 +<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -22052,11 +22052,11 @@ index 0000000..418a983
 +  </ImportGroup>
 +</Project>
 \ No newline at end of file
-diff --git a/build.vc14/lib_tests/tproj/tproj.vcxproj.filters b/build.vc14/lib_tests/tproj/tproj.vcxproj.filters
+diff --git a/build.vc14/lib_tests/tproj/tproj.vcxproj.filters build.vc14/lib_tests/tproj/tproj.vcxproj.filters
 new file mode 100644
 index 0000000..85706f6
 --- /dev/null
-+++ b/build.vc14/lib_tests/tproj/tproj.vcxproj.filters
++++ build.vc14/lib_tests/tproj/tproj.vcxproj.filters
 @@ -0,0 +1,6 @@
 +﻿<?xml version="1.0" encoding="utf-8"?>
 +<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -22065,11 +22065,11 @@ index 0000000..85706f6
 +  </ItemGroup>
 +</Project>
 \ No newline at end of file
-diff --git a/build.vc14/lib_tests/treal/treal.vcxproj b/build.vc14/lib_tests/treal/treal.vcxproj
+diff --git a/build.vc14/lib_tests/treal/treal.vcxproj build.vc14/lib_tests/treal/treal.vcxproj
 new file mode 100644
 index 0000000..8ef05a4
 --- /dev/null
-+++ b/build.vc14/lib_tests/treal/treal.vcxproj
++++ build.vc14/lib_tests/treal/treal.vcxproj
 @@ -0,0 +1,165 @@
 +﻿<?xml version="1.0" encoding="utf-8"?>
 +<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -22237,11 +22237,11 @@ index 0000000..8ef05a4
 +  </ImportGroup>
 +</Project>
 \ No newline at end of file
-diff --git a/build.vc14/lib_tests/treal/treal.vcxproj.filters b/build.vc14/lib_tests/treal/treal.vcxproj.filters
+diff --git a/build.vc14/lib_tests/treal/treal.vcxproj.filters build.vc14/lib_tests/treal/treal.vcxproj.filters
 new file mode 100644
 index 0000000..5bbede2
 --- /dev/null
-+++ b/build.vc14/lib_tests/treal/treal.vcxproj.filters
++++ build.vc14/lib_tests/treal/treal.vcxproj.filters
 @@ -0,0 +1,6 @@
 +﻿<?xml version="1.0" encoding="utf-8"?>
 +<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -22250,11 +22250,11 @@ index 0000000..5bbede2
 +  </ItemGroup>
 +</Project>
 \ No newline at end of file
-diff --git a/build.vc14/lib_tests/treimref/treimref.vcxproj b/build.vc14/lib_tests/treimref/treimref.vcxproj
+diff --git a/build.vc14/lib_tests/treimref/treimref.vcxproj build.vc14/lib_tests/treimref/treimref.vcxproj
 new file mode 100644
 index 0000000..14123a4
 --- /dev/null
-+++ b/build.vc14/lib_tests/treimref/treimref.vcxproj
++++ build.vc14/lib_tests/treimref/treimref.vcxproj
 @@ -0,0 +1,165 @@
 +﻿<?xml version="1.0" encoding="utf-8"?>
 +<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -22422,11 +22422,11 @@ index 0000000..14123a4
 +  </ImportGroup>
 +</Project>
 \ No newline at end of file
-diff --git a/build.vc14/lib_tests/treimref/treimref.vcxproj.filters b/build.vc14/lib_tests/treimref/treimref.vcxproj.filters
+diff --git a/build.vc14/lib_tests/treimref/treimref.vcxproj.filters build.vc14/lib_tests/treimref/treimref.vcxproj.filters
 new file mode 100644
 index 0000000..b9bb8d0
 --- /dev/null
-+++ b/build.vc14/lib_tests/treimref/treimref.vcxproj.filters
++++ build.vc14/lib_tests/treimref/treimref.vcxproj.filters
 @@ -0,0 +1,6 @@
 +﻿<?xml version="1.0" encoding="utf-8"?>
 +<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -22435,11 +22435,11 @@ index 0000000..b9bb8d0
 +  </ItemGroup>
 +</Project>
 \ No newline at end of file
-diff --git a/build.vc14/lib_tests/trootofunity/trootofunity.vcxproj b/build.vc14/lib_tests/trootofunity/trootofunity.vcxproj
+diff --git a/build.vc14/lib_tests/trootofunity/trootofunity.vcxproj build.vc14/lib_tests/trootofunity/trootofunity.vcxproj
 new file mode 100644
 index 0000000..47c0704
 --- /dev/null
-+++ b/build.vc14/lib_tests/trootofunity/trootofunity.vcxproj
++++ build.vc14/lib_tests/trootofunity/trootofunity.vcxproj
 @@ -0,0 +1,165 @@
 +﻿<?xml version="1.0" encoding="utf-8"?>
 +<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -22607,11 +22607,11 @@ index 0000000..47c0704
 +  </ImportGroup>
 +</Project>
 \ No newline at end of file
-diff --git a/build.vc14/lib_tests/trootofunity/trootofunity.vcxproj.filters b/build.vc14/lib_tests/trootofunity/trootofunity.vcxproj.filters
+diff --git a/build.vc14/lib_tests/trootofunity/trootofunity.vcxproj.filters build.vc14/lib_tests/trootofunity/trootofunity.vcxproj.filters
 new file mode 100644
 index 0000000..953315a
 --- /dev/null
-+++ b/build.vc14/lib_tests/trootofunity/trootofunity.vcxproj.filters
++++ build.vc14/lib_tests/trootofunity/trootofunity.vcxproj.filters
 @@ -0,0 +1,6 @@
 +﻿<?xml version="1.0" encoding="utf-8"?>
 +<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -22620,11 +22620,11 @@ index 0000000..953315a
 +  </ItemGroup>
 +</Project>
 \ No newline at end of file
-diff --git a/build.vc14/lib_tests/tset/tset.vcxproj b/build.vc14/lib_tests/tset/tset.vcxproj
+diff --git a/build.vc14/lib_tests/tset/tset.vcxproj build.vc14/lib_tests/tset/tset.vcxproj
 new file mode 100644
 index 0000000..417269c
 --- /dev/null
-+++ b/build.vc14/lib_tests/tset/tset.vcxproj
++++ build.vc14/lib_tests/tset/tset.vcxproj
 @@ -0,0 +1,165 @@
 +﻿<?xml version="1.0" encoding="utf-8"?>
 +<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -22792,11 +22792,11 @@ index 0000000..417269c
 +  </ImportGroup>
 +</Project>
 \ No newline at end of file
-diff --git a/build.vc14/lib_tests/tset/tset.vcxproj.filters b/build.vc14/lib_tests/tset/tset.vcxproj.filters
+diff --git a/build.vc14/lib_tests/tset/tset.vcxproj.filters build.vc14/lib_tests/tset/tset.vcxproj.filters
 new file mode 100644
 index 0000000..bd7e819
 --- /dev/null
-+++ b/build.vc14/lib_tests/tset/tset.vcxproj.filters
++++ build.vc14/lib_tests/tset/tset.vcxproj.filters
 @@ -0,0 +1,6 @@
 +﻿<?xml version="1.0" encoding="utf-8"?>
 +<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -22805,11 +22805,11 @@ index 0000000..bd7e819
 +  </ItemGroup>
 +</Project>
 \ No newline at end of file
-diff --git a/build.vc14/lib_tests/tsin/tsin.vcxproj b/build.vc14/lib_tests/tsin/tsin.vcxproj
+diff --git a/build.vc14/lib_tests/tsin/tsin.vcxproj build.vc14/lib_tests/tsin/tsin.vcxproj
 new file mode 100644
 index 0000000..bd92165
 --- /dev/null
-+++ b/build.vc14/lib_tests/tsin/tsin.vcxproj
++++ build.vc14/lib_tests/tsin/tsin.vcxproj
 @@ -0,0 +1,165 @@
 +﻿<?xml version="1.0" encoding="utf-8"?>
 +<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -22977,11 +22977,11 @@ index 0000000..bd92165
 +  </ImportGroup>
 +</Project>
 \ No newline at end of file
-diff --git a/build.vc14/lib_tests/tsin/tsin.vcxproj.filters b/build.vc14/lib_tests/tsin/tsin.vcxproj.filters
+diff --git a/build.vc14/lib_tests/tsin/tsin.vcxproj.filters build.vc14/lib_tests/tsin/tsin.vcxproj.filters
 new file mode 100644
 index 0000000..96b2150
 --- /dev/null
-+++ b/build.vc14/lib_tests/tsin/tsin.vcxproj.filters
++++ build.vc14/lib_tests/tsin/tsin.vcxproj.filters
 @@ -0,0 +1,6 @@
 +﻿<?xml version="1.0" encoding="utf-8"?>
 +<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -22990,11 +22990,11 @@ index 0000000..96b2150
 +  </ItemGroup>
 +</Project>
 \ No newline at end of file
-diff --git a/build.vc14/lib_tests/tsin_cos/tsin_cos.vcxproj b/build.vc14/lib_tests/tsin_cos/tsin_cos.vcxproj
+diff --git a/build.vc14/lib_tests/tsin_cos/tsin_cos.vcxproj build.vc14/lib_tests/tsin_cos/tsin_cos.vcxproj
 new file mode 100644
 index 0000000..c3f50d0
 --- /dev/null
-+++ b/build.vc14/lib_tests/tsin_cos/tsin_cos.vcxproj
++++ build.vc14/lib_tests/tsin_cos/tsin_cos.vcxproj
 @@ -0,0 +1,165 @@
 +﻿<?xml version="1.0" encoding="utf-8"?>
 +<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -23162,11 +23162,11 @@ index 0000000..c3f50d0
 +  </ImportGroup>
 +</Project>
 \ No newline at end of file
-diff --git a/build.vc14/lib_tests/tsin_cos/tsin_cos.vcxproj.filters b/build.vc14/lib_tests/tsin_cos/tsin_cos.vcxproj.filters
+diff --git a/build.vc14/lib_tests/tsin_cos/tsin_cos.vcxproj.filters build.vc14/lib_tests/tsin_cos/tsin_cos.vcxproj.filters
 new file mode 100644
 index 0000000..9b6db88
 --- /dev/null
-+++ b/build.vc14/lib_tests/tsin_cos/tsin_cos.vcxproj.filters
++++ build.vc14/lib_tests/tsin_cos/tsin_cos.vcxproj.filters
 @@ -0,0 +1,6 @@
 +﻿<?xml version="1.0" encoding="utf-8"?>
 +<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -23175,11 +23175,11 @@ index 0000000..9b6db88
 +  </ItemGroup>
 +</Project>
 \ No newline at end of file
-diff --git a/build.vc14/lib_tests/tsinh/tsinh.vcxproj b/build.vc14/lib_tests/tsinh/tsinh.vcxproj
+diff --git a/build.vc14/lib_tests/tsinh/tsinh.vcxproj build.vc14/lib_tests/tsinh/tsinh.vcxproj
 new file mode 100644
 index 0000000..c3e9fdd
 --- /dev/null
-+++ b/build.vc14/lib_tests/tsinh/tsinh.vcxproj
++++ build.vc14/lib_tests/tsinh/tsinh.vcxproj
 @@ -0,0 +1,165 @@
 +﻿<?xml version="1.0" encoding="utf-8"?>
 +<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -23347,11 +23347,11 @@ index 0000000..c3e9fdd
 +  </ImportGroup>
 +</Project>
 \ No newline at end of file
-diff --git a/build.vc14/lib_tests/tsinh/tsinh.vcxproj.filters b/build.vc14/lib_tests/tsinh/tsinh.vcxproj.filters
+diff --git a/build.vc14/lib_tests/tsinh/tsinh.vcxproj.filters build.vc14/lib_tests/tsinh/tsinh.vcxproj.filters
 new file mode 100644
 index 0000000..656ebed
 --- /dev/null
-+++ b/build.vc14/lib_tests/tsinh/tsinh.vcxproj.filters
++++ build.vc14/lib_tests/tsinh/tsinh.vcxproj.filters
 @@ -0,0 +1,6 @@
 +﻿<?xml version="1.0" encoding="utf-8"?>
 +<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -23360,11 +23360,11 @@ index 0000000..656ebed
 +  </ItemGroup>
 +</Project>
 \ No newline at end of file
-diff --git a/build.vc14/lib_tests/tsqr/tsqr.vcxproj b/build.vc14/lib_tests/tsqr/tsqr.vcxproj
+diff --git a/build.vc14/lib_tests/tsqr/tsqr.vcxproj build.vc14/lib_tests/tsqr/tsqr.vcxproj
 new file mode 100644
 index 0000000..692c824
 --- /dev/null
-+++ b/build.vc14/lib_tests/tsqr/tsqr.vcxproj
++++ build.vc14/lib_tests/tsqr/tsqr.vcxproj
 @@ -0,0 +1,165 @@
 +﻿<?xml version="1.0" encoding="utf-8"?>
 +<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -23532,11 +23532,11 @@ index 0000000..692c824
 +  </ImportGroup>
 +</Project>
 \ No newline at end of file
-diff --git a/build.vc14/lib_tests/tsqr/tsqr.vcxproj.filters b/build.vc14/lib_tests/tsqr/tsqr.vcxproj.filters
+diff --git a/build.vc14/lib_tests/tsqr/tsqr.vcxproj.filters build.vc14/lib_tests/tsqr/tsqr.vcxproj.filters
 new file mode 100644
 index 0000000..01821c5
 --- /dev/null
-+++ b/build.vc14/lib_tests/tsqr/tsqr.vcxproj.filters
++++ build.vc14/lib_tests/tsqr/tsqr.vcxproj.filters
 @@ -0,0 +1,6 @@
 +﻿<?xml version="1.0" encoding="utf-8"?>
 +<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -23545,11 +23545,11 @@ index 0000000..01821c5
 +  </ItemGroup>
 +</Project>
 \ No newline at end of file
-diff --git a/build.vc14/lib_tests/tsqrt/tsqrt.vcxproj b/build.vc14/lib_tests/tsqrt/tsqrt.vcxproj
+diff --git a/build.vc14/lib_tests/tsqrt/tsqrt.vcxproj build.vc14/lib_tests/tsqrt/tsqrt.vcxproj
 new file mode 100644
 index 0000000..92485fd
 --- /dev/null
-+++ b/build.vc14/lib_tests/tsqrt/tsqrt.vcxproj
++++ build.vc14/lib_tests/tsqrt/tsqrt.vcxproj
 @@ -0,0 +1,165 @@
 +﻿<?xml version="1.0" encoding="utf-8"?>
 +<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -23717,11 +23717,11 @@ index 0000000..92485fd
 +  </ImportGroup>
 +</Project>
 \ No newline at end of file
-diff --git a/build.vc14/lib_tests/tsqrt/tsqrt.vcxproj.filters b/build.vc14/lib_tests/tsqrt/tsqrt.vcxproj.filters
+diff --git a/build.vc14/lib_tests/tsqrt/tsqrt.vcxproj.filters build.vc14/lib_tests/tsqrt/tsqrt.vcxproj.filters
 new file mode 100644
 index 0000000..bdcd98d
 --- /dev/null
-+++ b/build.vc14/lib_tests/tsqrt/tsqrt.vcxproj.filters
++++ build.vc14/lib_tests/tsqrt/tsqrt.vcxproj.filters
 @@ -0,0 +1,6 @@
 +﻿<?xml version="1.0" encoding="utf-8"?>
 +<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -23730,11 +23730,11 @@ index 0000000..bdcd98d
 +  </ItemGroup>
 +</Project>
 \ No newline at end of file
-diff --git a/build.vc14/lib_tests/tstrtoc/tstrtoc.vcxproj b/build.vc14/lib_tests/tstrtoc/tstrtoc.vcxproj
+diff --git a/build.vc14/lib_tests/tstrtoc/tstrtoc.vcxproj build.vc14/lib_tests/tstrtoc/tstrtoc.vcxproj
 new file mode 100644
 index 0000000..bb4e488
 --- /dev/null
-+++ b/build.vc14/lib_tests/tstrtoc/tstrtoc.vcxproj
++++ build.vc14/lib_tests/tstrtoc/tstrtoc.vcxproj
 @@ -0,0 +1,165 @@
 +﻿<?xml version="1.0" encoding="utf-8"?>
 +<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -23902,11 +23902,11 @@ index 0000000..bb4e488
 +  </ImportGroup>
 +</Project>
 \ No newline at end of file
-diff --git a/build.vc14/lib_tests/tstrtoc/tstrtoc.vcxproj.filters b/build.vc14/lib_tests/tstrtoc/tstrtoc.vcxproj.filters
+diff --git a/build.vc14/lib_tests/tstrtoc/tstrtoc.vcxproj.filters build.vc14/lib_tests/tstrtoc/tstrtoc.vcxproj.filters
 new file mode 100644
 index 0000000..20f04fd
 --- /dev/null
-+++ b/build.vc14/lib_tests/tstrtoc/tstrtoc.vcxproj.filters
++++ build.vc14/lib_tests/tstrtoc/tstrtoc.vcxproj.filters
 @@ -0,0 +1,6 @@
 +﻿<?xml version="1.0" encoding="utf-8"?>
 +<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -23915,11 +23915,11 @@ index 0000000..20f04fd
 +  </ItemGroup>
 +</Project>
 \ No newline at end of file
-diff --git a/build.vc14/lib_tests/tsub/tsub.vcxproj b/build.vc14/lib_tests/tsub/tsub.vcxproj
+diff --git a/build.vc14/lib_tests/tsub/tsub.vcxproj build.vc14/lib_tests/tsub/tsub.vcxproj
 new file mode 100644
 index 0000000..cec8065
 --- /dev/null
-+++ b/build.vc14/lib_tests/tsub/tsub.vcxproj
++++ build.vc14/lib_tests/tsub/tsub.vcxproj
 @@ -0,0 +1,165 @@
 +﻿<?xml version="1.0" encoding="utf-8"?>
 +<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -24087,11 +24087,11 @@ index 0000000..cec8065
 +  </ImportGroup>
 +</Project>
 \ No newline at end of file
-diff --git a/build.vc14/lib_tests/tsub/tsub.vcxproj.filters b/build.vc14/lib_tests/tsub/tsub.vcxproj.filters
+diff --git a/build.vc14/lib_tests/tsub/tsub.vcxproj.filters build.vc14/lib_tests/tsub/tsub.vcxproj.filters
 new file mode 100644
 index 0000000..92df87a
 --- /dev/null
-+++ b/build.vc14/lib_tests/tsub/tsub.vcxproj.filters
++++ build.vc14/lib_tests/tsub/tsub.vcxproj.filters
 @@ -0,0 +1,6 @@
 +﻿<?xml version="1.0" encoding="utf-8"?>
 +<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -24100,11 +24100,11 @@ index 0000000..92df87a
 +  </ItemGroup>
 +</Project>
 \ No newline at end of file
-diff --git a/build.vc14/lib_tests/tsub_fr/tsub_fr.vcxproj b/build.vc14/lib_tests/tsub_fr/tsub_fr.vcxproj
+diff --git a/build.vc14/lib_tests/tsub_fr/tsub_fr.vcxproj build.vc14/lib_tests/tsub_fr/tsub_fr.vcxproj
 new file mode 100644
 index 0000000..9a819d8
 --- /dev/null
-+++ b/build.vc14/lib_tests/tsub_fr/tsub_fr.vcxproj
++++ build.vc14/lib_tests/tsub_fr/tsub_fr.vcxproj
 @@ -0,0 +1,165 @@
 +﻿<?xml version="1.0" encoding="utf-8"?>
 +<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -24272,11 +24272,11 @@ index 0000000..9a819d8
 +  </ImportGroup>
 +</Project>
 \ No newline at end of file
-diff --git a/build.vc14/lib_tests/tsub_fr/tsub_fr.vcxproj.filters b/build.vc14/lib_tests/tsub_fr/tsub_fr.vcxproj.filters
+diff --git a/build.vc14/lib_tests/tsub_fr/tsub_fr.vcxproj.filters build.vc14/lib_tests/tsub_fr/tsub_fr.vcxproj.filters
 new file mode 100644
 index 0000000..f4691bf
 --- /dev/null
-+++ b/build.vc14/lib_tests/tsub_fr/tsub_fr.vcxproj.filters
++++ build.vc14/lib_tests/tsub_fr/tsub_fr.vcxproj.filters
 @@ -0,0 +1,6 @@
 +﻿<?xml version="1.0" encoding="utf-8"?>
 +<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -24285,11 +24285,11 @@ index 0000000..f4691bf
 +  </ItemGroup>
 +</Project>
 \ No newline at end of file
-diff --git a/build.vc14/lib_tests/tsub_ui/tsub_ui.vcxproj b/build.vc14/lib_tests/tsub_ui/tsub_ui.vcxproj
+diff --git a/build.vc14/lib_tests/tsub_ui/tsub_ui.vcxproj build.vc14/lib_tests/tsub_ui/tsub_ui.vcxproj
 new file mode 100644
 index 0000000..451967d
 --- /dev/null
-+++ b/build.vc14/lib_tests/tsub_ui/tsub_ui.vcxproj
++++ build.vc14/lib_tests/tsub_ui/tsub_ui.vcxproj
 @@ -0,0 +1,165 @@
 +﻿<?xml version="1.0" encoding="utf-8"?>
 +<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -24457,11 +24457,11 @@ index 0000000..451967d
 +  </ImportGroup>
 +</Project>
 \ No newline at end of file
-diff --git a/build.vc14/lib_tests/tsub_ui/tsub_ui.vcxproj.filters b/build.vc14/lib_tests/tsub_ui/tsub_ui.vcxproj.filters
+diff --git a/build.vc14/lib_tests/tsub_ui/tsub_ui.vcxproj.filters build.vc14/lib_tests/tsub_ui/tsub_ui.vcxproj.filters
 new file mode 100644
 index 0000000..e77ecfa
 --- /dev/null
-+++ b/build.vc14/lib_tests/tsub_ui/tsub_ui.vcxproj.filters
++++ build.vc14/lib_tests/tsub_ui/tsub_ui.vcxproj.filters
 @@ -0,0 +1,6 @@
 +﻿<?xml version="1.0" encoding="utf-8"?>
 +<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -24470,11 +24470,11 @@ index 0000000..e77ecfa
 +  </ItemGroup>
 +</Project>
 \ No newline at end of file
-diff --git a/build.vc14/lib_tests/tswap/tswap.vcxproj b/build.vc14/lib_tests/tswap/tswap.vcxproj
+diff --git a/build.vc14/lib_tests/tswap/tswap.vcxproj build.vc14/lib_tests/tswap/tswap.vcxproj
 new file mode 100644
 index 0000000..a63745a
 --- /dev/null
-+++ b/build.vc14/lib_tests/tswap/tswap.vcxproj
++++ build.vc14/lib_tests/tswap/tswap.vcxproj
 @@ -0,0 +1,165 @@
 +﻿<?xml version="1.0" encoding="utf-8"?>
 +<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -24642,11 +24642,11 @@ index 0000000..a63745a
 +  </ImportGroup>
 +</Project>
 \ No newline at end of file
-diff --git a/build.vc14/lib_tests/tswap/tswap.vcxproj.filters b/build.vc14/lib_tests/tswap/tswap.vcxproj.filters
+diff --git a/build.vc14/lib_tests/tswap/tswap.vcxproj.filters build.vc14/lib_tests/tswap/tswap.vcxproj.filters
 new file mode 100644
 index 0000000..6bc51ea
 --- /dev/null
-+++ b/build.vc14/lib_tests/tswap/tswap.vcxproj.filters
++++ build.vc14/lib_tests/tswap/tswap.vcxproj.filters
 @@ -0,0 +1,6 @@
 +﻿<?xml version="1.0" encoding="utf-8"?>
 +<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -24655,11 +24655,11 @@ index 0000000..6bc51ea
 +  </ItemGroup>
 +</Project>
 \ No newline at end of file
-diff --git a/build.vc14/lib_tests/ttan/ttan.vcxproj b/build.vc14/lib_tests/ttan/ttan.vcxproj
+diff --git a/build.vc14/lib_tests/ttan/ttan.vcxproj build.vc14/lib_tests/ttan/ttan.vcxproj
 new file mode 100644
 index 0000000..7516991
 --- /dev/null
-+++ b/build.vc14/lib_tests/ttan/ttan.vcxproj
++++ build.vc14/lib_tests/ttan/ttan.vcxproj
 @@ -0,0 +1,165 @@
 +﻿<?xml version="1.0" encoding="utf-8"?>
 +<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -24827,11 +24827,11 @@ index 0000000..7516991
 +  </ImportGroup>
 +</Project>
 \ No newline at end of file
-diff --git a/build.vc14/lib_tests/ttan/ttan.vcxproj.filters b/build.vc14/lib_tests/ttan/ttan.vcxproj.filters
+diff --git a/build.vc14/lib_tests/ttan/ttan.vcxproj.filters build.vc14/lib_tests/ttan/ttan.vcxproj.filters
 new file mode 100644
 index 0000000..cebcd4a
 --- /dev/null
-+++ b/build.vc14/lib_tests/ttan/ttan.vcxproj.filters
++++ build.vc14/lib_tests/ttan/ttan.vcxproj.filters
 @@ -0,0 +1,6 @@
 +﻿<?xml version="1.0" encoding="utf-8"?>
 +<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -24840,11 +24840,11 @@ index 0000000..cebcd4a
 +  </ItemGroup>
 +</Project>
 \ No newline at end of file
-diff --git a/build.vc14/lib_tests/ttanh/ttanh.vcxproj b/build.vc14/lib_tests/ttanh/ttanh.vcxproj
+diff --git a/build.vc14/lib_tests/ttanh/ttanh.vcxproj build.vc14/lib_tests/ttanh/ttanh.vcxproj
 new file mode 100644
 index 0000000..731a9e5
 --- /dev/null
-+++ b/build.vc14/lib_tests/ttanh/ttanh.vcxproj
++++ build.vc14/lib_tests/ttanh/ttanh.vcxproj
 @@ -0,0 +1,165 @@
 +﻿<?xml version="1.0" encoding="utf-8"?>
 +<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -25012,11 +25012,11 @@ index 0000000..731a9e5
 +  </ImportGroup>
 +</Project>
 \ No newline at end of file
-diff --git a/build.vc14/lib_tests/ttanh/ttanh.vcxproj.filters b/build.vc14/lib_tests/ttanh/ttanh.vcxproj.filters
+diff --git a/build.vc14/lib_tests/ttanh/ttanh.vcxproj.filters build.vc14/lib_tests/ttanh/ttanh.vcxproj.filters
 new file mode 100644
 index 0000000..df01aa4
 --- /dev/null
-+++ b/build.vc14/lib_tests/ttanh/ttanh.vcxproj.filters
++++ build.vc14/lib_tests/ttanh/ttanh.vcxproj.filters
 @@ -0,0 +1,6 @@
 +﻿<?xml version="1.0" encoding="utf-8"?>
 +<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -25025,11 +25025,11 @@ index 0000000..df01aa4
 +  </ItemGroup>
 +</Project>
 \ No newline at end of file
-diff --git a/build.vc14/lib_tests/tui_div/tui_div.vcxproj b/build.vc14/lib_tests/tui_div/tui_div.vcxproj
+diff --git a/build.vc14/lib_tests/tui_div/tui_div.vcxproj build.vc14/lib_tests/tui_div/tui_div.vcxproj
 new file mode 100644
 index 0000000..034e37c
 --- /dev/null
-+++ b/build.vc14/lib_tests/tui_div/tui_div.vcxproj
++++ build.vc14/lib_tests/tui_div/tui_div.vcxproj
 @@ -0,0 +1,165 @@
 +﻿<?xml version="1.0" encoding="utf-8"?>
 +<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -25197,11 +25197,11 @@ index 0000000..034e37c
 +  </ImportGroup>
 +</Project>
 \ No newline at end of file
-diff --git a/build.vc14/lib_tests/tui_div/tui_div.vcxproj.filters b/build.vc14/lib_tests/tui_div/tui_div.vcxproj.filters
+diff --git a/build.vc14/lib_tests/tui_div/tui_div.vcxproj.filters build.vc14/lib_tests/tui_div/tui_div.vcxproj.filters
 new file mode 100644
 index 0000000..6b817d4
 --- /dev/null
-+++ b/build.vc14/lib_tests/tui_div/tui_div.vcxproj.filters
++++ build.vc14/lib_tests/tui_div/tui_div.vcxproj.filters
 @@ -0,0 +1,6 @@
 +﻿<?xml version="1.0" encoding="utf-8"?>
 +<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -25210,11 +25210,11 @@ index 0000000..6b817d4
 +  </ItemGroup>
 +</Project>
 \ No newline at end of file
-diff --git a/build.vc14/lib_tests/tui_ui_sub/tui_ui_sub.vcxproj b/build.vc14/lib_tests/tui_ui_sub/tui_ui_sub.vcxproj
+diff --git a/build.vc14/lib_tests/tui_ui_sub/tui_ui_sub.vcxproj build.vc14/lib_tests/tui_ui_sub/tui_ui_sub.vcxproj
 new file mode 100644
 index 0000000..20738e1
 --- /dev/null
-+++ b/build.vc14/lib_tests/tui_ui_sub/tui_ui_sub.vcxproj
++++ build.vc14/lib_tests/tui_ui_sub/tui_ui_sub.vcxproj
 @@ -0,0 +1,165 @@
 +﻿<?xml version="1.0" encoding="utf-8"?>
 +<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -25382,11 +25382,11 @@ index 0000000..20738e1
 +  </ImportGroup>
 +</Project>
 \ No newline at end of file
-diff --git a/build.vc14/lib_tests/tui_ui_sub/tui_ui_sub.vcxproj.filters b/build.vc14/lib_tests/tui_ui_sub/tui_ui_sub.vcxproj.filters
+diff --git a/build.vc14/lib_tests/tui_ui_sub/tui_ui_sub.vcxproj.filters build.vc14/lib_tests/tui_ui_sub/tui_ui_sub.vcxproj.filters
 new file mode 100644
 index 0000000..e2a3d66
 --- /dev/null
-+++ b/build.vc14/lib_tests/tui_ui_sub/tui_ui_sub.vcxproj.filters
++++ build.vc14/lib_tests/tui_ui_sub/tui_ui_sub.vcxproj.filters
 @@ -0,0 +1,6 @@
 +﻿<?xml version="1.0" encoding="utf-8"?>
 +<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -25395,11 +25395,11 @@ index 0000000..e2a3d66
 +  </ItemGroup>
 +</Project>
 \ No newline at end of file
-diff --git a/build.vc14/mpc.sln b/build.vc14/mpc.sln
+diff --git a/build.vc14/mpc.sln build.vc14/mpc.sln
 new file mode 100644
 index 0000000..f1a8ca5
 --- /dev/null
-+++ b/build.vc14/mpc.sln
++++ build.vc14/mpc.sln
 @@ -0,0 +1,1508 @@
 +﻿
 +Microsoft Visual Studio Solution File, Format Version 12.00
@@ -26909,11 +26909,11 @@ index 0000000..f1a8ca5
 +		{7BDE3A5A-3FBA-4B0F-A892-9483891F905B} = {C9DEB242-59DF-40F7-AB0D-8A794DC22669}
 +	EndGlobalSection
 +EndGlobal
-diff --git a/build.vc14/mpc_dll/mpc_dll.vcxproj b/build.vc14/mpc_dll/mpc_dll.vcxproj
+diff --git a/build.vc14/mpc_dll/mpc_dll.vcxproj build.vc14/mpc_dll/mpc_dll.vcxproj
 new file mode 100644
 index 0000000..df25f04
 --- /dev/null
-+++ b/build.vc14/mpc_dll/mpc_dll.vcxproj
++++ build.vc14/mpc_dll/mpc_dll.vcxproj
 @@ -0,0 +1,262 @@
 +﻿<?xml version="1.0" encoding="utf-8"?>
 +<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -27178,11 +27178,11 @@ index 0000000..df25f04
 +  </ImportGroup>
 +</Project>
 \ No newline at end of file
-diff --git a/build.vc14/mpc_dll/mpc_dll.vcxproj.filters b/build.vc14/mpc_dll/mpc_dll.vcxproj.filters
+diff --git a/build.vc14/mpc_dll/mpc_dll.vcxproj.filters build.vc14/mpc_dll/mpc_dll.vcxproj.filters
 new file mode 100644
 index 0000000..bc8ce1d
 --- /dev/null
-+++ b/build.vc14/mpc_dll/mpc_dll.vcxproj.filters
++++ build.vc14/mpc_dll/mpc_dll.vcxproj.filters
 @@ -0,0 +1,272 @@
 +﻿<?xml version="1.0" encoding="utf-8"?>
 +<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -27457,11 +27457,11 @@ index 0000000..bc8ce1d
 +  </ItemGroup>
 +</Project>
 \ No newline at end of file
-diff --git a/build.vc14/mpc_lib/mpc_lib.vcxproj b/build.vc14/mpc_lib/mpc_lib.vcxproj
+diff --git a/build.vc14/mpc_lib/mpc_lib.vcxproj build.vc14/mpc_lib/mpc_lib.vcxproj
 new file mode 100644
 index 0000000..d3aebac
 --- /dev/null
-+++ b/build.vc14/mpc_lib/mpc_lib.vcxproj
++++ build.vc14/mpc_lib/mpc_lib.vcxproj
 @@ -0,0 +1,268 @@
 +﻿<?xml version="1.0" encoding="utf-8"?>
 +<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -27732,11 +27732,11 @@ index 0000000..d3aebac
 +  </ImportGroup>
 +</Project>
 \ No newline at end of file
-diff --git a/build.vc14/mpc_lib/mpc_lib.vcxproj.filters b/build.vc14/mpc_lib/mpc_lib.vcxproj.filters
+diff --git a/build.vc14/mpc_lib/mpc_lib.vcxproj.filters build.vc14/mpc_lib/mpc_lib.vcxproj.filters
 new file mode 100644
 index 0000000..322f47c
 --- /dev/null
-+++ b/build.vc14/mpc_lib/mpc_lib.vcxproj.filters
++++ build.vc14/mpc_lib/mpc_lib.vcxproj.filters
 @@ -0,0 +1,272 @@
 +﻿<?xml version="1.0" encoding="utf-8"?>
 +<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -28011,11 +28011,11 @@ index 0000000..322f47c
 +  </ItemGroup>
 +</Project>
 \ No newline at end of file
-diff --git a/build.vc14/readme.txt b/build.vc14/readme.txt
+diff --git a/build.vc14/readme.txt build.vc14/readme.txt
 new file mode 100644
 index 0000000..8f0c982
 --- /dev/null
-+++ b/build.vc14/readme.txt
++++ build.vc14/readme.txt
 @@ -0,0 +1,115 @@
 +======================
 +A. A Note On Licensing
@@ -28132,11 +28132,11 @@ index 0000000..8f0c982
 +   readme.txt file giving the build instructions
 + 
 +       Brian Gladman, February 2013
-diff --git a/build.vc14/run_dll_tests.py b/build.vc14/run_dll_tests.py
+diff --git a/build.vc14/run_dll_tests.py build.vc14/run_dll_tests.py
 new file mode 100644
 index 0000000..ee83145
 --- /dev/null
-+++ b/build.vc14/run_dll_tests.py
++++ build.vc14/run_dll_tests.py
 @@ -0,0 +1,165 @@
 +#
 +# Python script for running MPFR tests
@@ -28303,11 +28303,11 @@ index 0000000..ee83145
 +    pass
 +else:
 +  sys.exit(build_fail + run_fail)
-diff --git a/build.vc14/run_lib_tests.py b/build.vc14/run_lib_tests.py
+diff --git a/build.vc14/run_lib_tests.py build.vc14/run_lib_tests.py
 new file mode 100644
 index 0000000..9533a87
 --- /dev/null
-+++ b/build.vc14/run_lib_tests.py
++++ build.vc14/run_lib_tests.py
 @@ -0,0 +1,161 @@
 +#
 +# Python script for running MPFR tests
