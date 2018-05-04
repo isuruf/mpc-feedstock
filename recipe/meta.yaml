@@ -12,7 +12,7 @@ source:
   - patches/build-vc14.patch
 
 build:
-  number: 4
+  number: 5
   features:
     - vc14            # [win]
   msvc_compiler: 14.0
@@ -24,12 +24,12 @@ requirements:
     - libtool         # [unix]
     - gmp >=5.0.1,<7  # [unix]
     - mpir            # [win]
-    - mpfr 3.*
+    - mpfr 4.*
   run:
     - gmp >=5.0.1,<7  # [unix]
     - mpir            # [win]
     - vc 14           # [win]
-    - mpfr 3.*
+    - mpfr 4.*
 
 test:
   commands:
