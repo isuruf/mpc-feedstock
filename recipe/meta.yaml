@@ -13,23 +13,21 @@ source:
 
 build:
   number: 5
-  features:
-    - vc14            # [win]
-  msvc_compiler: 14.0
+  skip: True  # [vc<14]
 
 requirements:
   build:
-    - toolchain
-    - m4              # [unix]
     - libtool         # [unix]
-    - gmp >=5.0.1,<7  # [unix]
+    - {{ compiler('c') }}
+  host:
+    - m4              # [unix]
+    - gmp             # [unix]
     - mpir            # [win]
-    - mpfr 4.*
+    - mpfr
   run:
-    - gmp >=5.0.1,<7  # [unix]
+    - gmp             # [unix]
     - mpir            # [win]
-    - vc 14           # [win]
-    - mpfr 4.*
+    - mpfr
 
 test:
   commands:
