@@ -14,14 +14,16 @@ Summary: A C library for the arithmetic of complex numbers with arbitrarily high
 Current build status
 ====================
 
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/mpc-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/mpc-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/mpc-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/mpc-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/mpc-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/mpc-feedstock/branch/master)
+[![Windows](https://img.shields.io/appveyor/ci/conda-forge/mpc-feedstock/master.svg?label=Windows)](https://ci.appveyor.com/project/conda-forge/mpc-feedstock/branch/master)
+![Linux disabled](https://img.shields.io/badge/linux-disabled-lightgrey.svg)
+![OSX disabled](https://img.shields.io/badge/OSX-disabled-lightgrey.svg)
 
 Current release info
 ====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/mpc/badges/version.svg)](https://anaconda.org/conda-forge/mpc)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/mpc/badges/downloads.svg)](https://anaconda.org/conda-forge/mpc)
+
+| Name | Downloads | Version | Platforms |
+| --- | --- | --- | --- |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-mpc-green.svg)](https://anaconda.org/conda-forge/mpc) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/mpc.svg)](https://anaconda.org/conda-forge/mpc) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/mpc.svg)](https://anaconda.org/conda-forge/mpc) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/mpc.svg)](https://anaconda.org/conda-forge/mpc) |
 
 Installing mpc
 ==============
@@ -66,6 +68,7 @@ To manage the continuous integration and simplify feedstock maintenance
 Using the ``conda-forge.yml`` within this repository, it is possible to re-render all of
 this feedstock's supporting files (e.g. the CI configuration files) with ``conda smithy rerender``.
 
+For more information please check the [conda-forge documentation](https://conda-forge.org/docs/).
 
 Terminology
 ===========
