@@ -18,9 +18,9 @@ build:
 requirements:
   build:
     - libtool         # [unix]
+    - m4              # [unix]
     - {{ compiler('c') }}
   host:
-    - m4              # [unix]
     - gmp             # [unix]
     - mpir            # [win]
     - mpfr
