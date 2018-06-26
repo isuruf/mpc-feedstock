@@ -14,9 +14,9 @@ Summary: A C library for the arithmetic of complex numbers with arbitrarily high
 Current build status
 ====================
 
+[![Linux](https://img.shields.io/circleci/project/github/conda-forge/mpc-feedstock/master.svg?label=Linux)](https://circleci.com/gh/conda-forge/mpc-feedstock)
+[![OSX](https://img.shields.io/travis/conda-forge/mpc-feedstock/master.svg?label=macOS)](https://travis-ci.org/conda-forge/mpc-feedstock)
 [![Windows](https://img.shields.io/appveyor/ci/conda-forge/mpc-feedstock/master.svg?label=Windows)](https://ci.appveyor.com/project/conda-forge/mpc-feedstock/branch/master)
-![Linux disabled](https://img.shields.io/badge/linux-disabled-lightgrey.svg)
-![OSX disabled](https://img.shields.io/badge/OSX-disabled-lightgrey.svg)
 
 Current release info
 ====================
