@@ -12,24 +12,24 @@ source:
   - patches/build-vc14.patch
 
 build:
-  number: 5
-  features:
-    - vc14            # [win]
-  msvc_compiler: 14.0
+  number: 6
+  skip: True  # [win and vc<14]
+  run_exports:
+    - {{ pin_subpackage("mpc") }}
 
 requirements:
   build:
-    - toolchain
-    - m4              # [unix]
     - libtool         # [unix]
-    - gmp >=5.0.1,<7  # [unix]
+    - m4              # [unix]
+    - {{ compiler('c') }}
+  host:
+    - gmp             # [unix]
     - mpir            # [win]
-    - mpfr 4.*
+    - mpfr
   run:
-    - gmp >=5.0.1,<7  # [unix]
+    - gmp             # [unix]
     - mpir            # [win]
-    - vc 14           # [win]
-    - mpfr 4.*
+    - mpfr
 
 test:
   commands:
