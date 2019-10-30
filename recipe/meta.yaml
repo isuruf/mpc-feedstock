@@ -21,6 +21,7 @@ requirements:
   build:
     - libtool         # [unix]
     - m4              # [unix]
+    - make            # [unix]
     - {{ compiler('c') }}
   host:
     - gmp             # [unix]
