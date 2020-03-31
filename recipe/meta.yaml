@@ -13,7 +13,6 @@ source:
 
 build:
   number: 1007
-  skip: True  # [win and vc<14]
   run_exports:
     - {{ pin_subpackage("mpc") }}
 
