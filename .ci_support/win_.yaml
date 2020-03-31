@@ -9,7 +9,3 @@ mpfr:
 pin_run_as_build:
   mpfr:
     max_pin: x
-  vc:
-    max_pin: x
-vc:
-- '14'
