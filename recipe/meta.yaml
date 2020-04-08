@@ -12,6 +12,7 @@ source:
   - patches/build-vc14.patch
 
 build:
+  skip: True  # [win and vc<14]
   number: 1007
   run_exports:
     - {{ pin_subpackage("mpc") }}
