@@ -45,7 +45,7 @@ test:
 
 about:
   home: http://www.multiprecision.org/
-  license: LGPL-3-only
+  license: LGPL-3-or-later
   license_file: {{ SRC_DIR }}/COPYING.LESSER
   summary: A C library for the arithmetic of complex numbers with arbitrarily high precision.
 
