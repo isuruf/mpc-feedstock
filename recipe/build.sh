@@ -1,10 +1,10 @@
 #!/bin/bash
 
-export LD_LIBRARY_PATH=$PREFIX/lib:$LD_LIBRARY_PATH
-
 ./configure --prefix=$PREFIX \
             --with-gmp=$PREFIX \
-            --with-mpfr=$PREFIX
-make
-make check
+            --with-mpfr=$PREFIX \
+            --disable-static
+
+make -j${CPU_COUNT}
+make check -j${CPU_COUNT}
 make install
