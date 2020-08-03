@@ -13,7 +13,7 @@ source:
 
 build:
   skip: True  # [win and vc<14]
-  number: 1007
+  number: 1008
   run_exports:
     - {{ pin_subpackage("mpc") }}
 
@@ -39,14 +39,13 @@ test:
     - if not exist %LIBRARY_BIN%\\mpc.dll exit 1                # [win]
     - if not exist %LIBRARY_LIB%\\mpc_static.lib exit 1         # [win]
     - test -f ${PREFIX}/include/mpc.h                           # [unix]
-    - test -f ${PREFIX}/lib/libmpc.a                            # [unix]
     - test -f ${PREFIX}/lib/libmpc.dylib                        # [osx]
     - test -f ${PREFIX}/lib/libmpc.so                           # [linux]
 
 about:
   home: http://www.multiprecision.org/
-  license: LGPL-3-or-later
-  license_file: {{ SRC_DIR }}/COPYING.LESSER
+  license: LGPL-3.0-or-later
+  license_file: COPYING.LESSER
   summary: A C library for the arithmetic of complex numbers with arbitrarily high precision.
 
 extra:
